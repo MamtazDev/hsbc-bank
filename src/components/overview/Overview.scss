@@ -1,0 +1,30 @@
+.overview {
+    .section_heading {
+        h1 {
+            color: #333;
+            font-size: 1.625rem;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+        }
+
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+    }
+
+    .alert_box {
+
+        width: 100%;
+        border-style: solid;
+        background-color: rgb(255, 248, 234);
+        border-color: rgb(255, 187, 51);
+        color: rgb(51, 51, 51);
+        padding: 0.9375rem 0.5rem 0.9375rem 1.25rem;
+        border-width: 0.0625rem;
+        margin-bottom: 20px;
+
+        a {
+            color: #333;
+        }
+    }
+}
