@@ -13,12 +13,20 @@ const DashboardLayout = () => {
                 <div className="col-lg-2">
                     <Sidebar />
                 </div>
-                <div className="col-lg-9">
+                <div className="col-lg-10">
                     <Outlet />
                 </div>
-
             </div>
 
+            {/* <div className="row mt-5">
+                <div className="col-md-2 bg-danger">
+                    <h1>Hello</h1>
+                </div>
+                <div className="col-md-10 bg-success">
+                    <Outlet />
+                    <h1>Hello</h1>
+                </div>
+            </div> */}
         </>
     )
 }

@@ -3,6 +3,7 @@ import './Overview.scss'
 import { Link } from 'react-router-dom'
 import Alert from '../alert/Alert'
 import WalletList from '../walletList/WalletList'
+import RecevingAccountList from '../recevingAccountList/RecevingAccountList'
 
 const Overview = () => {
     return (
@@ -12,12 +13,9 @@ const Overview = () => {
                     Overview
                 </h1>
             </div>
-
             <Alert />
-
             <WalletList />
-
-
+            <RecevingAccountList />
         </div>
     )
 }

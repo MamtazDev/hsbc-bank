@@ -1,0 +1,107 @@
+import React from 'react'
+import { recevingData } from '../../data/RecevingData'
+
+const AccountDetails = ({ accountData }) => {
+    console.log(accountData, "llll");
+
+    return (
+        <div className="account_details">
+            <div className="account_details_wrapper">
+                <div className="account_details_table_box">
+                    <div className="table_wrapper">
+                        <div className="table_controller">
+                            <table className='main_table'>
+                                <caption className='table_caption'></caption>
+                                <thead className='table_head'>
+                                    <tr className='table_row'>
+                                        <th className='table_head_one active' style={{ width: '200px' }}>
+                                            <div className='table_head_title'>
+                                                <button>
+                                                    Receiving Account nickname
+                                                </button>
+                                            </div>
+                                        </th>
+
+                                        <th className='table_head_one active' style={{ width: '200px' }}>
+                                            <div className='table_head_title'>
+                                                <button>
+                                                    Receiving Account Number
+                                                </button>
+                                            </div>
+                                        </th>
+
+                                        <th className='table_head_one active' style={{ width: '120px' }}>
+                                            <div className='table_head_title'>
+                                                <button>
+                                                    Currency
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th className='table_head_one active' style={{ width: '160px' }}>
+                                            <div className='table_head_title'>
+                                                <button>
+                                                    Status
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th className='table_head_one active' style={{ width: '120px' }}>
+                                            <div className='table_head_title'>
+                                                <button>
+                                                    Action
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody className='table_body'>
+                                    <tr className='table_row'>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    Band-Aid branch Store
+                                                </p>
+                                            </span>
+                                        </td>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    13252222011039
+                                                </p>
+                                            </span>
+                                        </td>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    USD
+                                                </p>
+                                            </span>
+                                        </td>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    Active
+                                                </p>
+                                            </span>
+                                        </td>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    View detail
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            {/* {accountData} */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    )
+}
+
+export default AccountDetails
