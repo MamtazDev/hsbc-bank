@@ -1,8 +1,8 @@
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 
-const AccountInfo = ({ accountData }) => {
-    console.log(accountData)
+const AccountInfo = ({ accountInfo }) => {
+
     return (
         <div className="account_info">
             <div className="account_info_head mb-3">

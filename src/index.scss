@@ -41,11 +41,18 @@ body {
 
 .fs_18 {
     font-size: 18px;
-    line-height: 20;
+    line-height: 20px;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-medium {
+    font-weight: 500;
 }
 
 /* helper , base classes  - END*/
-
 
 // global css
 .btn_not_allowed {
@@ -57,4 +64,187 @@ body {
     padding: 0px 1.1875rem;
 }
 
+.main_content {
+    padding-top: 60px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+
+.section_heading {
+    h1 {
+        color: #333;
+        font-size: 1.625rem;
+        line-height: 1.31;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.border_bottom_black {
+    border-bottom: 1px solid black;
+}
+
 // global css /-end
+
+// Make payment css
+.radio_btn_group {
+
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #666;
+    }
+
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #00847f;
+        border-radius: 100%;
+        background: #fff;
+    }
+
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #00847f;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    [type="radio"]:not(:checked)+label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    [type="radio"]:checked+label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+
+    .cursor_disable {
+        cursor: not-allowed !important;
+
+        input {
+            cursor: not-allowed !important;
+            border: 1px solid #6666666c !important;
+            background: #6666666c !important;
+        }
+
+        label {
+            cursor: not-allowed !important;
+            color: #6666666c !important;
+        }
+    }
+
+}
+
+$theme : #0096D9;
+
+.checkbox {
+    position: absolute;
+    left: -9999px;
+
+    &+label {
+        position: relative;
+        display: inline-block;
+        padding: 0 30px;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            position: absolute;
+            top: 0;
+            content: '';
+            border-radius: 1px;
+        }
+
+        &:before {
+            top: 4px;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #CCC;
+            background-color: #fff;
+        }
+
+        &:after {
+            /* hidden */
+            width: 0;
+            height: 0;
+        }
+
+    }
+
+    &:checked {
+        &+label {
+            &:before {
+                border-color: $theme;
+                background-color: $theme;
+            }
+
+            &:after {
+                width: 6px;
+                height: 13px;
+                top: 3px;
+                left: 5px;
+
+                color: #fff;
+                border-top: 2px solid transparent;
+                border-left: 2px solid transparent;
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+
+                -webkit-transform: rotate(37deg);
+                -ms-transform: rotate(37deg);
+                -o-transform: rotate(37deg);
+                transform: rotate(37deg);
+            }
+        }
+    }
+
+    &:disabled {
+
+        &+label {
+            color: #CCC;
+
+            &:before {
+                border-color: #CCC;
+                background-color: #F2F2F2;
+                box-shadow: none;
+            }
+
+            &:after {
+                /* hidden */
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+}

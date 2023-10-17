@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.scss';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     const [isCollectionDropdownOpen, setIsCollectionDropdownOpen] = useState(false);
@@ -19,9 +20,10 @@ const Sidebar = () => {
                 <nav className="navbar-light px-2 py-3">
                     <ul className="navbar-nav flex-column">
                         <li className="nav-item mb-2">
-                            <a className="nav-link active" href="#" onClick={toggleCollectionDropdown}>
+                            <Link to={'/collection/overview'} className="nav-link active" onClick={toggleCollectionDropdown}>
                                 <span className="nav-text text-nowrap">Collection</span>
-                            </a>
+                            </Link>
+
                             {isCollectionDropdownOpen && (
                                 <ul className="dropdown-menu bg-transparent border-0 mt-0">
                                     <li>
@@ -39,9 +41,9 @@ const Sidebar = () => {
                             }
                         </li>
                         <li className="nav-item mb-2">
-                            <a className="nav-link" href="#" onClick={toggleInventoryDropdown}>
-                                <span className="nav-text text-nowrap">Inventory</span>
-                            </a>
+                            <Link to={'/collection/createAccount'} className="nav-link" onClick={toggleInventoryDropdown}>
+                                <span className="nav-text text-nowrap">Create Account</span>
+                            </Link>
                             {isInventoryDropdownOpen && (
                                 <ul className="dropdown-menu bg-transparent border-0 mt-0">
                                     <li>
@@ -59,9 +61,14 @@ const Sidebar = () => {
                             }
                         </li>
                         <li className="nav-item mb-2">
-                            <a className="nav-link" href="#">
-                                <span className="nav-text text-nowrap">Customers</span>
-                            </a>
+                            <Link to={'/collection/exchangeRate'} className="nav-link">
+                                Exchange Rate
+                            </Link>
+                        </li>
+                        <li className="nav-item mb-2">
+                            <Link to={'/collection/makepayment'} className="nav-link">
+                                Make Payment
+                            </Link>
                         </li>
                     </ul>
                 </nav>

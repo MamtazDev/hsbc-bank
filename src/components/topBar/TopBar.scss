@@ -1,7 +1,8 @@
 .topbar {
+    position: fixed;
     background-color: #3e505d;
     height: 55px;
-
+    z-index: 99;
     .sub-btn {
         background-color: red;
         font-size: 0.75rem;

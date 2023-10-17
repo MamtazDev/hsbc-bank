@@ -7,7 +7,7 @@ import RecevingAccountList from '../recevingAccountList/RecevingAccountList'
 
 const Overview = () => {
     return (
-        <div className='overview mt-3'>
+        <div className='overview main_content mt-3'>
             <div className='section_heading'>
                 <h1>
                     Overview
