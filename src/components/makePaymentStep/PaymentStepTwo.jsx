@@ -97,7 +97,7 @@ const PaymentStepTwo = () => {
                 USD CombiNations Savings
               </p>
 
-              <p class="d-flex align-items-center justify-content-between m-0">
+              <p className="d-flex align-items-center justify-content-between m-0">
                 <span>
                   001-7-600123
                 </span>

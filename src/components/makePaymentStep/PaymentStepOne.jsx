@@ -22,23 +22,23 @@ const PaymentStepOne = () => {
       <div className="radio_btn_group">
         <form action="#" className='d-flex align-items-center gap-5'>
           <p>
-            <input type="radio" id="radio_btn" name="radio-group" checked />
-            <label for="radio_btn">Account number</label>
+            <input type="radio" id="radio_btn" name="radio-group" defaultChecked />
+            <label htmlFor="radio_btn">Account number</label>
           </p>
 
           <p className='cursor_disable'>
             <input type="radio" id="radio_btn2" name="radio-group" />
-            <label for="radio_btn2">Email address</label>
+            <label htmlFor="radio_btn2">Email address</label>
           </p>
 
           <p className='cursor_disable'>
             <input type="radio" id="radio_btn3" name="radio-group" />
-            <label for="radio_btn3">Phone number</label>
+            <label htmlFor="radio_btn3">Phone number</label>
           </p>
 
           <p className='cursor_disable'>
             <input type="radio" id="radio_btn4" name="radio-group" />
-            <label for="radio_btn4">FPS ID</label>
+            <label htmlFor="radio_btn4">FPS ID</label>
           </p>
 
         </form>
@@ -81,13 +81,13 @@ const PaymentStepOne = () => {
           <div className="radio_btn_group">
             <form action="#" className='d-flex align-items-center gap-5'>
               <p>
-                <input type="radio" id="radio_btn" name="radio-group" checked />
-                <label for="radio_btn">Search by keywords</label>
+                <input type="radio" id="radio_btn" name="radio-group" />
+                <label htmlFor="radio_btn">Search by keywords</label>
               </p>
 
               <p className='cursor_disable'>
                 <input type="radio" id="radio_btn2" name="radio-group" />
-                <label for="radio_btn2">Search by full bank code/SWIFT address</label>
+                <label htmlFor="radio_btn2">Search by full bank code/SWIFT address</label>
               </p>
             </form>
           </div>
@@ -127,23 +127,23 @@ const PaymentStepOne = () => {
           <div className="radio_btn_group">
             <form action="#" className='d-flex align-items-center gap-5'>
               <p>
-                <input type="radio" id="radio_btn" name="radio-group" checked />
-                <label for="radio_btn">Pay-as-locals</label>
+                <input type="radio" id="radio_btn" name="radio-group" />
+                <label htmlFor="radio_btn">Pay-as-locals</label>
               </p>
 
               <p className='cursor_disable'>
                 <input type="radio" id="radio_btn2" name="radio-group" />
-                <label for="radio_btn2">Telegraphic transfer</label>
+                <label htmlFor="radio_btn2">Telegraphic transfer</label>
               </p>
             </form>
 
             <p className='cursor_disable'>
-              <input class="checkbox"
+              <input className="checkbox"
                 type="checkbox"
-                disabled="true"
+                disabled={true}
                 id="checkbox-3"
                 name="checkbox" />
-              <label for="checkbox-3">
+              <label htmlFor="checkbox-3">
                 Through intermediary bank
               </label>
             </p>
@@ -226,7 +226,7 @@ const PaymentStepOne = () => {
             With effect from 1 January 2021, any outward telegraphic transfer into mainland China will require the input of a SWIFT BIC code (also known as SWIFT code or SWIFT address) as bank beneficiary identifier. CNY payments with CNAPS code input will be rejected.
           </li>
         </ul>
-      </div>  
+      </div>
 
     </div>
   )

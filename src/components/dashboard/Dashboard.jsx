@@ -5,7 +5,7 @@ import './Dashboard.scss'
 const Dashboard = () => {
     return (
         <main id="dashboard">
-            <div class="container-fluid">
+            <div className="container-fluid">
                 <h1>
                     Contaniner Fulid
                 </h1>
