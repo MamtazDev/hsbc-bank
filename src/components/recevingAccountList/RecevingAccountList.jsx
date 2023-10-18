@@ -1,13 +1,11 @@
 import React from 'react'
 import './RecevingAccountList.scss'
-import { AiOutlineReload } from 'react-icons/ai'
-import { IoIosArrowForward } from "react-icons/io";
 import AccountDetails from '../accountDetails/AccountDetails';
 import AccountInfo from '../accountInfo/AccountInfo';
 import { recevingData } from '../../data/RecevingData';
 import FilterBtn from '../filterBtn/FilterBtn';
-import SectionTitleWrapper from '../sectionTItleWrapper/sectionTitleWrapper';
 import AccountRequest from '../accountRequest/AccountRequest';
+import SectionTitleWrapper from '../sectionTItleWrapper/sectionTitleWrapper';
 
 const RecevingAccountList = () => {
     return (
@@ -49,11 +47,7 @@ const RecevingAccountList = () => {
                     </div>
                 </div>
             </div>
-
             <AccountRequest />
-
-
-
         </div>
     )
 }
