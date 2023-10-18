@@ -5,14 +5,13 @@ import AccountInfo from '../accountInfo/AccountInfo';
 import { recevingData } from '../../data/RecevingData';
 import FilterBtn from '../filterBtn/FilterBtn';
 import AccountRequest from '../accountRequest/AccountRequest';
-import SectionTitleWrapper from '../sectionTitleWrapper/sectionTitleWrapper';
+import SectionTitle from '../sectionTitle/SectionTitle';
 
 const RecevingAccountList = () => {
     return (
         <div className='receving_account_list'>
-            <SectionTitleWrapper />
+            <SectionTitle />
             <FilterBtn />
-
             {
                 recevingData.map((accountDataInfo, index) => (
                     <div className='account_details_wrapper' key={index}>
@@ -21,7 +20,6 @@ const RecevingAccountList = () => {
                     </div>
                 ))
             }
-
             <div className="section_title_wrapper mt-5">
                 <div className="section_title d-flex align-items-center justify-content-between">
                     <h5 className='fs-5 fw-medium'>

@@ -1,7 +1,6 @@
 import React from 'react'
-import { AiOutlineReload } from 'react-icons/ai'
 
-const SectionTitleWrapper = () => {
+const SectionTitle = () => {
     return (
         <div className="section_title_wrapper">
             <div className="section_title d-flex align-items-center justify-content-between">
@@ -20,4 +19,4 @@ const SectionTitleWrapper = () => {
     )
 }
 
-export default SectionTitleWrapper
+export default SectionTitle
