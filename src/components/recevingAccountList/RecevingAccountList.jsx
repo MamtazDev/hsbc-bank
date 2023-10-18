@@ -5,7 +5,7 @@ import AccountInfo from '../accountInfo/AccountInfo';
 import { recevingData } from '../../data/RecevingData';
 import FilterBtn from '../filterBtn/FilterBtn';
 import AccountRequest from '../accountRequest/AccountRequest';
-import SectionTitleWrapper from '../sectionTItleWrapper/sectionTitleWrapper';
+import SectionTitleWrapper from '../sectionTitleWrapper/sectionTitleWrapper';
 
 const RecevingAccountList = () => {
     return (
