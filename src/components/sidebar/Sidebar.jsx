@@ -20,7 +20,7 @@ const Sidebar = () => {
                 <nav className="navbar-light px-2 py-3">
                     <ul className="navbar-nav flex-column">
                         <li className="nav-item mb-2">
-                            <Link to={'/collection/overview'} className="nav-link active" onClick={toggleCollectionDropdown}>
+                            <Link to={'/'} className="nav-link active" onClick={toggleCollectionDropdown}>
                                 <span className="nav-text text-nowrap">Collection</span>
                             </Link>
 

@@ -5,6 +5,7 @@ const SectionTitle = () => {
     return (
         <div className="section_title_wrapper">
             <div className="section_title d-flex align-items-center justify-content-between">
+
                 <h5 className='fs-5 fw-medium'>
                     HSBC Global Wallet Receiving Account list
                 </h5>
@@ -15,6 +16,7 @@ const SectionTitle = () => {
                         < AiOutlineReload />
                     </button>
                 </span>
+
             </div>
         </div>
     )

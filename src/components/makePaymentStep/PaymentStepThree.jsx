@@ -1,8 +1,372 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PaymentStepThree = () => {
     return (
-        <div>PaymentStepThree</div>
+        <div className='payment_three'>
+            <div className='section_heading'>
+                <h1 className='fw-medium'>
+                    Payment preview
+                </h1>
+            </div>
+
+            <div className="pay_to paymentstep_two_border">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Pay to
+                </h3>
+
+                <div className="section_wrapper">
+                    <div className="left">
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Beneficiary bank location
+                            </p>
+                            <span className='fw-bold '>
+                                United States
+                            </span>
+                        </div>
+
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Payment currency
+                            </p>
+                            <span className='fw-bold '>
+                                USD
+                            </span>
+                        </div>
+
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Beneficiary bank name
+                            </p>
+                            <span className='fw-bold '>
+                                HSBC BANK USA, N.A.
+                            </span>
+                        </div>
+
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Beneficiary bank address
+                            </p>
+                            <span className='fw-bold '>
+                                452 FIFTH AVENUE
+                            </span>
+                            <br />
+                            <span className='fw-bold '>
+                                NEW YORK NY 10018 US
+                            </span>
+                            <br />
+                            <span className='fw-bold '>
+                                NEW YORK, NEW YORK
+                            </span>
+                        </div>
+                    </div>
+                    <div className="right">
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Beneficiary account number / IBAN
+                            </p>
+                            <span className='fw-bold '>
+                                dasfsdf
+                            </span>
+                        </div>
+
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Beneficiary name
+                            </p>
+                            <span className='fw-bold '>
+                                sdfsdf
+                            </span>
+                        </div>
+
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Beneficiary bank code / SWIFT address
+                            </p>
+                            <span className='fw-bold '>
+                                021001088
+                            </span>
+                        </div>
+
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Beneficiary address
+                            </p>
+                            <span className='fw-bold '>
+                                sdfsdf
+                            </span>
+                            <br />
+                            <span className='fw-bold '>
+                                sdfsdf
+                            </span>
+                            <br />
+                            <span className='fw-bold '>
+                                sdfsdf
+                            </span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    From
+                </h3>
+
+                <div className="section_wrapper">
+                    <div className="left">
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                AUD Current Account
+                            </p>
+                            <span className=''>
+                                001-060730-203
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Amount
+                </h3>
+
+                <div className="section_wrapper">
+                    <div className="left">
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Debit amount
+                            </p>
+                            <span className='d-flex align-items-center gap-2'>
+                                AUD
+                                <span className='fw-bold fs-5'>
+                                    100.00
+                                </span>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div className="right">
+                        <div className="section_item mb-3">
+                            <p className='fs-12 m-0'>
+                                Payment amount
+                            </p>
+                            <span className='d-flex align-items-center gap-2'>
+                                USD
+                                <span className='fw-bold fs-5'>
+                                    100.00
+                                </span>
+                                (indicative only)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="section_item mb-3">
+                    <p className='fs-12 m-0'>
+                        Exchange rate
+                    </p>
+                    <span className='d-flex align-items-center gap-2'>
+                        <span className='fw-bold fs-6'>
+                            AUD 1 = USD
+                            0.719424460
+                        </span>
+                        (indicative only)
+                    </span>
+                </div>
+
+                <div className="section_item mb-3">
+                    <p className='fs-12 m-0'>
+                        Rate last update at: 27/12/2021 18:00HKT
+                    </p>
+                    <span className='d-flex gap-2'>
+                        <span>
+                            <svg width={"20px"} class="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 fXlhuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-labelledby="title-icon-3049 " role="img" data-testid="StatusWarningLightIcon" data-id="Icon" fill="currentColor"><title id="title-icon-3049">StatusWarningLight</title><path fill="none" d="M0 0h18v18H0z"></path><circle cx="9" cy="9" r="9" fill="#fb3"></circle><circle cx="9" cy="13" r="1.2"></circle><path d="M8.1 3.8h1.8v6H8.1z"></path></svg>
+                        </span>
+                        Other fees and charges may apply. For details, please refer to the Bank's Commercial Tariff section open in new window available on the HSBC Hong Kong Commercial Banking website. Please go to 'Transaction History' under 'Accounts' on or after the 'Payment Date' to check the transaction details.
+                    </span>
+                </div>
+
+
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{fontSize: '20px'}} className='mb-3'>
+                    Payment date
+                </h3>
+                <div className="section_item mb-3">
+                    <p style={{fontSize: '14px'}} className='fs-12'>
+                        18/10/2023
+                    </p>
+                    <span className='d-flex align-items-center gap-2'>
+                        Transaction requests submitted during business hours open in new window on a Hong Kong working day will be processed on the same day. Requests submitted at other times (e.g. on a public holiday) will be processed on the next working day.
+                    </span>
+                </div>
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Settlement option
+                </h3>
+                <div className="section_item mb-3">
+                    <p style={{ fontSize: '14px' }} className='fs-12 fw-medium'>
+                        Telegraphic transfer
+                    </p>
+                    <span className='d-flex align-items-center gap-2'>
+                        If we are unable to process this payment via RTGS, we will process it as a telegraphic transfer and the corresponding charges will apply. However, the related advice will still show 'Bank Fund Transfer' and not 'Outward Remittance'.
+                    </span>
+                </div>
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Who pays local / overseas charges
+                </h3>
+                <div className="section_item mb-3">
+                    <span className='d-flex align-items-center gap-2'>
+                        We pay local bank charges, the beneficiary pays overseas bank charges.
+                    </span>
+                </div>
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Deduct charges from
+                </h3>
+                <div className="section_item mb-3">
+                    <span className='d-flex align-items-center gap-2 fw-bold'>
+                        Same as debit account
+                    </span>
+                </div>
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Ordering party
+                </h3>
+                <div className="section_item mb-3">
+                    <span className='d-flex align-items-center gap-2'>
+                        Is this payment being made on behalf of a third party (ordering party)?
+                    </span>
+                    <span className='fw-bold'>
+                        Yes
+                    </span>
+                </div>
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Messages
+                </h3>
+                <div className="section_wrappper">
+                    <div className="right">
+                        <div className="section_item mb-3">
+                            <span className='d-flex align-items-center gap-2'>
+                                Message to beneficiary
+                            </span>
+                            <span className='fw-bold'>
+                                N/A
+                            </span>
+                        </div>
+                    </div>
+                    <div className="left">
+                        <div className="section_item mb-3">
+                            <span className='d-flex align-items-center gap-2'>
+                                Message to beneficiary bank
+                            </span>
+                            <span className='fw-bold'>
+                                N/A
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    e-Advice
+                </h3>
+                <p>
+                    You may request us to send an email to the above beneficiary and/or other related business partners notifying them you have sent funds to the beneficiary. A charge of HKD1 per email will be debited from the account you specified above. If 'Business Integrated Account' is selected, the charge will be debited from your HKD savings account. You can request a maximum of four emails.
+                </p>
+                <div className="section_wrappper">
+                    <div className="right">
+                        <div className="section_item mb-3">
+                            <span className='d-flex align-items-center gap-2'>
+                                Email address
+                            </span>
+                            <span className='fw-bold'>
+                                N/A
+                            </span>
+                        </div>
+                        <div className="section_item mb-3">
+                            <span className='d-flex align-items-center gap-2'>
+                                Return email address if e-Advice fails to send
+                            </span>
+                            <span className='fw-bold'>
+                                N/A
+                            </span>
+                        </div>
+                    </div>
+                    <div className="left">
+                        <div className="section_item mb-3">
+                            <span className='d-flex align-items-center gap-2'>
+                                Reference
+                            </span>
+                            <span className='fw-bold'>
+                                N/A
+                            </span>
+                        </div>
+                        <div className="section_item mb-3">
+                            <span className='d-flex align-items-center gap-2'>
+                                Message to recipient
+                            </span>
+                            <span className='fw-bold'>
+                                N/A
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="pay_to paymentstep_two_border pt-5">
+                <h3 style={{ fontSize: '20px' }} className='mb-3'>
+                    Important Notes
+                </h3>
+                <p>
+                    With effect from 1 January 2021, any outward telegraphic transfer into mainland China will require the input of a SWIFT BIC code as bank beneficiary identifier. RMB payments with CNAPS code input would be rejected.
+                </p>
+                <p>
+                    HSBC is unable to verify beneficiary account information, and accepts no responsibility for any loss or damage suffered by any person arising out of the rejection, return and/or delay. Please verify all the information of the above transaction details is accurate.
+                </p>
+                <p>
+                    For HKD/CNY/EUR/USD payments to other local banks via RTGS / Telegraphic Transfer, HSBC charges would be deducted from the debit account of this payment while beneficiary should pay other local bank charges, if any.
+                </p>
+                <p>
+                    For HKD/CNY/EUR/USD payments to other local banks via RTGS / Telegraphic Transfer, HSBC charges would be deducted from the debit account of this payment while beneficiary should pay other local bank charges, if any.
+                </p>
+                <p>
+                    <Link className="text-decoration-none me-2">
+                        Click here
+                    </Link>
+                    to learn about the solutions for the most common issues you may face when making payments in Business Internet Banking.
+                </p>
+
+            </div>
+
+
+        </div>
     )
 }
 

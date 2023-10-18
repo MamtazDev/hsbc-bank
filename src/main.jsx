@@ -12,11 +12,11 @@ import MakePayment from './components/makePayment/MakePayment';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+
     element: <DashboardLayout />,
     children: [
       {
-        path: '/collection/overview',
+        path: '/',
         element: <Overview />,
       },
       {
