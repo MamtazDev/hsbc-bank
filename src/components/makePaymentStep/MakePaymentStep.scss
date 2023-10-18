@@ -37,6 +37,7 @@
             position: relative;
             padding: 30px 20px 40px;
             width: 100%;
+            overflow-x: scroll;
 
             .tcb_grid {
                 display: grid;
@@ -47,6 +48,7 @@
                     padding: 30px 20px 40px;
                     width: 100%;
                     position: relative;
+                    overflow-x: scroll;
 
                     &::before {
                         content: "";
@@ -125,8 +127,15 @@
         display: grid;
         grid-template-columns: 0.5fr 1fr;
 
+        @media(max-width: 992px){
+            grid-template-columns: 1fr;
+        }
+
         .paymentstep_two_details {
             border-right: 1px solid black;
+            @media(max-width: 992px) {
+                    border-right: 0px;
+                }
         }
     }
 
@@ -329,6 +338,13 @@
                 outline: none;
             }
         }
+    }
+
+    .paymentstep_two_information{
+        @media(max-width: 992px) {
+            margin-top: 50px;
+            }
+
     }
 
 

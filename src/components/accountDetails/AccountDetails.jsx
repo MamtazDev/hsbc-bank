@@ -4,7 +4,7 @@ import React from 'react'
 const AccountDetails = ({ accountData }) => {
     return (
         <div className="account_details">
-            <div className="account_details_wrapper">
+            <div className="account_details_wrapper_box">
                 <div className="account_details_table_box">
                     <div className="table_wrapper">
                         <div className="table_controller">

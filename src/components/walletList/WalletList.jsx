@@ -53,7 +53,7 @@ const WalletList = () => {
                     {
                         walletInfo.map((walletData, index) => (
                             <div className="col-lg-3" key={index}>
-                                <div className="wallet_card_item">
+                                <div className="wallet_card_item mb-4 mb-lg-0">
                                     <div className="wallet_card_head d-flex white-spance-nowrap align-items-center justify-content-between">
                                         <div className="wallet_card_title">
                                             <h6 className='m-0'>

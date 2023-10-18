@@ -68,6 +68,10 @@ body {
     padding-top: 60px;
     padding-right: 30px;
     padding-bottom: 60px;
+    @media(max-width: 992px){
+        padding-right: 0px;
+        padding-top: 0px;
+    }
 }
 
 .section_heading {
@@ -261,5 +265,11 @@ $theme : #0096D9;
                 height: 0;
             }
         }
+    }
+}
+
+input {
+    &:focus-visible {
+        outline: none;
     }
 }

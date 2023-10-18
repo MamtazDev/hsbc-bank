@@ -29,17 +29,19 @@ const RecevingAccountList = () => {
             </div>
 
             <div className="filter_btn d-flex justify-content-between mb-4">
-                <div className="filter_btn_left d-flex align-items-center gap-3">
+                <div className="filter_btn_left d-flex flex-wrap align-items-center gap-3">
                     <select name="allCurrency" id="">
                         <option value="1">
                             All Currency
                         </option>
                     </select>
+
                     <select name="allCurrency" id="">
                         <option value="1">
                             All Currency
                         </option>
                     </select>
+
                     <div className="search_filter">
                         <input type="text" placeholder='Search by Receiving Account name or number' />
                     </div>
