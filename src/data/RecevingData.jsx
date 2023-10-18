@@ -11,35 +11,35 @@ export const recevingData = [
         accountData: [
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011039,
+                accountNumber: '13252222011039',
                 currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Logitech head store',
-                accountNumber: 13252222011049,
+                accountNumber: '13252222011049',
                 currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'TCL head store',
-                accountNumber: 13252222031050,
+                accountNumber: '13252222031050',
                 currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'ABC outdoor store',
-                accountNumber: 13252222041051,
+                accountNumber: '13252222041051',
                 currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011052,
+                accountNumber: '13252222011052',
                 currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
@@ -60,35 +60,35 @@ export const recevingData = [
         accountData: [
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011040,
+                accountNumber: '13252222011040',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Logitech head store',
-                accountNumber: 13252222011041,
+                accountNumber: '13252222011041',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'TCL head store',
-                accountNumber: 13252222031042,
+                accountNumber: '13252222031042',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'ABC outdoor store',
-                accountNumber: 13252222041043,
+                accountNumber: '13252222041043',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011044,
+                accountNumber: '13252222011044',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
@@ -109,35 +109,35 @@ export const recevingData = [
         accountData: [
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011070,
+                accountNumber: '13252222011070',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Logitech head store',
-                accountNumber: 13252222011071,
+                accountNumber: '13252222011071',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'TCL head store',
-                accountNumber: 132522220310723,
+                accountNumber: '132522220310723',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'ABC outdoor store',
-                accountNumber: 13252222041073,
+                accountNumber: '13252222041073',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011074,
+                accountNumber: '13252222011074',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
@@ -158,35 +158,35 @@ export const recevingData = [
         accountData: [
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011075,
+                accountNumber: '13252222011075',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Logitech head store',
-                accountNumber: 13252222011076,
+                accountNumber: '13252222011076',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'TCL head store',
-                accountNumber: 13252222031077,
+                accountNumber: '13252222031077',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'ABC outdoor store',
-                accountNumber: 13252222041078,
+                accountNumber: '13252222041078',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011079,
+                accountNumber: '13252222011079',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
@@ -207,35 +207,35 @@ export const recevingData = [
         accountData: [
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011080,
+                accountNumber: '13252222011080',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Logitech head store',
-                accountNumber: 13252222011081,
+                accountNumber: '13252222011081',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'TCL head store',
-                accountNumber: 13252222031082,
+                accountNumber: '13252222031082',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'ABC outdoor store',
-                accountNumber: 13252222041083,
+                accountNumber: '13252222041083',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011084,
+                accountNumber: '13252222011084',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
@@ -256,14 +256,14 @@ export const recevingData = [
         accountData: [
             {
                 accountNickName: 'Band-Aid branch Store',
-                accountNumber: 13252222011085,
+                accountNumber: '13252222011085',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
             },
             {
                 accountNickName: 'Logitech head store',
-                accountNumber: 13252222011086,
+                accountNumber: '13252222011086',
                 currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View Action'
