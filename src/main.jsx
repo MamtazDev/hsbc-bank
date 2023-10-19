@@ -9,6 +9,7 @@ import Overview from './components/overview/Overview';
 import CreateAccount from './components/createAccount/CreateAccount';
 import ExchangeRate from './components/exchangeRate/ExchangeRate';
 import MakePayment from './components/makePayment/MakePayment';
+import Account from './components/account/Account';
 
 const router = createBrowserRouter([
   {
@@ -20,16 +21,20 @@ const router = createBrowserRouter([
         element: <Overview />,
       },
       {
-        path: '/collection/createAccount',
+        path: '/createAccount',
         element: <CreateAccount />,
       },
       {
-        path: '/collection/exchangeRate',
+        path: '/exchangeRate',
         element: <ExchangeRate />,
       },
       {
-        path: '/collection/makepayment',
+        path: '/makepayment',
         element: <MakePayment />,
+      },
+      {
+        path: '/account',
+        element: <Account />,
       }
     ]
   },

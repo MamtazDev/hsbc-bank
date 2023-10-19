@@ -3,14 +3,20 @@ import './CreateAccount.scss'
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import Select from 'react-select';
 const options = [
-    { value: 'USD', label: 'USD' },
-    { value: 'GBP', label: 'GBP' },
-    { value: 'AUD', label: 'AUD' }
+    { value: 'ERU', label: 'ERU' },
+    { value: 'HKD', label: 'HKD' },
 ]
 const options2 = [
-    { value: 'USD', label: 'China' },
-    { value: 'GBP', label: 'India' },
-    { value: 'AUD', label: 'Bangladesh' }
+    { value: 'UK', label: 'United Kingdom' },
+    { value: 'USA', label: 'United Sates of America' },
+    { value: 'CA', label: 'China' },
+    { value: 'HK', label: 'Hong Kong' }
+]
+const options3 = [
+    { value: 'Marketplace', label: 'Marketplace' },
+    { value: 'AffiliatedCompany', label: 'Affiliated Company' },
+    { value: 'AgencyRelationship', label: 'Agency Relationship' },
+
 ]
 
 const CreateAccount = () => {
@@ -40,7 +46,7 @@ const CreateAccount = () => {
                     </div>
 
                     <div className="create_account_input">
-                        <Select options={options} placeholder={"USD"}
+                        <Select options={options} placeholder={"EUR"}
                             styles={{
                                 control: (baseStyles, state) => ({
                                     ...baseStyles,
@@ -102,7 +108,7 @@ const CreateAccount = () => {
                     </div>
 
                     <div className="create_account_input">
-                        <Select options={options2} placehold er={"China"}
+                        <Select options={options2} placeholder={"United Kingdom"}
                             styles={{
                                 control: (baseStyles, state) => ({
                                     ...baseStyles,
@@ -157,7 +163,7 @@ const CreateAccount = () => {
                     </div>
 
                     <div className="create_account_input">
-                        <Select options={options} placeholder={"Select business relationship"}
+                        <Select options={options3} placeholder={"Select business relationship"}
                             styles={{
                                 control: (baseStyles, state) => ({
                                     ...baseStyles,

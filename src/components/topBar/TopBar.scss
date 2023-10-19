@@ -2,16 +2,22 @@
     position: fixed;
     background-color: #3e505d;
     height: 55px;
-    z-index: 99;
+    z-index: 99999;
+    padding-left: 10px;
+
+    @media(max-width: 992px) {
+        padding: 10px;
+        height: auto;
+    }
+
     .sub-btn {
-        background-color: red;
+        background-color: #3970b3;
         font-size: 0.75rem;
         padding: 0px 0.875rem;
         font-size: 0.75rem;
         font-weight: 400;
         min-height: 1.875rem;
         height: fit-content;
-        background-color: rgb(219, 0, 17);
         color: rgb(255, 255, 255);
     }
 }

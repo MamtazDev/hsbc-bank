@@ -1,9 +1,10 @@
 #navigation-sidebar {
     position: fixed;
-    width: 238px;
+    width: 260px;
     padding-top: 50px;
     height: 100vh;
     background-color: #3e505d;
+    z-index: 999;
 
     @media(max-width: 992px) {
         display: none;
@@ -16,7 +17,6 @@
         position: absolute;
         right: 0;
     }
-
 
     .navbar-nav .nav-item {
         .nav-link {
@@ -38,7 +38,7 @@
         justify-content: space-between;
         gap: 10px;
         align-items: center;
-        border-left: 5px solid red;
+        border-left: 5px solid #3970b3;
     }
 
 }
@@ -46,11 +46,21 @@
 .res_btn {
     display: none;
 
-    @media(max-width: 922px) {
+    @media(max-width: 992px) {
         display: block;
         margin-top: 80px;
         display: flex;
         justify-content: end;
+    }
+
+    @media(max-width: 920px){
+        margin-top: 150px;
+    }
+    @media(max-width: 670px){
+        margin-top: 180px;
+    }
+    @media(max-width: 550px){
+        margin-top: 200px;
     }
 
     .navigation-sidebar {

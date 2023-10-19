@@ -15,8 +15,11 @@ body {
 }
 
 :root {
+    --primary_b3: #3970b3;
+    --secondary_49: #131c49;
     --black_33: #333;
     --clr_93: #347893;
+    --clr_76: #767676;
 }
 
 // text-color
@@ -26,6 +29,10 @@ body {
 
 .text_clr_93 {
     color: var(--clr_93);
+}
+
+.text_clr_76{
+    color: var(--clr_76);
 }
 
 // font size
@@ -68,8 +75,20 @@ body {
     padding-top: 60px;
     padding-right: 30px;
     padding-bottom: 60px;
-    @media(max-width: 992px){
+
+    @media(max-width: 992px) {
         padding-right: 0px;
+    }
+
+    @media(max-width: 920px) {
+        padding-top: 0px;
+    }
+
+    @media(max-width: 670px) {
+        padding-top: 0px;
+    }
+
+    @media(max-width: 550px) {
         padding-top: 0px;
     }
 }
@@ -271,5 +290,21 @@ $theme : #0096D9;
 input {
     &:focus-visible {
         outline: none;
+    }
+}
+
+.alert_box {
+
+    width: 100%;
+    border-style: solid;
+    background-color: rgb(255, 248, 234);
+    border-color: rgb(255, 187, 51);
+    color: rgb(51, 51, 51);
+    padding: 0.9375rem 0.5rem 0.9375rem 1.25rem;
+    border-width: 0.0625rem;
+    margin-bottom: 20px;
+
+    a {
+        color: #333;
     }
 }

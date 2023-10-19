@@ -1,0 +1,69 @@
+.create_account {
+    .account_card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        .account_card_left {
+            .account_card_head {
+                padding: 18px 30px;
+                color: #fff;
+                background-color: #4d6474;
+            }
+
+            .account_card_content_wrapper {
+                padding: 30px;
+                border: 1px solid #767676;
+
+                .account_card_content_top {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    border-bottom: 1px solid #767676;
+                    margin-bottom: 20px;
+                }
+
+                .account_card_content_middle {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    border-bottom: 1px solid #767676;
+                    margin-bottom: 20px;
+                }
+
+                .account_card_content_bottom {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .account_card_content_left {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .account_card_icon {
+                            background-color: #cecece;
+                            color: #000000;
+                            padding: 10px;
+                        }
+                    }
+
+                    .account_card_content_right {
+                        button {
+                            border: 1px solid rgb(51, 51, 51);
+                            color: rgb(51, 51, 51);
+                            opacity: 0.3;
+                            background-color: transparent;
+                            cursor: not-allowed;
+                            padding: 0px 1.1875rem;
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+            .account_card_item_top {
+                border-bottom: 1px solid #767676;
+            }
+        }
+    }
+}

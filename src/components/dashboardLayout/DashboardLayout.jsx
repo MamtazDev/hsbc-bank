@@ -3,14 +3,8 @@ import './DashboardLayout.scss'
 import Sidebar from '../sidebar/Sidebar'
 import TopBar from '../topBar/TopBar'
 import { Outlet } from 'react-router-dom'
-import { Button, Offcanvas } from 'react-bootstrap'
-
-// import { Outlet } from 'react-router-dom'
 
 const DashboardLayout = () => {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
     return (
         <>
             <TopBar />

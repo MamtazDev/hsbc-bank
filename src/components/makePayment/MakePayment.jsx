@@ -28,17 +28,9 @@ const MakePayment = () => {
     }
   };
 
-  // const calculateProgressBarWidth = () => {
-  //   // Calculate the width of the progress bar based on the current step
-  //   return ((step - 1) / 2) * 100 + '%';
-  // };
-
   return (
 
     <div className='overview main_content mt-3'>
-      {/* <div className="progress">
-        <div className="progress-bar" style={{ width: calculateProgressBarWidth() }}></div>
-      </div> */}
       {renderStepContent()}
       <PaymentStepBtn handleNext={handleNext} handlePrevious={handlePrevious} step={step} />
     </div>

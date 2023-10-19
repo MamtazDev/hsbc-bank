@@ -25,7 +25,7 @@ const Sidebar = () => {
     return (
         <>
             <div className='res_btn'>
-                <Button onClick={handleShow} style={{ backgroundColor: '#253038', border:'0px' }}>
+                <Button onClick={handleShow} style={{ backgroundColor: '#253038', border: '0px' }}>
                     <AiOutlineAlignRight />
                 </Button>
 
@@ -35,7 +35,7 @@ const Sidebar = () => {
                             <ul className="navbar-nav flex-column">
                                 <li className="nav-item mb-2">
                                     <Link to={'/'} className="nav-link active" onClick={toggleCollectionDropdown}>
-                                        <span className="nav-text text-nowrap">Collection</span>
+                                        <span className="nav-text text-nowrap">Overview</span>
                                     </Link>
 
                                     {isCollectionDropdownOpen && (
@@ -55,8 +55,8 @@ const Sidebar = () => {
                                     }
                                 </li>
                                 <li className="nav-item mb-2">
-                                    <Link to={'/collection/createAccount'} className="nav-link" onClick={toggleInventoryDropdown}>
-                                        <span className="nav-text text-nowrap">Create Account</span>
+                                    <Link to={'/createAccount'} className="nav-link" onClick={toggleInventoryDropdown}>
+                                        <span className="nav-text text-nowrap">Create Receving Account</span>
                                     </Link>
                                     {isInventoryDropdownOpen && (
                                         <ul className="dropdown-menu bg-transparent border-0 mt-0">
@@ -75,13 +75,13 @@ const Sidebar = () => {
                                     }
                                 </li>
                                 <li className="nav-item mb-2">
-                                    <Link to={'/collection/exchangeRate'} className="nav-link">
-                                        Exchange Rate
+                                    <Link to={'/makepayment'} className="nav-link">
+                                        Make Payment
                                     </Link>
                                 </li>
                                 <li className="nav-item mb-2">
-                                    <Link to={'/collection/makepayment'} className="nav-link">
-                                        Make Payment
+                                    <Link to={'/exchangeRate'} className="nav-link">
+                                        Exchange Rate
                                     </Link>
                                 </li>
                             </ul>
@@ -94,7 +94,7 @@ const Sidebar = () => {
                 <div className='top_widget'>
                     <TbWorld className='fs-4 text-white' />
                     <p className='m-0 text-white fs_14'>
-                        HSBC Merchant Box
+                        ICBT Merchant Box
                     </p>
                 </div>
                 <div className="navigation-widget pt-2">
@@ -102,7 +102,7 @@ const Sidebar = () => {
                         <ul className="navbar-nav flex-column">
                             <li className="nav-item mb-2">
                                 <Link to={'/'} className="nav-link active" onClick={toggleCollectionDropdown}>
-                                    <span className="nav-text text-nowrap">Collection</span>
+                                    <span className="nav-text text-nowrap">Overview</span>
                                 </Link>
 
                                 {isCollectionDropdownOpen && (
@@ -122,8 +122,8 @@ const Sidebar = () => {
                                 }
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to={'/collection/createAccount'} className="nav-link" onClick={toggleInventoryDropdown}>
-                                    <span className="nav-text text-nowrap">Create Account</span>
+                                <Link to={'/createAccount'} className="nav-link" onClick={toggleInventoryDropdown}>
+                                    <span className="nav-text text-nowrap">Create Receving Account</span>
                                 </Link>
                                 {isInventoryDropdownOpen && (
                                     <ul className="dropdown-menu bg-transparent border-0 mt-0">
@@ -142,13 +142,13 @@ const Sidebar = () => {
                                 }
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to={'/collection/exchangeRate'} className="nav-link">
-                                    Exchange Rate
+                                <Link to={'/makepayment'} className="nav-link">
+                                    Make Payment
                                 </Link>
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to={'/collection/makepayment'} className="nav-link">
-                                    Make Payment
+                                <Link to={'/exchangeRate'} className="nav-link">
+                                    Exchange Rate
                                 </Link>
                             </li>
                         </ul>

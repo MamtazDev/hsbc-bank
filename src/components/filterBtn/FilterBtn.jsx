@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FilterBtn = () => {
     return (
@@ -24,7 +25,11 @@ const FilterBtn = () => {
                     <button>Generate composite statement</button>
                 </div>
                 <div className="modal_btn2">
-                    <button>Create Receiving Account</button>
+                    <button>
+                        <Link className='text-decoration-none text-white' to={"/createAccount"}>
+                            Create Receiving Account
+                        </Link>
+                    </button>
                 </div>
             </div>
         </div>

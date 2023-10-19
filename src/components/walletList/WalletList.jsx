@@ -23,7 +23,7 @@ const walletInfo = [
     },
 
     {
-        walletName: 'AUD Account',
+        walletName: 'HKD Account',
         availableBalance: '326,678.00',
         walletTypeIcon: <AiFillDollarCircle />
     }

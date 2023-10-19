@@ -108,7 +108,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    More information required
+                                                    View detail
                                                 </p>
                                             </span>
                                         </td>
@@ -156,7 +156,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    More information required
+                                                    View detail
                                                 </p>
                                             </span>
                                         </td>
@@ -204,7 +204,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    More information required
+                                                    View detail
                                                 </p>
                                             </span>
                                         </td>
@@ -252,7 +252,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    More information required
+                                                    View detail
                                                 </p>
                                             </span>
                                         </td>
@@ -300,7 +300,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    More information required
+                                                    View detail
                                                 </p>
                                             </span>
                                         </td>

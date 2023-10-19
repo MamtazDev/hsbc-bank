@@ -47,7 +47,7 @@ const PaymentStepOne = () => {
       <div className="toggle_content_wrapper mb-5">
         <div className="tab_toggle_content">
           <div className="tab_content_box tcb_grid mb-4">
-            <div className="left" style={{ width: '400px' }}>
+            <div className="left mb-4 mb-lg-0" style={{ width: '400px' }}>
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Beneficiary bank location
               </label>
@@ -81,13 +81,13 @@ const PaymentStepOne = () => {
           <div className="radio_btn_group">
             <form action="#" className='d-flex align-items-center gap-5'>
               <p>
-                <input type="radio" id="radio_btn" name="radio-group" />
-                <label htmlFor="radio_btn">Search by keywords</label>
+                <input type="radio" id="radio_btn5" name="radio-group" />
+                <label htmlFor="radio_btn5">Search by keywords</label>
               </p>
 
               <p className='cursor_disable'>
-                <input type="radio" id="radio_btn2" name="radio-group" />
-                <label htmlFor="radio_btn2">Search by full bank code/SWIFT address</label>
+                <input type="radio" id="radio_btn6" name="radio-group" />
+                <label htmlFor="radio_btn6">Search by full bank code/SWIFT address</label>
               </p>
             </form>
           </div>
@@ -127,13 +127,13 @@ const PaymentStepOne = () => {
           <div className="radio_btn_group">
             <form action="#" className='d-flex align-items-center gap-5'>
               <p>
-                <input type="radio" id="radio_btn" name="radio-group" />
-                <label htmlFor="radio_btn">Pay-as-locals</label>
+                <input type="radio" id="radio_btn8" name="radio-group" />
+                <label htmlFor="radio_btn8">Pay-as-locals</label>
               </p>
 
               <p className='cursor_disable'>
-                <input type="radio" id="radio_btn2" name="radio-group" />
-                <label htmlFor="radio_btn2">Telegraphic transfer</label>
+                <input type="radio" id="radio_btn7" name="radio-group" />
+                <label htmlFor="radio_btn7">Telegraphic transfer</label>
               </p>
             </form>
 

@@ -42,6 +42,9 @@
             .tcb_grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                @media(max-width: 992px){
+                    grid-template-columns: 1fr;
+                }
 
                 &.tcb_white {
                     background-color: white;
@@ -346,7 +349,6 @@
             }
 
     }
-
 
 }
 

@@ -44,7 +44,7 @@ const ExchangeRate = () => {
             />
           </div>
           <div className="create_account_input">
-            <input className='ca_input' type="text" placeholder='Please enter name of the shop' />
+            <input className='ca_input' type="number"  />
           </div>
         </div>
 
@@ -64,7 +64,7 @@ const ExchangeRate = () => {
             />
           </div>
           <div className="create_account_input">
-            <input className='ca_input' type="text" placeholder='Please enter name of the shop' />
+            <input className='ca_input' type="number" />
           </div>
         </div>
       </div>
