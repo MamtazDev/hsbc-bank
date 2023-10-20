@@ -8,6 +8,9 @@ const options = [
 ]
 
 const PaymentStepOne = () => {
+
+
+
   return (
     <div className='paymentstep_one'>
       <div className='section_heading'>
