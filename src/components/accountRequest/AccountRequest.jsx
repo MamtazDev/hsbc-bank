@@ -105,6 +105,7 @@ const AccountRequest = () => {
                                                 </p>
                                             </span>
                                         </td>
+
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
@@ -113,6 +114,7 @@ const AccountRequest = () => {
                                             </span>
                                         </td>
                                     </tr>
+
                                     <tr className='table_row'>
                                         <td className='table_data'>
                                             <span className='table_text'>
@@ -161,6 +163,7 @@ const AccountRequest = () => {
                                             </span>
                                         </td>
                                     </tr>
+
                                     <tr className='table_row'>
                                         <td className='table_data'>
                                             <span className='table_text'>
@@ -209,6 +212,7 @@ const AccountRequest = () => {
                                             </span>
                                         </td>
                                     </tr>
+
                                     <tr className='table_row'>
                                         <td className='table_data'>
                                             <span className='table_text'>
@@ -249,6 +253,7 @@ const AccountRequest = () => {
                                                 </p>
                                             </span>
                                         </td>
+
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
@@ -257,6 +262,7 @@ const AccountRequest = () => {
                                             </span>
                                         </td>
                                     </tr>
+
                                     <tr className='table_row'>
                                         <td className='table_data'>
                                             <span className='table_text'>
@@ -311,6 +317,7 @@ const AccountRequest = () => {
                         </div>
 
                     </div>
+
                     <div className='d-flex align-items-center justify-content-between mt-4'>
                         <div>
                             <p className='fs_12 fw-normal text_clr_ee m-0'>Total request(s): </p>
@@ -333,6 +340,7 @@ const AccountRequest = () => {
 
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

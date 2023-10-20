@@ -63,5 +63,74 @@
                 border-bottom: 1px solid #767676;
             }
         }
+
+        .account_card_right {
+            .card {
+                border: 1px solid #767676;
+                border-radius: 0;
+
+                img {
+                    border-radius: 0;
+                }
+
+                a {
+                    font-family: UniversNextforHSBC;
+                    margin: 0px;
+                    padding: 0px;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: rgb(51, 51, 51);
+                    text-align: left;
+                    cursor: not-allowed !important;
+                }
+            }
+        }
+
+
     }
+
+    .search_filter {
+        input {
+            width: 400px;
+            border-radius: 0px;
+            display: flex;
+            box-shadow: none;
+            text-align: left;
+            border-width: 0.0625rem;
+            border-style: solid;
+            transition: border 0.1s ease-out 0s;
+            border-color: rgb(118, 118, 118);
+            color: rgb(51, 51, 51);
+            background-color: rgb(255, 255, 255);
+            font-size: 0.875rem;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 40px;
+            height: 2.5rem;
+            padding: 0.5625rem 0.625rem 0.6875rem;
+        }
+    }
+
+    .filter_btn {
+        button {
+            background-color: transparent;
+            border: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+        }
+    }
+
+    .modal{
+        .modal-dialog {
+            // max-width: 900px !important;
+                &.modal-dialog-centered {
+                    max-width: 890px !important;
+                }
+            }
+    }
+
 }

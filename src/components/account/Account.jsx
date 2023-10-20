@@ -1,14 +1,18 @@
 import React from 'react'
-import { MdOutlineArrowBackIosNew } from "react-icons/md";
+import { MdOutlineArrowBackIosNew, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Alert from '../alert/Alert';
-import './Account.scss'
+import './Account.scss';
 import { PiClipboardTextBold } from "react-icons/pi";
 import guideImage from '../../assets/guideImage.png'
-import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
+import { Link } from 'react-router-dom';
+import { GiSettingsKnobs } from "react-icons/gi";
+import { AiOutlineArrowDown } from 'react-icons/ai';
+import AccountRequest from '../accountRequest/AccountRequest';
 
 const Account = () => {
   return (
-    <div className='create_account main_content mt-3'>
+    <div className='create_account main_content mt-3 '>
       <div className='section_heading'>
         <h1>
           <MdOutlineArrowBackIosNew /> | Band-Aid branch Store
@@ -44,7 +48,7 @@ const Account = () => {
 
                 <div className="account_card_item mb-4">
                   <p className='fs_14 text_clr_76'>Bank name</p>
-                  <p className='fw-medium fs_14 text-black'>CITI Bank, Hong Kong</p>
+                  <p className='fw-medium fs_14 text-black'>CITI Bank, NA, Hong Kong Branch</p>
                 </div>
               </div>
 
@@ -113,11 +117,614 @@ const Account = () => {
               <p class="card-text">
                 Link my account to e-marketplace for collection
               </p>
-              <button href="#">Click here <IoIosArrowForward /></button>
+              <div className='d-flex align-items-center justify-content-end'>
+                <Link className='text-decoration-none' href="#">Click here <IoIosArrowForward /></Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div>
+        <div className="section_title_wrapper mt-5">
+          <div className="section_title d-flex align-items-center justify-content-between">
+            <h5 className='fs-5 fw-medium'>
+              HSBC Global Wallet Receiving Account list
+            </h5>
+          </div>
+        </div>
+
+        <div className="filter_btn d-flex justify-content-between mb-4">
+          <div className="filter_btn_left d-flex flex-wrap align-items-center gap-3">
+
+            <div className="search_filter">
+              <input type="text" placeholder='Search by Receiving Account name or number' />
+            </div>
+
+            <div className="filter_btn">
+              <button>
+                <GiSettingsKnobs />
+                Filter
+                <IoIosArrowDown />
+
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div className="account_request">
+          <div className="account_request_wrapper">
+            <div className="account_request_table_box">
+              <div className="table_wrapper">
+                <div className="table_controller">
+                  <table className='main_table'>
+                    <caption className='table_caption'></caption>
+
+                    <thead className='table_head'>
+                      <tr className='table_row'>
+                        <th className='table_head_one active' style={{ width: '120px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Bank reference
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '200px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Transaction description
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '160px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Payer Name
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '200px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Transaction type
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '200px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Value date
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '120px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Amount
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '120px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Status
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '120px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Value date
+                            </button>
+                          </div>
+                        </th>
+
+                        <th className='table_head_one active' style={{ width: '120px' }}>
+                          <div className='table_head_title'>
+                            <button>
+                              Action
+                            </button>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody className='table_body'>
+
+                      <tr className='table_row'>
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              QPSGGGGGGAZV
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              BENM/gcvdshgcd/EREF/086562I01FCF
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              EBAY Commerce Ltd
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Transfer
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              USD 80.00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Pending
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022 12:00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              View detail
+                            </p>
+                          </span>
+                        </td>
+
+                      </tr>
+
+                      <tr className='table_row'>
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              QPSGGGGGGAZV
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              BENM/gcvdshgcd/EREF/086562I01FCF
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              EBAY Commerce Ltd
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Transfer
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              USD 80.00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Pending
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022 12:00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              View detail
+                            </p>
+                          </span>
+                        </td>
+
+                      </tr>
+
+                      <tr className='table_row'>
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              QPSGGGGGGAZV
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              BENM/gcvdshgcd/EREF/086562I01FCF
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              EBAY Commerce Ltd
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Transfer
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              USD 80.00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Pending
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022 12:00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              View detail
+                            </p>
+                          </span>
+                        </td>
+
+                      </tr>
+
+                      <tr className='table_row'>
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              QPSGGGGGGAZV
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              BENM/gcvdshgcd/EREF/086562I01FCF
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              EBAY Commerce Ltd
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Transfer
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              USD 80.00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Pending
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022 12:00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              View detail
+                            </p>
+                          </span>
+                        </td>
+
+                      </tr>
+
+                      <tr className='table_row'>
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              QPSGGGGGGAZV
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              BENM/gcvdshgcd/EREF/086562I01FCF
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              EBAY Commerce Ltd
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Transfer
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              USD 80.00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Pending
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022 12:00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              View detail
+                            </p>
+                          </span>
+                        </td>
+
+                      </tr>
+
+                      <tr className='table_row'>
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              QPSGGGGGGAZV
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              BENM/gcvdshgcd/EREF/086562I01FCF
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              EBAY Commerce Ltd
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Transfer
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              USD 80.00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              Pending
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              20/01/2022 12:00
+                            </p>
+                          </span>
+                        </td>
+
+                        <td className='table_data'>
+                          <span className='table_text'>
+                            <p className='m-0'>
+                              View detail
+                            </p>
+                          </span>
+                        </td>
+
+                      </tr>
+
+
+                    </tbody>
+
+                  </table>
+                </div>
+
+              </div>
+
+              <div className='d-flex align-items-center justify-content-between mt-4'>
+                <div>
+                  <p className='fs_12 fw-normal text_clr_ee m-0'>Total request(s): </p>
+                </div>
+                <div className='d-flex gap-3  align-items-center'>
+                  <span>page</span>
+                  <select style={{ width: '90px', height: '50px' }} className='d-flex align-items-center px-2' name="" id="">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                  </select>
+                  of 1
+                  <div className='d-flex'>
+                    <div className='d-flex align-items-center justify-content-center border p-3'>
+                      <MdOutlineKeyboardArrowLeft />
+                    </div>
+                    <div className='d-flex align-items-center justify-content-center border p-3'>
+                      <MdOutlineKeyboardArrowRight />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }

@@ -5,13 +5,13 @@ const StepTracker = ({ step }) => {
     return (
         <div class='steps-container'>
             <div class={`steps ${step === 1 && "active"}`}>
-                <span>Step</span>
+                <span>Payment details</span>
             </div>
             <div class={`steps ${step === 2 && "active"}`}>
-                <span>Step</span>
+                <span>Preview</span>
             </div>
             <div class={`steps ${step === 3 && "active"}`}>
-                <span>Step</span>
+                <span>Acknowledgement</span>
             </div>
         </div>
     )

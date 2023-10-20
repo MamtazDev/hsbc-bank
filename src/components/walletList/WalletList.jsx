@@ -48,6 +48,7 @@ const WalletList = () => {
                     </button>
                 </div>
             </div>
+            
             <div className="wallet_card_wrapper">
                 <div className="row">
                     {

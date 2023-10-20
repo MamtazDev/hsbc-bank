@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const AccountDetails = ({ accountData }) => {
@@ -93,9 +94,9 @@ const AccountDetails = ({ accountData }) => {
 
                                                 <td className='table_data'>
                                                     <span className='table_text'>
-                                                        <p className='m-0'>
+                                                        <Link to={"/account"} className='text-decoration-none text-black m-0'>
                                                             {accountDataInfo.accountAction}
-                                                        </p>
+                                                        </Link>
                                                     </span>
                                                 </td>
                                             </tr>

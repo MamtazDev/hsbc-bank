@@ -8,7 +8,6 @@
     display: flex;
 }
 .steps-container span{
-    color: #ffffff;
     position: relative;
     z-index: 99999;
 }
@@ -59,16 +58,16 @@
     text-overflow: ellipsis;
     width: 100%;
     height: 75%;
-    vertical-align: middle;
 }
 
 .steps span:before {
     content: counter(steps) ". ";
 }
 
-.steps.active {
-    color: white;
-    font-weight: bold;
+.steps {
+    &.active{
+        color: #FFF;
+    }
     z-index: -1;
 }
 

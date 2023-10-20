@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: "Univers Next for HSBC W02 Rg";
+    font-family: "Univers Next for HSBC W02 Rg" !important;
     background-color: #F6F5F8;
     overflow-x: hidden;
 }
@@ -31,7 +31,7 @@ body {
     color: var(--clr_93);
 }
 
-.text_clr_76{
+.text_clr_76 {
     color: var(--clr_76);
 }
 
@@ -306,5 +306,39 @@ input {
 
     a {
         color: #333;
+    }
+}
+
+button {
+    padding: 0px 1.1875rem;
+    appearance: none;
+    box-shadow: none;
+    text-decoration: none;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden;
+    border-radius: 0px;
+    user-select: none;
+    vertical-align: middle;
+    transition: background-color 0.1s ease-out 0s, color 0.1s ease-out 0s, border 0.1s ease-out 0s;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    min-height: 2.5rem;
+    height: fit-content;
+
+    &:hover {
+        background-color: rgb(77, 100, 116);
+        border-color: rgb(77, 100, 116);
+        color: rgb(255, 255, 255);
     }
 }

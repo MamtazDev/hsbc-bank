@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import DashboardLayout from './components/dashboardLayout/DashboardLayout';
 import Overview from './components/overview/Overview';
@@ -9,6 +9,7 @@ import CreateAccount from './components/createAccount/CreateAccount';
 import ExchangeRate from './components/exchangeRate/ExchangeRate';
 import MakePayment from './components/makePayment/MakePayment';
 import Account from './components/account/Account';
+import RequestSucess from './components/requestSucess/RequestSucess';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: '/account',
         element: <Account />,
+      },
+
+      {
+        path: '/requestSucess',
+        element: <RequestSucess />,
       }
     ]
   },
