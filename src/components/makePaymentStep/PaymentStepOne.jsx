@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MakePaymentStep.scss'
 import Select from 'react-select'
 const options = [
@@ -8,9 +8,29 @@ const options = [
 ]
 
 const PaymentStepOne = () => {
+  const [beneficiaryData, setBeneficiaryData] = useState([]);
+  const handleForm = () => {
 
+  }
 
+  const handleInputChange = (e, field) => {
+    const value = e.target.value;
+    setBeneficiaryData((prevData) => {
+      const newData = [...prevData];
+      const index = newData.findIndex((item) => item.field === field);
 
+      if (index !== -1) {
+        newData[index] = { field, value };
+      } else {
+        newData.push({ field, value });
+      }
+
+      return newData;
+    });
+
+    // Store the updated data in localStorage
+    localStorage.setItem('beneficiaryData', JSON.stringify(beneficiaryData));
+  };
   return (
     <div className='paymentstep_one'>
       <div className='section_heading'>
@@ -153,7 +173,7 @@ const PaymentStepOne = () => {
         </div>
       </div>
 
-      <div className="create_account_title mb-5">
+      <form onSubmit={handleForm} className="create_account_title mb-5">
         <div className='mb-4'>
           <p className='fs-5 fw-medium' style={{ color: '#333' }}>
             Beneficiary details
@@ -214,7 +234,7 @@ const PaymentStepOne = () => {
           </div>
 
         </div>
-      </div>
+      </form>
 
       <div className="note">
         <p className='fs_14'>

@@ -1,16 +1,22 @@
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
+import { recevingData } from '../../data/RecevingData';
+import moment from 'moment';
 
 const AccountInfo = ({ accountInfo }) => {
-
+    const currentData = new Date();
+    const formatDate = moment(currentData).format('DD MMM YYYY, h:mm')
+    console.log(accountInfo);
     return (
+
         <div className="account_info">
+
             <div className="account_info_head mb-3">
                 <h3>
-                    USD Account
+                    {accountInfo.accountType}
                 </h3>
                 <p className='m-0'>
-                    WA5456789000USD
+                    {accountInfo.accountNumber}
                 </p>
             </div>
             <div className="account_current">
@@ -20,9 +26,9 @@ const AccountInfo = ({ accountInfo }) => {
                 <div className="account_ammount">
 
                     <span>
-                        USD
+                        {accountInfo.currentLedgerType}
                     </span>
-                    326,678.00
+                    {accountInfo.currentLedgerAmmount}
                 </div>
             </div>
             <div className="account_current">
@@ -30,16 +36,15 @@ const AccountInfo = ({ accountInfo }) => {
                     Available balance
                 </p>
                 <div className="account_ammount">
-
                     <span>
-                        GBP
+                        {accountInfo.availableBalaceType}
                     </span>
-                    31,526,633.00
+                    {accountInfo.availableBalaceType}
                 </div>
             </div>
             <div className="account_date">
                 <p>
-                    As of 22 Jun 2022 12:13
+                   As of  {formatDate  }
                 </p>
             </div>
             <div className="account_withdraw">
@@ -47,6 +52,7 @@ const AccountInfo = ({ accountInfo }) => {
                     Top-up / Withdraw <IoIosArrowForward style={{ color: 'red' }} />
                 </a>
             </div>
+
         </div>
     )
 }
