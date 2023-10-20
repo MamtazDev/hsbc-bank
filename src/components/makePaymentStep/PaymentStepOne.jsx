@@ -107,7 +107,7 @@ const PaymentStepOne = () => {
                 }}
               />
             </div>
-            <div className="right" style={{ width: '400px' }}>
+            <div className="right" style={{ width: '400px', height: '170px' }}>
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Bank name/SWIFT address
               </label>
@@ -115,7 +115,6 @@ const PaymentStepOne = () => {
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
-
                     backgroundColor: 'white',
                     borderRadius: '0px'
                   }),
