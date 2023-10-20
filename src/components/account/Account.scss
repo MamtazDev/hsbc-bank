@@ -1,7 +1,8 @@
 .create_account {
     .account_card {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 1fr;
+        gap: 30px;
 
         .account_card_left {
             .account_card_head {
@@ -56,9 +57,6 @@
                     }
 
                 }
-
-
-
             }
 
             .account_card_item_top {

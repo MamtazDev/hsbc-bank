@@ -3,6 +3,8 @@ import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import Alert from '../alert/Alert';
 import './Account.scss'
 import { PiClipboardTextBold } from "react-icons/pi";
+import guideImage from '../../assets/guideImage.png'
+import { IoIosArrowForward } from 'react-icons/io';
 
 const Account = () => {
   return (
@@ -101,7 +103,20 @@ const Account = () => {
 
         </div>
 
-        <div className="account_card_right"></div>
+        <div className="account_card_right">
+          <div class="card">
+            <img src={guideImage} class="card-img-top" alt="image" />
+            <div class="card-body">
+              <h5 class="card-title">
+                How do I link my Receiving Account to e-marketplace?
+              </h5>
+              <p class="card-text">
+                Link my account to e-marketplace for collection
+              </p>
+              <button href="#">Click here <IoIosArrowForward /></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

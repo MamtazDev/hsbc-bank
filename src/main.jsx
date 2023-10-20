@@ -1,10 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.scss'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import DashboardLayout from './components/dashboardLayout/DashboardLayout'
-
+import './index.scss';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import DashboardLayout from './components/dashboardLayout/DashboardLayout';
 import Overview from './components/overview/Overview';
 import CreateAccount from './components/createAccount/CreateAccount';
 import ExchangeRate from './components/exchangeRate/ExchangeRate';
@@ -20,18 +19,22 @@ const router = createBrowserRouter([
         path: '/',
         element: <Overview />,
       },
+
       {
         path: '/createAccount',
         element: <CreateAccount />,
       },
+
       {
         path: '/exchangeRate',
         element: <ExchangeRate />,
       },
+
       {
         path: '/makepayment',
         element: <MakePayment />,
       },
+
       {
         path: '/account',
         element: <Account />,
