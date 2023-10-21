@@ -15,7 +15,7 @@ const RequestSucess = () => {
             <Alert />
             <div className='sucess_message'>
                 <span>
-                    <svg width='100px' class="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 gNhxuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-hidden="true" role="presentation" data-testid="StatusConfirmationLightIcon" data-id="Icon" fill="currentColor">
+                    <svg width='100px' className="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 gNhxuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-hidden="true" role="presentation" data-testid="StatusConfirmationLightIcon" data-id="Icon" fill="currentColor">
                         <path fill="none" d="M0 0h18v18H0z" opacity=".25"></path>
                         <circle cx="9" cy="9" r="9" fill="#00847f"></circle>
                         <path fill="#fff" d="M7.216 13.553l-3.63-3.629L4.859 8.65l2.357 2.358 5.925-5.925 1.273 1.273z"></path>

@@ -190,7 +190,7 @@ const PaymentStepThree = () => {
                     </p>
                     <span className='d-flex gap-2'>
                         <span>
-                            <svg width={"20px"} class="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 fXlhuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-labelledby="title-icon-3049 " role="img" data-testid="StatusWarningLightIcon" data-id="Icon" fill="currentColor"><title id="title-icon-3049">StatusWarningLight</title><path fill="none" d="M0 0h18v18H0z"></path><circle cx="9" cy="9" r="9" fill="#fb3"></circle><circle cx="9" cy="13" r="1.2"></circle><path d="M8.1 3.8h1.8v6H8.1z"></path></svg>
+                            <svg width={"20px"} className="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 fXlhuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-labelledby="title-icon-3049 " role="img" data-testid="StatusWarningLightIcon" data-id="Icon" fill="currentColor"><title id="title-icon-3049">StatusWarningLight</title><path fill="none" d="M0 0h18v18H0z"></path><circle cx="9" cy="9" r="9" fill="#fb3"></circle><circle cx="9" cy="13" r="1.2"></circle><path d="M8.1 3.8h1.8v6H8.1z"></path></svg>
                         </span>
                         Other fees and charges may apply. For details, please refer to the Bank's Commercial Tariff section open in new window available on the HSBC Hong Kong Commercial Banking website. Please go to 'Transaction History' under 'Accounts' on or after the 'Payment Date' to check the transaction details.
                     </span>

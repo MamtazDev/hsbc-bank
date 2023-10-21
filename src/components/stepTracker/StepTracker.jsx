@@ -3,14 +3,15 @@ import './StepTracker.scss'
 
 const StepTracker = ({ step }) => {
     return (
-        <div class='steps-container'>
-            <div class={`steps ${step === 1 && "active"}`}>
+        <div className='steps-container'>
+        
+            <div className={`steps ${step === 1 && "active"}`}>
                 <span>Payment details</span>
             </div>
-            <div class={`steps ${step === 2 && "active"}`}>
+            <div className={`steps ${step === 2 && "active"}`}>
                 <span>Preview</span>
             </div>
-            <div class={`steps ${step === 3 && "active"}`}>
+            <div className={`steps ${step === 3 && "active"}`}>
                 <span>Acknowledgement</span>
             </div>
         </div>

@@ -4,7 +4,7 @@ import { CiCalendarDate } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 
-const PaymentStepTwo = () => {
+const PaymentStepTwo = ({handleInputChange,handleSelectFieldInputChange}) => {
   return (
     <div className='paymentstep_two'>
       <div className="paymentstep_two_wrapper">
@@ -122,7 +122,7 @@ const PaymentStepTwo = () => {
               <span>
                 AUD
               </span>
-              <input type="text" placeholder='0.00' />
+              <input onChange={handleInputChange} name='amountAUD' type="text" placeholder='0.00' />
             </div>
           </div>
 
@@ -162,21 +162,21 @@ const PaymentStepTwo = () => {
               <div className="radio_btn_group">
                 <form action="#" className=''>
                   <p>
-                    <input type="radio" id="radio_btn" name="radio-group" defaultChecked />
+                    <input onChange={handleInputChange} type="radio" id="radio_btn" name="payCharge" defaultChecked />
                     <label htmlFor="radio_btn">
                       We pay local bank charges, the beneficiary pays overseas bank charges.
                     </label>
                   </p>
 
                   <p>
-                    <input type="radio" id="radio_btn2" name="radio-group" />
+                    <input onChange={handleInputChange} type="radio" id="radio_btn2" name="payCharge" />
                     <label htmlFor="radio_btn2">
                       We pay all bank charges.
                     </label>
                   </p>
 
                   <p>
-                    <input type="radio" id="radio_btn3" name="radio-group" />
+                    <input onChange={handleInputChange} type="radio" id="radio_btn3" name="payCharge" />
                     <label htmlFor="radio_btn3">
                       The beneficiary pays all bank charges.
                     </label>
@@ -230,14 +230,14 @@ const PaymentStepTwo = () => {
               </h3>
               <form action="#" className=''>
                 <p>
-                  <input type="radio" id="radio_btn1" name="radio-group" defaultChecked />
+                  <input onChange={handleInputChange} type="radio" id="radio_btn1" name="thirdParty" defaultChecked />
                   <label htmlFor="radio_btn1">
                     Yes
                   </label>
                 </p>
 
                 <p>
-                  <input type="radio" id="radio_btn22" name="radio-group" />
+                  <input onChange={handleInputChange}  type="radio" id="radio_btn22" name="thirdParty" />
                   <label htmlFor="radio_btn22">
                     No
                   </label>
@@ -278,7 +278,7 @@ const PaymentStepTwo = () => {
                     <h3 className='fw-normal fs_14 fs-5'>
                       Email address
                     </h3>
-                    <input type="email" />
+                    <input type="email" onChange={handleInputChange} name="messageEmail"/>
                   </div>
 
 
@@ -286,21 +286,21 @@ const PaymentStepTwo = () => {
                     <h3 className='fw-normal fs_14 fs-5'>
                       Reference
                     </h3>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <textarea onChange={handleInputChange} name="reference" cols="30" rows="5"></textarea>
                   </div>
 
                   <div className="return_email mb-3">
                     <h3 className='fw-normal fs_14 fs-5'>
                       Return email address if e-Advice fails to send
                     </h3>
-                    <input type="email" />
+                    <input type="email" onChange={handleInputChange} name='messageEmailAgain'/>
                   </div>
 
                   <div className="message_recipet mb-3">
                     <h3 className='fw-normal fs_14 fs-5'>
                       Message to recipient
                     </h3>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <textarea onChange={handleInputChange} name="recipient"  cols="30" rows="5"></textarea>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>

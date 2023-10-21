@@ -7,30 +7,9 @@ const options = [
   { value: 'CUD', label: 'Canada' }
 ]
 
-const PaymentStepOne = () => {
-  const [beneficiaryData, setBeneficiaryData] = useState([]);
-  const handleForm = () => {
-
-  }
-
-  const handleInputChange = (e, field) => {
-    const value = e.target.value;
-    setBeneficiaryData((prevData) => {
-      const newData = [...prevData];
-      const index = newData.findIndex((item) => item.field === field);
-
-      if (index !== -1) {
-        newData[index] = { field, value };
-      } else {
-        newData.push({ field, value });
-      }
-
-      return newData;
-    });
-
-    // Store the updated data in localStorage
-    localStorage.setItem('beneficiaryData', JSON.stringify(beneficiaryData));
-  };
+const PaymentStepOne = ({handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
+ 
+ 
   return (
     <div className='paymentstep_one'>
       <div className='section_heading'>
@@ -43,24 +22,24 @@ const PaymentStepOne = () => {
       </div>
 
       <div className="radio_btn_group">
-        <form action="#" className='d-flex align-items-center gap-5'>
+        <form onSubmit={handleFormSubmit} className='d-flex align-items-center gap-5'>
           <p>
-            <input type="radio" id="radio_btn" name="radio-group" defaultChecked />
+            <input onChange={handleInputChange} type="radio" id="radio_btn" name="individualOrCompany" defaultChecked />
             <label htmlFor="radio_btn">Account number</label>
           </p>
 
           <p className='cursor_disable'>
-            <input type="radio" id="radio_btn2" name="radio-group" />
+            <input onChange={handleInputChange} type="radio" id="radio_btn2" name="individualOrCompany" />
             <label htmlFor="radio_btn2">Email address</label>
           </p>
 
           <p className='cursor_disable'>
-            <input type="radio" id="radio_btn3" name="radio-group" />
+            <input onChange={handleInputChange} type="radio" id="radio_btn3" name="individualOrCompany" />
             <label htmlFor="radio_btn3">Phone number</label>
           </p>
 
           <p className='cursor_disable'>
-            <input type="radio" id="radio_btn4" name="radio-group" />
+            <input onChange={handleInputChange} type="radio" id="radio_btn4" name="individualOrCompany" />
             <label htmlFor="radio_btn4">FPS ID</label>
           </p>
 
@@ -74,7 +53,7 @@ const PaymentStepOne = () => {
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Beneficiary bank location
               </label>
-              <Select id='bbl' options={options} placeholder={"United State"}
+              <Select name='bankLocation' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'bankLocation')} id='bbl' options={options} placeholder={"United State"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -88,7 +67,7 @@ const PaymentStepOne = () => {
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Payment currency
               </label>
-              <Select id='bbl' options={options} placeholder={"United State"}
+              <Select name='currency' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'currency')} id='bbl' options={options} placeholder={"United State"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -104,12 +83,12 @@ const PaymentStepOne = () => {
           <div className="radio_btn_group">
             <form action="#" className='d-flex align-items-center gap-5'>
               <p>
-                <input type="radio" id="radio_btn5" name="radio-group" />
+                <input onChange={handleInputChange}  type="radio" id="radio_btn5" name="search" />
                 <label htmlFor="radio_btn5">Search by keywords</label>
               </p>
 
               <p className='cursor_disable'>
-                <input type="radio" id="radio_btn6" name="radio-group" />
+                <input onChange={handleInputChange} type="radio" id="radio_btn6" name="search" />
                 <label htmlFor="radio_btn6">Search by full bank code/SWIFT address</label>
               </p>
             </form>
@@ -120,7 +99,7 @@ const PaymentStepOne = () => {
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 City
               </label>
-              <Select id='bbl' options={options} placeholder={"United State"}
+              <Select name='city' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'city')} id='bbl' options={options} placeholder={"United State"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -134,7 +113,7 @@ const PaymentStepOne = () => {
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Bank name/SWIFT address
               </label>
-              <Select id='bbl' options={options} placeholder={"United State"}
+              <Select name='bankName' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'bankName')} id='bbl' options={options} placeholder={"United State"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -149,12 +128,12 @@ const PaymentStepOne = () => {
           <div className="radio_btn_group">
             <form action="#" className='d-flex align-items-center gap-5'>
               <p>
-                <input type="radio" id="radio_btn8" name="radio-group" />
+                <input onChange={handleInputChange} type="radio" id="radio_btn8" name="localOrTelegraphic" />
                 <label htmlFor="radio_btn8">Pay-as-locals</label>
               </p>
 
               <p className='cursor_disable'>
-                <input type="radio" id="radio_btn7" name="radio-group" />
+                <input onChange={handleInputChange} type="radio" id="radio_btn7" name="localOrTelegraphic" />
                 <label htmlFor="radio_btn7">Telegraphic transfer</label>
               </p>
             </form>
@@ -162,9 +141,10 @@ const PaymentStepOne = () => {
             <p className='cursor_disable'>
               <input className="checkbox"
                 type="checkbox"
+                onChange={handleInputChange}
                 disabled={true}
                 id="checkbox-3"
-                name="checkbox" />
+                name="intermediary" />
               <label htmlFor="checkbox-3">
                 Through intermediary bank
               </label>
@@ -173,7 +153,7 @@ const PaymentStepOne = () => {
         </div>
       </div>
 
-      <form onSubmit={handleForm} className="create_account_title mb-5">
+      <form  className="create_account_title mb-5">
         <div className='mb-4'>
           <p className='fs-5 fw-medium' style={{ color: '#333' }}>
             Beneficiary details
@@ -186,7 +166,7 @@ const PaymentStepOne = () => {
           </label>
 
           <div>
-            <input className='input_box_iban' type="text" id='iban' />
+            <input onChange={handleInputChange} name='iban' className='input_box_iban' type="text" id='beneficiaryIban' />
           </div>
 
         </div>
@@ -197,7 +177,7 @@ const PaymentStepOne = () => {
           </label>
 
           <div>
-            <input className='input_box_iban' type="text" id='iban0' />
+            <input onChange={handleInputChange} name='beneficiaryName' className='input_box_iban' type="text" id='iban0' />
           </div>
 
         </div>
@@ -208,7 +188,7 @@ const PaymentStepOne = () => {
           </label>
 
           <div>
-            <input className='input_box_iban' type="text" id='iban1' />
+            <input onChange={handleInputChange} name='beneficiaryAddressLink1' className='input_box_iban' type="text" id='iban1' />
           </div>
 
         </div>
@@ -219,7 +199,7 @@ const PaymentStepOne = () => {
           </label>
 
           <div>
-            <input className='input_box_iban' type="text" id='iban2' />
+            <input onChange={handleInputChange} name='beneficiaryAddressLine2' className='input_box_iban' type="text" id='iban2' />
           </div>
 
         </div>
@@ -230,7 +210,7 @@ const PaymentStepOne = () => {
           </label>
 
           <div>
-            <input className='input_box_iban' type="text" id='iban3' />
+            <input onChange={handleInputChange} name='beneficiaryAddressLine3' className='input_box_iban' type="text" id='iban3' />
           </div>
 
         </div>

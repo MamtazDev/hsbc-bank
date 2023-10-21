@@ -131,7 +131,7 @@ setFormData({...formData, [key]:selectedOption})
                     </div>
 
                     <div className="create_account_input">
-                        <input onChange={handleInputChange} name='sellerEmail' type="text" placeholder="Please enter shop e-mail address" />
+                        <input onChange={handleInputChange} name='sellerEmail' type="email" placeholder="Please enter shop e-mail address" />
                     </div>
                 </div>
 
@@ -180,7 +180,7 @@ setFormData({...formData, [key]:selectedOption})
                     </div>
 
                     <div className="create_account_input">
-                        <input onChange={handleInputChange} name='postalCode' type="text" placeholder="Please input your postal code/zip code" />
+                        <input onChange={handleInputChange} name='postalCode' type="number" placeholder="Please input your postal code/zip code" />
                     </div>
                 </div>
             </div>
