@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PaymentStepThree = () => {
+const PaymentStepThree = ({paymentFormData}) => {
     return (
         <div className='payment_three'>
             <div className='section_heading'>
@@ -22,7 +22,7 @@ const PaymentStepThree = () => {
                                 Beneficiary bank location
                             </p>
                             <span className='fw-bold '>
-                                United States
+                         {paymentFormData?.bankLocation}
                             </span>
                         </div>
 
@@ -40,7 +40,7 @@ const PaymentStepThree = () => {
                                 Beneficiary bank name
                             </p>
                             <span className='fw-bold '>
-                                HSBC BANK USA, N.A.
+                            {paymentFormData?.beneficiaryName}
                             </span>
                         </div>
 
@@ -49,15 +49,15 @@ const PaymentStepThree = () => {
                                 Beneficiary bank address
                             </p>
                             <span className='fw-bold '>
-                                452 FIFTH AVENUE
+                             {paymentFormData?.beneficiaryAddressLink1}
                             </span>
                             <br />
                             <span className='fw-bold '>
-                                NEW YORK NY 10018 US
+                            {paymentFormData?.beneficiaryAddressLink2}
                             </span>
                             <br />
                             <span className='fw-bold '>
-                                NEW YORK, NEW YORK
+                            {paymentFormData?.beneficiaryAddressLink3}
                             </span>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const PaymentStepThree = () => {
                                 Beneficiary account number / IBAN
                             </p>
                             <span className='fw-bold '>
-                                dasfsdf
+                                {paymentFormData?.iban}
                             </span>
                         </div>
 
@@ -76,7 +76,7 @@ const PaymentStepThree = () => {
                                 Beneficiary name
                             </p>
                             <span className='fw-bold '>
-                                sdfsdf
+                                {paymentFormData?.beneficiaryName}
                             </span>
                         </div>
 
@@ -94,15 +94,15 @@ const PaymentStepThree = () => {
                                 Beneficiary address
                             </p>
                             <span className='fw-bold '>
-                                sdfsdf
+                            {paymentFormData?.beneficiaryAddressLink1}
                             </span>
                             <br />
                             <span className='fw-bold '>
-                                sdfsdf
+                            {paymentFormData?.beneficiaryAddressLink2}
                             </span>
                             <br />
                             <span className='fw-bold '>
-                                sdfsdf
+                            {paymentFormData?.beneficiaryAddressLink3}
                             </span>
                         </div>
 
@@ -148,7 +148,7 @@ const PaymentStepThree = () => {
                             <span className='d-flex align-items-center gap-2'>
                                 AUD
                                 <span className='fw-bold fs-5'>
-                                    100.00
+                                {paymentFormData?.amountAUD}
                                 </span>
                             </span>
                         </div>
@@ -306,7 +306,7 @@ const PaymentStepThree = () => {
                                 Email address
                             </span>
                             <span className='fw-bold'>
-                                N/A
+                            {paymentFormData?.messageEmail}
                             </span>
                         </div>
                         <div className="section_item mb-3">
@@ -314,7 +314,7 @@ const PaymentStepThree = () => {
                                 Return email address if e-Advice fails to send
                             </span>
                             <span className='fw-bold'>
-                                N/A
+                            {paymentFormData?.messageEmailAgain}
                             </span>
                         </div>
                     </div>
@@ -324,7 +324,7 @@ const PaymentStepThree = () => {
                                 Reference
                             </span>
                             <span className='fw-bold'>
-                                N/A
+                                {paymentFormData?.reference}
                             </span>
                         </div>
                         <div className="section_item mb-3">
@@ -332,7 +332,7 @@ const PaymentStepThree = () => {
                                 Message to recipient
                             </span>
                             <span className='fw-bold'>
-                                N/A
+                             {paymentFormData?.recipient}
                             </span>
                         </div>
                     </div>

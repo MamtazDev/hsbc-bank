@@ -274,7 +274,7 @@ setFormData({...formData, [key]:selectedOption})
                 </button>
 
 
-                <Button onClick={handleFormSubmit} className='px-3' variant="primary">
+                <Button onClick={handleFormSubmit} disabled={!formData.comments || !formData.currency || !formData.receivingAccountNickname || !formData.sellerName || !formData.sellerEmail || !formData.addressLine1 || !formData.addressLine2 || !formData.region || !formData.postalCode || !formData.businessRelationship || !formData.uploadDocument || !formData.country } className={`${(formData.comments && formData.currency && formData.receivingAccountNickname && formData.sellerName && formData.sellerEmail && formData.addressLine1 && formData.addressLine2 && formData.region && formData.postalCode && formData.businessRelationship && formData.uploadDocument && formData.country) && "active"} px-3`} variant="primary">
                     Submit
                 </Button>
             </div>
