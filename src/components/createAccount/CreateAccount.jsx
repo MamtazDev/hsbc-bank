@@ -269,10 +269,7 @@ setFormData({...formData, [key]:selectedOption})
             </div>
 
             <div className="back_submit_btn d-flex align-items-center justify-content-between">
-                <button  className='px-3'>
-                    Back
-                </button>
-
+              <div></div>
 
                 <Button onClick={handleFormSubmit} disabled={!formData.comments || !formData.currency || !formData.receivingAccountNickname || !formData.sellerName || !formData.sellerEmail || !formData.addressLine1 || !formData.addressLine2 || !formData.region || !formData.postalCode || !formData.businessRelationship || !formData.uploadDocument || !formData.country } className={`${(formData.comments && formData.currency && formData.receivingAccountNickname && formData.sellerName && formData.sellerEmail && formData.addressLine1 && formData.addressLine2 && formData.region && formData.postalCode && formData.businessRelationship && formData.uploadDocument && formData.country) && "active"} px-3`} variant="primary">
                     Submit

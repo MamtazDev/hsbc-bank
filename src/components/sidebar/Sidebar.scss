@@ -6,7 +6,7 @@
     background-color: #3e505d;
     z-index: 999;
 
-    @media(max-width: 992px) {
+    @media(max-width: 1110px) {
         display: none;
     }
 
@@ -46,7 +46,7 @@
 .res_btn {
     display: none;
 
-    @media(max-width: 992px) {
+    @media(max-width: 1110px) {
         display: block;
         margin-top: 80px;
         display: flex;
