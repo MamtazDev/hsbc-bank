@@ -31,7 +31,7 @@ const MakePayment = () => {
   const renderStepContent = () => {
     switch (step) {
       case 1:
-        return <PaymentStepOne handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} handleFormSubmit={handleFormSubmit} />
+        return <PaymentStepOne paymentFormData={paymentFormData} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} handleFormSubmit={handleFormSubmit} step={step} handleNext={handleNext} />
       case 2:
         return <PaymentStepTwo paymentFormData={paymentFormData} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} />
       case 3:
@@ -46,7 +46,7 @@ const MakePayment = () => {
     <div className='overview main_content mt-3'>
       <StepTracker step={step} />
       {renderStepContent()}
-      <PaymentStepBtn handleNext={handleNext} handlePrevious={handlePrevious} step={step} />
+      {/* <PaymentStepBtn handleNext={handleNext} handlePrevious={handlePrevious} step={step} /> */}
     </div>
 
   );

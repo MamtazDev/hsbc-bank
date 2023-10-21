@@ -7,7 +7,7 @@ const options = [
   { value: 'CUD', label: 'Canada' }
 ]
 
-const PaymentStepOne = ({handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
+const PaymentStepOne = ({paymentFormData,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
  
  
   return (
@@ -229,7 +229,16 @@ const PaymentStepOne = ({handleInputChange,handleFormSubmit,handleSelectFieldInp
           </li>
         </ul>
       </div>
+      <div className='text-end'>
 
+      {step < 3 && (
+                <button 
+                disabled={!paymentFormData.bankLocation || !paymentFormData.currency || !paymentFormData.city || !paymentFormData.bankName || !paymentFormData.iban || !paymentFormData.beneficiaryName || !paymentFormData.beneficiaryAddressLink1 || !paymentFormData.beneficiaryAddressLine2 || !paymentFormData.beneficiaryAddressLine3 } 
+                onClick={handleNext} className={`${(paymentFormData.bankLocation && paymentFormData.currency && paymentFormData.city &&paymentFormData.bankName && paymentFormData.iban && paymentFormData.beneficiaryName && paymentFormData.beneficiaryAddressLink1 && paymentFormData.beneficiaryAddressLine2 && paymentFormData.beneficiaryAddressLine3) && "active"} next-button mt-5 `} >
+                    Next
+                </button>
+            )}
+      </div>
     </div>
   )
 }
