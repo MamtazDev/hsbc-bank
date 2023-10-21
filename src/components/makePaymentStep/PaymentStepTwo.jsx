@@ -4,7 +4,7 @@ import { CiCalendarDate } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 
-const PaymentStepTwo = ({handleInputChange,handleSelectFieldInputChange}) => {
+const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
   return (
     <div className='paymentstep_two'>
       <div className="paymentstep_two_wrapper">
@@ -256,11 +256,11 @@ const PaymentStepTwo = ({handleInputChange,handleSelectFieldInputChange}) => {
                   <h3 className='fw-normal fs_14 fs-5'>
                     Message to beneficiary
                   </h3>
-                  <textarea name="" id="" cols="30" rows="5"></textarea>
+                  <textarea onChange={handleInputChange} name="messageBeneficiary" cols="30" rows="5"></textarea>
                   <h3 className='fw-normal fs_14 fs-5'>
                     Message to beneficiary Bank
                   </h3>
-                  <textarea name="" id="" cols="30" rows="5"></textarea>
+                  <textarea onChange={handleInputChange} name="messageBenificiaryBank" cols="30" rows="5"></textarea>
                 </Accordion.Body>
               </Accordion.Item>
 
@@ -310,6 +310,19 @@ const PaymentStepTwo = ({handleInputChange,handleSelectFieldInputChange}) => {
 
         </div>
       </div>
+      <div className="button-container">
+            {step > 1 && (
+                <button onClick={handlePrevious} className="previous-button">
+                    Previous
+                </button>
+            )}
+            {step < 3 && (
+                <button disabled={!paymentFormData.amountAUD || !paymentFormData.messageEmail || !paymentFormData.messageEmailAgain || !paymentFormData.reference || !paymentFormData.recipient || !paymentFormData.messageBenificiaryBank || !paymentFormData.messageBeneficiary} onClick={handleNext} 
+                className={`${(paymentFormData.amountAUD && paymentFormData.messageEmail && paymentFormData.messageEmailAgain && paymentFormData.reference && paymentFormData.recipient && paymentFormData.messageBenificiaryBank && paymentFormData.messageBeneficiary)&& "active"} next-button`} >
+                    Next
+                </button>
+            )}
+        </div>
     </div>
   )
 }

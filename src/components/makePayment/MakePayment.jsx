@@ -33,7 +33,7 @@ const MakePayment = () => {
       case 1:
         return <PaymentStepOne paymentFormData={paymentFormData} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} handleFormSubmit={handleFormSubmit} step={step} handleNext={handleNext} />
       case 2:
-        return <PaymentStepTwo paymentFormData={paymentFormData} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} />
+        return <PaymentStepTwo step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange}  />
       case 3:
         return <PaymentStepThree paymentFormData={paymentFormData} />;
       default:
