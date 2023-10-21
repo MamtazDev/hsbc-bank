@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PaymentStepThree = ({paymentFormData}) => {
+const PaymentStepThree = ({step,handlePrevious,paymentFormData}) => {
     return (
         <div className='payment_three'>
             <div className='section_heading'>
@@ -274,7 +274,7 @@ const PaymentStepThree = ({paymentFormData}) => {
                                 Message to beneficiary
                             </span>
                             <span className='fw-bold'>
-                                N/A
+                                {paymentFormData.messageBeneficiary}
                             </span>
                         </div>
                     </div>
@@ -284,7 +284,7 @@ const PaymentStepThree = ({paymentFormData}) => {
                                 Message to beneficiary bank
                             </span>
                             <span className='fw-bold'>
-                                N/A
+                                {paymentFormData.messageBenificiaryBank}
                             </span>
                         </div>
                     </div>
@@ -364,7 +364,14 @@ const PaymentStepThree = ({paymentFormData}) => {
                 </p>
 
             </div>
-
+            <div className="button-container">
+            {step > 1 && (
+                <button onClick={handlePrevious} className="previous-button">
+                    Previous
+                </button>
+            )}
+          
+        </div>
 
         </div>
     )

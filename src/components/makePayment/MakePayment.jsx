@@ -35,7 +35,7 @@ const MakePayment = () => {
       case 2:
         return <PaymentStepTwo step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange}  />
       case 3:
-        return <PaymentStepThree paymentFormData={paymentFormData} />;
+        return <PaymentStepThree step={step}  handlePrevious={handlePrevious} paymentFormData={paymentFormData} />;
       default:
         return null;
     }
