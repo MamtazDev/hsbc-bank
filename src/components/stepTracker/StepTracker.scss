@@ -35,7 +35,7 @@
     height: 50%;
     width: 100%;
     border-left: 1px solid #FFF;
-    background: #d9edec;
+    background: #9abef1;
 }
 
 .steps:before {
@@ -75,5 +75,5 @@
 .steps.active:before,
 .steps.active:after {
     color: #000000;
-    background: rgb(0, 133, 129);
+    background: #3970bc;
 }

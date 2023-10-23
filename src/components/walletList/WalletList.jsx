@@ -2,6 +2,7 @@ import React from 'react'
 import './WalletList.scss'
 import { AiFillDollarCircle, AiFillEuroCircle } from "react-icons/ai";
 import { PiCurrencyGbpFill } from "react-icons/pi";
+import { IoIosArrowDown } from "react-icons/io";
 
 const walletInfo = [
     {
@@ -86,7 +87,7 @@ const WalletList = () => {
                 </div>
                 <div className='text-end mt-3'>
 
-                <button className='bg-transparent border-0'>Show all</button>
+                <button className='bg-transparent border-0'>Show all <IoIosArrowDown/></button>
                 </div>
             </div>
         </div>
