@@ -3,9 +3,31 @@ import './MakePaymentStep.scss'
 import Select from 'react-select'
 import PaymentStepTwo from './PaymentStepTwo'
 const options = [
-  { value: 'USD', label: 'United State' },
   { value: 'AUD', label: 'Australia' },
-  { value: 'CUD', label: 'Canada' }
+  { value: 'CUD', label: 'Canada' },
+  { value: 'CHI', label: 'China' },
+  { value: 'FR', label: 'France' },
+  { value: 'GER', label: 'Germany' },
+  { value: 'JP', label: 'Japan' },
+  { value: 'KR', label: 'Korea,Republic Of' },
+  { value: 'RF', label: 'Russian Federation' },
+  { value: 'SG', label: 'Singapore' },
+  { value: 'UK', label: 'United Kingdom' },
+  { value: 'USD', label: 'United State' },
+  { value: 'HK', label: 'Hong Kong' },
+]
+const paymentCurrency = [
+  { value: 'AUD', label: 'AUD' },
+  { value: 'CAD', label: 'CAD' },
+  { value: 'CNY', label: 'CNY' },
+  { value: 'EUR', label: 'EUR' },
+  { value: 'GBP', label: 'GBP' },
+  { value: 'JPY', label: 'JPY' },
+  { value: 'KRW', label: 'KRW' },
+  { value: 'RUB', label: 'RUB' },
+  { value: 'SGD', label: 'SGD' },
+  { value: 'USD', label: 'USD' },
+  { value: 'HKD', label: 'HKD' },
 ]
 
 const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
@@ -70,7 +92,7 @@ const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleIn
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Payment currency
               </label>
-              <Select name='currency' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'currency')} id='bbl' options={options} placeholder={"United State"}
+              <Select name='currency' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'currency')} id='bbl' options={paymentCurrency} placeholder={"AUD"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -99,32 +121,23 @@ const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleIn
 
           <div className="tab_content_box tcb_grid tcb_white mb-4">
             <div className="left" style={{ width: '400px' }}>
-              <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
-                City
-              </label>
-              <Select name='city' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'city')} id='bbl' options={options} placeholder={"United State"}
-                styles={{
-                  control: (baseStyles, state) => ({
-                    ...baseStyles,
-                    backgroundColor: 'white',
-                    borderRadius: '0px'
-                  }),
-                }}
-              />
+             
+              <div className="input_box mb-3">
+                <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
+                  City
+                </label>
+              <div>
+            <input onChange={handleInputChange} name='city' className='input_box_iban' type="text" id='beneficiaryIban' />
+          </div>
+
+        </div>
             </div>
             <div className="right" style={{ width: '400px', height: '170px' }}>
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Bank name/SWIFT address
               </label>
-              <Select name='bankName' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'bankName')} id='bbl' options={options} placeholder={"United State"}
-                styles={{
-                  control: (baseStyles, state) => ({
-                    ...baseStyles,
-                    backgroundColor: 'white',
-                    borderRadius: '0px'
-                  }),
-                }}
-              />
+      
+              <input onChange={handleInputChange} name='bankName' className='input_box_iban' type="text" id='beneficiaryIban' />
             </div>
           </div>
 

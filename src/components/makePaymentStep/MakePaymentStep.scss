@@ -381,14 +381,33 @@
 .paymentstep_two .accordion-item .accordion-button {
     color: black !important;
 }
-.acknowledgement{
-    border: 1px solid #3970bc ;
+
+.acknowledgement {
+    border: 1px solid #3970bc;
     padding: 12px 18px;
-    background-color:#9abef1;
+    background-color: #9abef1;
 }
-.acknowledgement p{
+
+.acknowledgement p {
     margin-bottom: 0;
 }
-.acknowledgement span svg circle{
-    fill:#3970bc !important ;
+
+.acknowledgement span svg circle {
+    fill: #3970bc !important;
+}
+
+.input_box_iban {
+    padding: 10px;
+    width: 400px;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    // padding: 0.5625rem rem 0.625rem 0.6875rem;
+    margin: 0px 0px 6px;
+    text-align: left;
 }
