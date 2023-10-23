@@ -28,16 +28,14 @@ const options3 = [
 ]
 
 const CreateAccount = () => {
-
-
-    const [formData, setFormData] = useState({})
+const [formData, setFormData] = useState({})
 const fileRef = useRef()
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
 
-    console.log(formData)
+  
 
 const handleInputChange = (e) => {
     setFormData({...formData,[e.target.name]:e.target.value})     
@@ -56,7 +54,7 @@ setFormData({...formData, [key]:selectedOption})
 
     const handleFormSubmit = () => {
         event.preventDefault()
-        console.log(formData); 
+      
         handleShow()
     };
     

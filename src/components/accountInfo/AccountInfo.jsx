@@ -6,7 +6,7 @@ import moment from 'moment';
 const AccountInfo = ({ accountInfo }) => {
     const currentData = new Date();
     const formatDate = moment(currentData).format('DD MMM YYYY, h:mm')
-    console.log(accountInfo);
+   
     return (
 
         <div className="account_info">

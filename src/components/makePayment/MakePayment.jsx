@@ -24,10 +24,10 @@ const MakePayment = () => {
           }
     const handleFormSubmit = () => {
       event.preventDefault()
-      console.log(paymentFormData); 
+    
       
   };
-  console.log(paymentFormData);
+ 
   const renderStepContent = () => {
     switch (step) {
       case 1:

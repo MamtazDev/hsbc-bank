@@ -59,7 +59,7 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
 
               <div className="right">
                 <p className='fw-normal fs_14 text_clr_black_33'>
-                  USD 0.00
+                  USD {paymentFormData.amountAUD}
                 </p>
               </div>
             </div>
