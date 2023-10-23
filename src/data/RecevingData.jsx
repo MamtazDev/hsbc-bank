@@ -15,35 +15,35 @@ export const recevingData = [
                 accountNumber: '13252222011039',
                 currency: 'USD',
                 accountStatus: 'Active',
-                accountAction: 'View Action'
+                accountAction: 'View detail'
             },
             {
                 accountNickName: 'Lets Shop',
                 accountNumber: '13252222011049',
                 currency: 'USD',
                 accountStatus: 'Active',
-                accountAction: 'View Action'
+                accountAction: 'View detail'
             },
             {
                 accountNickName: 'Baby World',
                 accountNumber: '13252222031050',
                 currency: 'USD',
                 accountStatus: 'Active',
-                accountAction: 'View Action'
+                accountAction: 'View detail'
             },
             {
                 accountNickName: 'Mega Trands',
                 accountNumber: '13252222041051',
                 currency: 'USD',
                 accountStatus: 'Active',
-                accountAction: 'View Action'
+                accountAction: 'View detail'
             },
             {
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011052',
                 currency: 'USD',
                 accountStatus: 'Active',
-                accountAction: 'View Action'
+                accountAction: 'View detail'
             },
         ]
     },

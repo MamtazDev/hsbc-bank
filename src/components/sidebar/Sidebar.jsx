@@ -34,7 +34,7 @@ const Sidebar = () => {
                         <nav className="navbar-light px-2 py-3">
                             <ul className="navbar-nav flex-column">
                                 <li className="nav-item mb-2">
-                                    <Link to={'/'} className="nav-link active" onClick={toggleCollectionDropdown}>
+                                    <Link to={'/'} className="nav-link" onClick={toggleCollectionDropdown}>
                                         <span className="nav-text text-nowrap">Overview</span>
                                     </Link>
 
@@ -91,17 +91,17 @@ const Sidebar = () => {
             </div>
 
             <aside id="navigation-sidebar">
-                <div className='top_widget'>
+                {/* <div className='top_widget'>
                     <TbWorld className='fs-4 text-white' />
                     <p className='m-0 text-white fs_14'>
                         ICBT Merchant Box
                     </p>
-                </div>
+                </div> */}
                 <div className="navigation-widget pt-2">
                     <nav className="navbar-light px-2 py-3">
                         <ul className="navbar-nav flex-column">
                             <li className="nav-item mb-2">
-                                <Link to={'/'} className="nav-link active" onClick={toggleCollectionDropdown}>
+                                <Link to={'/'} className="nav-link " onClick={toggleCollectionDropdown}>
                                     <span className="nav-text text-nowrap">Overview</span>
                                 </Link>
 

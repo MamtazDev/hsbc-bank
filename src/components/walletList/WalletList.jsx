@@ -84,6 +84,10 @@ const WalletList = () => {
                         ))
                     }
                 </div>
+                <div className='text-end mt-3'>
+
+                <button className='bg-transparent border-0'>Show all</button>
+                </div>
             </div>
         </div>
     )

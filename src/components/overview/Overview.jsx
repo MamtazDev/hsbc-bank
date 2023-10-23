@@ -13,7 +13,7 @@ const Overview = () => {
                     Overview
                 </h1>
             </div>
-            <Alert />
+            {/* <Alert /> */}
             <WalletList />
             <RecevingAccountList />
         </div>

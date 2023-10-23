@@ -9,7 +9,7 @@ const TopBar = () => {
                 <img style={{ width: '225px' }} src={icbtLogo} alt="loog" />
             </div>
 
-            <div className='welcome_title'>
+            {/* <div className='welcome_title'>
                 <p className='fw-bold fs-6 text-white m-0'>
                     Welcome to the ICBT E-Commerce Banking Technology Demo page
                 </p>
@@ -19,7 +19,7 @@ const TopBar = () => {
                 <button className='sub-btn border-0'>
                     Subscribe now
                 </button>
-            </div>
+            </div> */}
         </div>
 
     )
