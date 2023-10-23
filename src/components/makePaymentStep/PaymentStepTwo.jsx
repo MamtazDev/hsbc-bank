@@ -17,16 +17,16 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
 
             <div className="payment_info">
               <p className='fw-normal fs_14 text_clr_black_33'>
-                BeneficiaryName
+                {paymentFormData.beneficiaryName}
               </p>
               <p className='fw-normal fs_14 text_clr_black_33'>
-                BeneficiaryAddress1
+                {paymentFormData.beneficiaryAddressLink1}
               </p>
               <p className='fw-normal fs_14 text_clr_black_33'>
-                BeneficiaryAddress2
+                {paymentFormData.beneficiaryAddressLine2}
               </p>
               <p className='fw-normal fs_14 text_clr_black_33'>
-                BeneficiaryAddress3
+                {paymentFormData.beneficiaryAddressLine3}
               </p>
               <p className='fw-normal fs_14 text_clr_black_33'>
                 BeneficiaryAccountNumber
