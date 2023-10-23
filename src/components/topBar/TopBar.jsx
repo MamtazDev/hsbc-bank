@@ -4,7 +4,7 @@ import icbtLogo from '../../assets/logo-white-text.png'
 
 const TopBar = () => {
     return (
-        <div className='topbar w-100 d-flex flex-wrap align-items-center gap-3'>
+        <div className='topbar w-100 d-flex flex-wrap align-items-center justify-content-between px-3 py-1 gap-3'>
             <div className='bank_logo'>
                 <img style={{ width: '225px' }} src={icbtLogo} alt="loog" />
             </div>
@@ -20,6 +20,10 @@ const TopBar = () => {
                     Subscribe now
                 </button>
             </div> */}
+            <div className='profile'>
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFacn0pb12vsSRTPKRUDnxFrP8sj7st13r8A&usqp=CAU" alt="" />
+<p>Sky Fashion Limited</p>
+            </div>
         </div>
 
     )

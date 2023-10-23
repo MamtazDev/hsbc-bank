@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './WalletList.scss'
 import { AiFillDollarCircle, AiFillEuroCircle } from "react-icons/ai";
 import { PiCurrencyGbpFill } from "react-icons/pi";
@@ -31,6 +31,36 @@ const walletInfo = [
 ]
 
 const WalletList = () => {
+    // const [clock, setClock] = useState();
+
+    // useEffect(() => {
+    //   setInterval(() => {
+    //     const date = new Date();
+    //     setClock(date.toLocaleTimeString());
+    //   }, 1000);
+    // }, []);
+    const [dateTime, setDateTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const newDateTime = new Date();
+      setDateTime(newDateTime);
+    }, 1000);
+
+    // Clear the interval when the component unmounts to prevent memory leaks
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // Format the date as "dd MMM, yyyy"
+  const formattedDate = dateTime.toLocaleDateString(undefined, {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  });
+
+  const timeString = dateTime.toLocaleTimeString();
+
+
     return (
         <div className='walletlist'>
             <div className='section_title_wrapper d-flex flex-wrap mb-3 align-items-center justify-content-between'>
@@ -38,7 +68,8 @@ const WalletList = () => {
                     <h5 className='text_clr_black_33 fs-5 fw-medium'>
                         HSBC Global Wallet list
                         <span className='fs_12 fw-normal ms-1'>
-                            (As of 22 Jun 2022 12:13)
+                            (As of {formattedDate} {timeString})
+                          
                         </span>
                     </h5>
                 </div>

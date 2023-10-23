@@ -21,3 +21,20 @@
         color: rgb(255, 255, 255);
     }
 }
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+.profile p{
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 0;
+}
