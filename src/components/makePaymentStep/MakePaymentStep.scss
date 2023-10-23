@@ -381,3 +381,14 @@
 .paymentstep_two .accordion-item .accordion-button {
     color: black !important;
 }
+.acknowledgement{
+    border: 1px solid #3970bc ;
+    padding: 12px 18px;
+    background-color:#9abef1;
+}
+.acknowledgement p{
+    margin-bottom: 0;
+}
+.acknowledgement span svg circle{
+    fill:#3970bc !important ;
+}

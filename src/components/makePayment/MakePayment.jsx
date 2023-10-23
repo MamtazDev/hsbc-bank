@@ -31,9 +31,9 @@ const MakePayment = () => {
   const renderStepContent = () => {
     switch (step) {
       case 1:
-        return <PaymentStepOne paymentFormData={paymentFormData} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} handleFormSubmit={handleFormSubmit} step={step} handleNext={handleNext} />
+        return <PaymentStepOne paymentFormData={paymentFormData} handlePrevious={handlePrevious} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} handleFormSubmit={handleFormSubmit} step={step} handleNext={handleNext} />
       case 2:
-        return <PaymentStepTwo step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange}  />
+        return  <PaymentStepThree handleNext={handleNext} step={step}  handlePrevious={handlePrevious} paymentFormData={paymentFormData} />;
       case 3:
         return <PaymentStepThree step={step}  handlePrevious={handlePrevious} paymentFormData={paymentFormData} />;
       default:

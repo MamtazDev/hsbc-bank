@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
 import './MakePaymentStep.scss'
 import Select from 'react-select'
+import PaymentStepTwo from './PaymentStepTwo'
 const options = [
   { value: 'USD', label: 'United State' },
   { value: 'AUD', label: 'Australia' },
   { value: 'CUD', label: 'Canada' }
 ]
 
-const PaymentStepOne = ({paymentFormData,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
- 
+const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
+ const [detailsStep,setDetailsStep] = useState(0)
  
   return (
-    <div className='paymentstep_one'>
+    <>
+    {
+      detailsStep === 0 &&  <div className='paymentstep_one'>
       <div className='section_heading'>
         <h1 className='fw-medium'>
           Pay new individual or company
@@ -234,12 +237,18 @@ const PaymentStepOne = ({paymentFormData,step,handleNext,handleInputChange,handl
       {step < 3 && (
                 <button 
                 disabled={!paymentFormData.bankLocation || !paymentFormData.currency || !paymentFormData.city || !paymentFormData.bankName || !paymentFormData.iban || !paymentFormData.beneficiaryName || !paymentFormData.beneficiaryAddressLink1 || !paymentFormData.beneficiaryAddressLine2 || !paymentFormData.beneficiaryAddressLine3 } 
-                onClick={handleNext} className={`${(paymentFormData.bankLocation && paymentFormData.currency && paymentFormData.city &&paymentFormData.bankName && paymentFormData.iban && paymentFormData.beneficiaryName && paymentFormData.beneficiaryAddressLink1 && paymentFormData.beneficiaryAddressLine2 && paymentFormData.beneficiaryAddressLine3) && "active"} next-button mt-5 `} >
+                onClick={()=>setDetailsStep(1)} className={`${(paymentFormData.bankLocation && paymentFormData.currency && paymentFormData.city &&paymentFormData.bankName && paymentFormData.iban && paymentFormData.beneficiaryName && paymentFormData.beneficiaryAddressLink1 && paymentFormData.beneficiaryAddressLine2 && paymentFormData.beneficiaryAddressLine3) && "active"} next-button mt-5 `} >
                     Next
                 </button>
             )}
       </div>
     </div>
+    }
+    {
+      detailsStep === 1 && <PaymentStepTwo step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange} />
+    }
+    </>
+   
   )
 }
 

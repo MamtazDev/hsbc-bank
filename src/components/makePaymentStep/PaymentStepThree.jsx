@@ -1,9 +1,45 @@
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PaymentStepThree = ({step,handlePrevious,paymentFormData}) => {
+
+const PaymentStepThree = ({step,handlePrevious,paymentFormData,handleNext}) => {
     return (
         <div className='payment_three'>
+            {
+                step === 3 && <>
+                <div className='section_heading'>
+
+<h2>Acknowledgement</h2>
+<div className='acknowledgement mb-4'>
+
+<div className='d-flex align-items-start gap-3 '>
+<span>
+<svg width={20} class="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 fXlhuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-labelledby="title-icon-954 " role="img" data-testid="StatusConfirmationLightIcon" data-id="Icon" fill="currentColor"><title id="title-icon-954">success</title><path fill="none" d="M0 0h18v18H0z" opacity=".25"></path><circle cx="9" cy="9" r="9" fill="#00847f"></circle><path fill="#fff" d="M7.216 13.553l-3.63-3.629L4.859 8.65l2.357 2.358 5.925-5.925 1.273 1.273z"></path></svg>
+</span>
+<div>
+
+<p>Your instruction has been received at 23/10/2023 12:03HKT. Please note the reference number below for your records.</p>
+<p>If this payment is made to a normal beneficiary, you will receive a notification via SMS. To get notified when your payee receives your payment via RTGS / Telegraphic Transfer, go to "My HSBC > Notification Centre" and subscribe </p>
+<p>'Outgoing Payment Notifications'.</p>
+<p>[NEW] Primary Users can go to 'Payment Tracker' to submit cancellation request for payments executed via RTGS or Telegraphic Transfer. Payment cancellation involves handling charges and it may take a few weeks.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+<h3>Reference</h3>
+<p className='mb-0'>Transaction reference number</p>
+<p className='mb-0'>33332012</p>
+<hr />
+</div>
+                </>
+            }
+
+
+
+
             <div className='section_heading'>
                 <h1 className='fw-medium'>
                     Payment preview
@@ -370,7 +406,12 @@ const PaymentStepThree = ({step,handlePrevious,paymentFormData}) => {
                     Previous
                 </button>
             )}
-          
+            {step < 3 && (
+                <button disabled={!paymentFormData.amountAUD || !paymentFormData.messageEmail || !paymentFormData.messageEmailAgain || !paymentFormData.reference || !paymentFormData.recipient || !paymentFormData.messageBenificiaryBank || !paymentFormData.messageBeneficiary} onClick={handleNext} 
+                className={`${(paymentFormData.amountAUD && paymentFormData.messageEmail && paymentFormData.messageEmailAgain && paymentFormData.reference && paymentFormData.recipient && paymentFormData.messageBenificiaryBank && paymentFormData.messageBeneficiary)&& "active"} next-button`} >
+                    Next
+                </button>
+            )}
         </div>
 
         </div>
