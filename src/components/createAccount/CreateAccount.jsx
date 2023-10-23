@@ -9,6 +9,8 @@ import RequestSucess from '../requestSucess/RequestSucess';
 const options = [
     { value: 'ERU', label: 'ERU' },
     { value: 'HKD', label: 'HKD' },
+    { value: 'USD', label: 'USD' },
+    { value: 'GBP', label: 'GBP' },
 ]
 
 const options2 = [
