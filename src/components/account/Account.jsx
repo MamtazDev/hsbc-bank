@@ -164,7 +164,7 @@ const Account = () => {
 
                     <thead className='table_head'>
                       <tr className='table_row'>
-                        <th className='table_head_one active' style={{ width: '120px' }}>
+                        <th className='table_head_one ' style={{ width: '120px' }}>
                           <div className='table_head_title'>
                             <button>
                               Bank reference
@@ -172,7 +172,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '200px' }}>
+                        <th className='table_head_one ' style={{ width: '200px' }}>
                           <div className='table_head_title'>
                             <button>
                               Transaction description
@@ -180,7 +180,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '160px' }}>
+                        <th className='table_head_one ' style={{ width: '160px' }}>
                           <div className='table_head_title'>
                             <button>
                               Payer Name
@@ -188,7 +188,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '200px' }}>
+                        <th className='table_head_one ' style={{ width: '200px' }}>
                           <div className='table_head_title'>
                             <button>
                               Transaction type
@@ -196,7 +196,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '200px' }}>
+                        <th className='table_head_one ' style={{ width: '200px' }}>
                           <div className='table_head_title'>
                             <button>
                               Value date
@@ -204,7 +204,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '120px' }}>
+                        <th className='table_head_one ' style={{ width: '120px' }}>
                           <div className='table_head_title'>
                             <button>
                               Amount
@@ -212,7 +212,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '120px' }}>
+                        <th className='table_head_one ' style={{ width: '120px' }}>
                           <div className='table_head_title'>
                             <button>
                               Status
@@ -220,7 +220,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '120px' }}>
+                        <th className='table_head_one ' style={{ width: '120px' }}>
                           <div className='table_head_title'>
                             <button>
                               Value date
@@ -228,7 +228,7 @@ const Account = () => {
                           </div>
                         </th>
 
-                        <th className='table_head_one active' style={{ width: '120px' }}>
+                        <th className='table_head_one ' style={{ width: '120px' }}>
                           <div className='table_head_title'>
                             <button>
                               Action

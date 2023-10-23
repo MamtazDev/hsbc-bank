@@ -21,7 +21,7 @@ const TopBar = () => {
                 </button>
             </div> */}
             <div className='profile'>
-                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFacn0pb12vsSRTPKRUDnxFrP8sj7st13r8A&usqp=CAU" alt="" />
+              
 <p>Sky Fashion Limited</p>
             </div>
         </div>

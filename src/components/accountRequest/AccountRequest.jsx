@@ -14,14 +14,14 @@ const AccountRequest = () => {
 
                                 <thead className='table_head'>
                                     <tr className='table_row'>
-                                        <th className='table_head_one active' style={{ width: '120px' }}>
+                                        <th className='table_head_one ' style={{ width: '120px' }}>
                                             <div className='table_head_title'>
                                                 <button>
                                                     Currency
                                                 </button>
                                             </div>
                                         </th>
-                                        <th className='table_head_one active' style={{ width: '200px' }}>
+                                        <th className='table_head_one ' style={{ width: '200px' }}>
                                             <div className='table_head_title'>
                                                 <button>
                                                     Receiving Account nickname
@@ -29,7 +29,7 @@ const AccountRequest = () => {
                                             </div>
                                         </th>
 
-                                        <th className='table_head_one active' style={{ width: '160px' }}>
+                                        <th className='table_head_one ' style={{ width: '160px' }}>
                                             <div className='table_head_title'>
                                                 <button>
                                                     Request status
@@ -37,14 +37,14 @@ const AccountRequest = () => {
                                             </div>
                                         </th>
 
-                                        <th className='table_head_one active' style={{ width: '200px' }}>
+                                        <th className='table_head_one ' style={{ width: '200px' }}>
                                             <div className='table_head_title'>
                                                 <button>
                                                     Last update date
                                                 </button>
                                             </div>
                                         </th>
-                                        <th className='table_head_one active' style={{ width: '200px' }}>
+                                        <th className='table_head_one ' style={{ width: '200px' }}>
                                             <div className='table_head_title'>
                                                 <button>
                                                     Request reference number
@@ -53,7 +53,7 @@ const AccountRequest = () => {
                                         </th>
 
 
-                                        <th className='table_head_one active' style={{ width: '120px' }}>
+                                        <th className='table_head_one ' style={{ width: '120px' }}>
                                             <div className='table_head_title'>
                                                 <button>
                                                     Action
