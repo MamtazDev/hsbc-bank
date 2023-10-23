@@ -1,8 +1,10 @@
 import React from 'react'
 import './AccountRequest.scss'
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { useFormData } from '../../context/FormDataContext';
 
 const AccountRequest = () => {
+    const { formData, setFormData } = useFormData();
     return (
         <div className="account_request">
             <div className="account_request_wrapper">
@@ -267,7 +269,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    USD
+                                                    {formData.currency}
                                                 </p>
                                             </span>
                                         </td>
@@ -275,7 +277,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    TCL head Store1
+                                           {formData.receivingAccountNickname}
                                                 </p>
                                             </span>
                                         </td>

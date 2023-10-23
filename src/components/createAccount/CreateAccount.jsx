@@ -6,6 +6,7 @@ import { Button, Modal } from 'react-bootstrap';
 import './Account.css';
 import { Link } from 'react-router-dom';
 import RequestSucess from '../requestSucess/RequestSucess';
+import { useFormData } from '../../context/FormDataContext';
 const options = [
     { value: 'ERU', label: 'ERU' },
     { value: 'HKD', label: 'HKD' },
@@ -28,7 +29,7 @@ const options3 = [
 ]
 
 const CreateAccount = () => {
-const [formData, setFormData] = useState({})
+const { formData, setFormData } = useFormData();
 const fileRef = useRef()
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
