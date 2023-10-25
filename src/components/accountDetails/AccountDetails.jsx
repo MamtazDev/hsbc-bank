@@ -95,7 +95,7 @@ const AccountDetails = ({ accountData }) => {
 
                                                 <td className='table_data'>
                                                     <span className='table_text'>
-                                                        <Link to={"/account"} className='text-decoration-none text-black m-0'>
+                                                        <Link to={`/account/${accountDataInfo.id}`} className='text-decoration-none text-black m-0'>
                                                             {accountDataInfo.accountAction}
                                                         </Link>
                                                     </span>

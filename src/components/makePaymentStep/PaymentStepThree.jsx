@@ -3,7 +3,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const PaymentStepThree = ({step,handlePrevious,paymentFormData,handleNext}) => {
+const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handleNext}) => {
+    console.log(step);
+    const handleAnotherPayment = ()=>{
+        setpaymentFormData({})
+        setStep(1)
+    }
     return (
         <div className='payment_three'>
             {
@@ -401,17 +406,12 @@ const PaymentStepThree = ({step,handlePrevious,paymentFormData,handleNext}) => {
 
             </div>
             <div className="button-container">
-            {step > 1 && (
-                <button onClick={handlePrevious} className="previous-button">
-                    Previous
+            {step === 3 && (
+                <button onClick={handleAnotherPayment} className="previous-button">
+                    Make another payment
                 </button>
             )}
-            {step < 3 && (
-                <button disabled={!paymentFormData.amountAUD || !paymentFormData.messageEmail || !paymentFormData.messageEmailAgain || !paymentFormData.reference || !paymentFormData.recipient || !paymentFormData.messageBenificiaryBank || !paymentFormData.messageBeneficiary} onClick={handleNext} 
-                className={`${(paymentFormData.amountAUD && paymentFormData.messageEmail && paymentFormData.messageEmailAgain && paymentFormData.reference && paymentFormData.recipient && paymentFormData.messageBenificiaryBank && paymentFormData.messageBeneficiary)&& "active"} next-button`} >
-                    Next
-                </button>
-            )}
+          
         </div>
 
         </div>

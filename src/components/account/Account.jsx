@@ -1,23 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdOutlineArrowBackIosNew, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Alert from '../alert/Alert';
 import './Account.scss';
 import { PiClipboardTextBold } from "react-icons/pi";
 import guideImage from '../../assets/guideImage.png'
 import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { GiSettingsKnobs } from "react-icons/gi";
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import AccountRequest from '../accountRequest/AccountRequest';
+import { recevingData } from '../../data/RecevingData';
 
 const Account = () => {
+  
+
+  const {id}  = useParams();
+  function filterDataById(recevingData, idToFilter) {
+    return recevingData.filter((entry) => entry.accountDetails.id === idToFilter);
+  }
+  
+  useEffect(()=>{
+    filterDataById(recevingData,id)
+  },[id])
+  console.log(filterDataById);
+  
   return (
     <div className='create_account main_content mt-3 '>
-      <div className='section_heading'>
+      <Link style={{cursor:"pointer",textDecoration:"none"}} to="/" className='section_heading'>
         <h1>
           <MdOutlineArrowBackIosNew /> | Band-Aid branch Store
         </h1>
-      </div>
+      </Link>
 
       <Alert />
 
@@ -26,6 +39,7 @@ const Account = () => {
           <div className="account_card_head">
             <p className='d-flex align-items-center m-0 gap-2'>
               <span>
+
                 Band-Aid branch Store | 13252222011039
               </span>
               <span>
@@ -129,7 +143,7 @@ const Account = () => {
         <div className="section_title_wrapper mt-5">
           <div className="section_title d-flex align-items-center justify-content-between">
             <h5 className='fs-5 fw-medium'>
-              ICBT Global Wallet Receiving Account list
+              HSBC Global Wallet Receiving Account list
             </h5>
           </div>
         </div>

@@ -258,7 +258,7 @@ const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleIn
     </div>
     }
     {
-      detailsStep === 1 && <PaymentStepTwo step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange} />
+      detailsStep === 1 && <PaymentStepTwo handleSelectFieldInputChange={handleSelectFieldInputChange} step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange} />
     }
     </>
    

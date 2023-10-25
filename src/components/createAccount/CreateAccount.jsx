@@ -64,7 +64,7 @@ setFormData({...formData, [key]:selectedOption})
         <div className='create_account main_content mt-3'>
             <div className='section_heading'>
                 <h1>
-                    <MdOutlineArrowBackIosNew /> | Create Account
+                   Create Account
                 </h1>
             </div>
 

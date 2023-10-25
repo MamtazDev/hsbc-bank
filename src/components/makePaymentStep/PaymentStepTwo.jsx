@@ -1,10 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { CiCalendarDate } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
+import Select from 'react-select'
 
-const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
+const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
+  const paymentCurrency = [
+    { value: 'AUD', label: 'AUD' },
+    { value: 'CAD', label: 'CAD' },
+    { value: 'CNY', label: 'CNY' },
+    { value: 'EUR', label: 'EUR' },
+    { value: 'GBP', label: 'GBP' },
+    { value: 'JPY', label: 'JPY' },
+    { value: 'KRW', label: 'KRW' },
+    { value: 'RUB', label: 'RUB' },
+    { value: 'SGD', label: 'SGD' },
+    { value: 'USD', label: 'USD' },
+    { value: 'HKD', label: 'HKD' },
+  ]
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const newDateTime = new Date();
+      setCurrentDate(newDateTime);
+    }, 1000);
+
+    // Clear the interval when the component unmounts to prevent memory leaks
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // Format the date as "DD/MM/YY"
+  const formattedDate = currentDate.toLocaleDateString('en-GB', { year: '2-digit', month: '2-digit', day: '2-digit' });
   return (
     <div className='paymentstep_two'>
       <div className="paymentstep_two_wrapper">
@@ -59,7 +87,7 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
 
               <div className="right">
                 <p className='fw-normal fs_14 text_clr_black_33'>
-                  USD {paymentFormData.amountAUD}
+                {paymentCurrency.from} {paymentFormData.amountAUD}
                 </p>
               </div>
             </div>
@@ -87,6 +115,22 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
             <h3 className='fw-bold fs-5 mb-3'>
               From
             </h3>
+            <div className="left mb-4 mb-lg-0" style={{ width: '400px' }}>
+              <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
+                Beneficiary bank location
+              </label>
+              <Select name='from' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'bankLocation')} id='bbl' options={paymentCurrency} placeholder={"United State"}
+                styles={{
+                  control: (baseStyles, state) => ({
+                    ...baseStyles,
+                    backgroundColor: 'white',
+                    borderRadius: '0px'
+                  }),
+                }}
+              />
+
+            
+            </div>
 
             <div className='from_dropdown p-2 d-flex  align-items-center justify-content-between'>
 
@@ -120,7 +164,7 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
 
             <div className="amount_info_input">
               <span>
-                AUD
+                {paymentCurrency.from}
               </span>
               <input onChange={handleInputChange} name='amountAUD' type="text" placeholder='0.00' />
             </div>
@@ -131,13 +175,15 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
               <h3 className='fw-bold fs-5 '>
                 Payment date
               </h3>
+            
             </div>
 
             <div className='from_dropdown p-2 d-flex  align-items-center justify-content-between cursor_disable'>
 
               <div className='from_left'>
                 <p className='m-0'>
-                  18/10/2023
+            
+                  {formattedDate}
                 </p>
               </div>
 
@@ -317,8 +363,8 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
                 </button>
             )}
             {step < 3 && (
-                <button disabled={!paymentFormData.amountAUD || !paymentFormData.messageEmail || !paymentFormData.messageEmailAgain || !paymentFormData.reference || !paymentFormData.recipient || !paymentFormData.messageBenificiaryBank || !paymentFormData.messageBeneficiary} onClick={handleNext} 
-                className={`${(paymentFormData.amountAUD && paymentFormData.messageEmail && paymentFormData.messageEmailAgain && paymentFormData.reference && paymentFormData.recipient && paymentFormData.messageBenificiaryBank && paymentFormData.messageBeneficiary)&& "active"} next-button`} >
+                <button disabled={!paymentFormData.amountAUD } onClick={handleNext} 
+                className={`${ paymentFormData.amountAUD && "active"} next-button`} >
                     Next
                 </button>
             )}

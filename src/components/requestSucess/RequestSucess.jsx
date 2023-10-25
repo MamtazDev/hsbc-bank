@@ -9,10 +9,10 @@ const RequestSucess = () => {
         <div className='create_account main_content mt-3'>
             <div className='section_heading'>
                 <h1>
-                    <MdOutlineArrowBackIosNew /> | Create additional ICBT Global Wallet Receiving Account
+                  Create additional ICBT Global Wallet Receiving Account
                 </h1>
             </div>
-            <Alert />
+            {/* <Alert /> */}
             <div className='sucess_message'>
                 <span>
                     <svg width='100px' className="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 gNhxuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-hidden="true" role="presentation" data-testid="StatusConfirmationLightIcon" data-id="Icon" fill="currentColor">
