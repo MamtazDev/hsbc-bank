@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { IoIosArrowDown } from "react-icons/io";
 
 
 const AccountDetails = ({ accountData }) => {
@@ -106,6 +107,13 @@ const AccountDetails = ({ accountData }) => {
                             </table>
                         </div>
                     </div>
+                
+
+                    <div className='text-end mt-3'>
+
+<button className='bg-transparent border-0'>Show all <IoIosArrowDown/></button>
+</div>
+
                 </div>
             </div>
         </div>
