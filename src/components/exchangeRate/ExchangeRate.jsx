@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ExchangeRate.scss'
 import Select from 'react-select'
 import { HiBellAlert } from "react-icons/hi2";
 import { BiTrendingUp } from "react-icons/bi";
 import { MdOutlineEdit } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { convertCurrency } from '../../utils/functionalities';
 
 const options = [
   { value: 'USD', label: 'USD' },
@@ -13,6 +14,31 @@ const options = [
 ]
 
 const ExchangeRate = () => {
+  const [exChangeCurrencyProperties, setExChangeCurrencyProperties]=useState({
+    baseCurrency: "USD",
+    baseCurrencyValue: "0",
+    currency:"AUD",
+    currencyValue:"0"
+  })
+
+  const handleBaseCurrencyChange=async(selectedOption)=>{
+    setExChangeCurrencyProperties({...exChangeCurrencyProperties,["baseCurrency"]:selectedOption.value})
+    const resData = await convertCurrency({...exChangeCurrencyProperties,["baseCurrency"]:selectedOption.value},Number(exChangeCurrencyProperties?.baseCurrencyValue))
+  }
+  const handleCurrencyChange = (selectedOption)=>{
+    setExChangeCurrencyProperties({...exChangeCurrencyProperties,["currency"]:selectedOption.value})
+  }
+
+  const handleInputChange = (e)=>{
+    setExChangeCurrencyProperties({...exChangeCurrencyProperties,[e.target.name]:e.target.value})
+  }
+
+  const handleCurrenceyConvert =async(e)=>{
+    const resData = await convertCurrency(exChangeCurrencyProperties, Number(e.target.value))
+setExChangeCurrencyProperties(resData)
+  }
+
+  console.log(exChangeCurrencyProperties,"gg")
   return (
     <div className='overview main_content mt-3'>
       <div className='section_heading'>
@@ -33,7 +59,7 @@ const ExchangeRate = () => {
       <div className="create_account_form border-bottom pb-3">
         <div className="create_account_box">
           <div className="create_account_input">
-            <Select options={options} placeholder={"USD"}
+            <Select options={options} placeholder={"USD"}  onChange={handleBaseCurrencyChange}
               styles={{
                 control: (baseStyles, state) => ({
                   ...baseStyles,
@@ -47,13 +73,13 @@ const ExchangeRate = () => {
             />
           </div>
           <div className="create_account_input">
-            <input className='ca_input' type="number" />
+            <input className='ca_input' value={exChangeCurrencyProperties?.baseCurrencyValue} type="number" name='baseCurrencyValue' onChange={handleInputChange} onBlur={handleCurrenceyConvert}/>
           </div>
         </div>
 
         <div className="create_account_box">
           <div className="create_account_input">
-            <Select options={options} placeholder={"USD"}
+            <Select options={options} placeholder={"AUD"}   onChange={handleCurrencyChange}
               styles={{
                 control: (baseStyles, state) => ({
                   ...baseStyles,
@@ -67,7 +93,7 @@ const ExchangeRate = () => {
             />
           </div>
           <div className="create_account_input">
-            <input className='ca_input' type="number" />
+            <input className='ca_input' type="number" value={exChangeCurrencyProperties?.currencyValue} name='currencyValue' onChange={handleInputChange} onBlur={handleCurrenceyConvert} />
           </div>
         </div>
 
