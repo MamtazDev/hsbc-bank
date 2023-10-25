@@ -56,7 +56,7 @@ const Sidebar = () => {
                                 </li>
                                 <li className="nav-item mb-2">
                                     <Link to={'/createAccount'} className="nav-link" onClick={toggleInventoryDropdown}>
-                                        <span className="nav-text text-nowrap">Create Receving Account</span>
+                                        <span className="nav-text text-nowrap">Create Receiving Account</span>
                                     </Link>
                                     {isInventoryDropdownOpen && (
                                         <ul className="dropdown-menu bg-transparent border-0 mt-0">
@@ -123,7 +123,7 @@ const Sidebar = () => {
                             </li>
                             <li className="nav-item mb-2">
                                 <Link to={'/createAccount'} className="nav-link" onClick={toggleInventoryDropdown}>
-                                    <span className="nav-text text-nowrap">Create Receving Account</span>
+                                    <span className="nav-text text-nowrap">Create Receiving Account</span>
                                 </Link>
                                 {isInventoryDropdownOpen && (
                                     <ul className="dropdown-menu bg-transparent border-0 mt-0">
