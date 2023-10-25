@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MdOutlineArrowBackIosNew, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Alert from '../alert/Alert';
 import './Account.scss';
@@ -12,23 +12,27 @@ import AccountRequest from '../accountRequest/AccountRequest';
 import { recevingData } from '../../data/RecevingData';
 
 const Account = () => {
-  
+  const { id } = useParams();
+  const [accountData, setAccountData] = useState(null);
 
-  const {id}  = useParams();
-  function filterDataById(recevingData, idToFilter) {
-    return recevingData.filter((entry) => entry.accountDetails.id === idToFilter);
-  }
-  
-  useEffect(()=>{
-    filterDataById(recevingData,id)
-  },[id])
-  console.log(filterDataById);
+  useEffect(() => {
+    const filteredData = recevingData.find((item) =>
+      item.accountData.some((account) => account.id.toString() === id)
+    );
+    
+    if (filteredData) {
+      const selectedAccount = filteredData.accountData.find(
+        (account) => account.id.toString() === id
+      );
+      setAccountData(selectedAccount);
+    }
+  }, [id]);
   
   return (
     <div className='create_account main_content mt-3 '>
       <Link style={{cursor:"pointer",textDecoration:"none"}} to="/" className='section_heading'>
         <h1>
-          <MdOutlineArrowBackIosNew /> | Band-Aid branch Store
+          <MdOutlineArrowBackIosNew /> | {accountData?.accountNickName}
         </h1>
       </Link>
 
@@ -40,7 +44,7 @@ const Account = () => {
             <p className='d-flex align-items-center m-0 gap-2'>
               <span>
 
-                Band-Aid branch Store | 13252222011039
+              {accountData?.accountNickName}| {accountData?.accountNumber}
               </span>
               <span>
                 <svg width={"15px"} className="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 iXVZXJ ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-labelledby="title-icon-716 " role="img" data-testid="NewModalIcon" data-id="Icon" fill="#fff"><title id="title-icon-716">copy13252222011039</title><path fill="none" d="M0 0h18v18H0z" opacity=".25"></path><path d="M11.8 15.8H2.2V6.2h2.6V5H1v12h12v-3.8h-1.2v2.6zm4-5H7.2V2.2H10V1H6v11h11V8h-1.2v2.8zm-4.34-3.412l4.34-4.34v3.808l1.2-1.2V1h-4.657l-1.199 1.199h3.809L10.612 6.54l.848.848z"></path></svg>

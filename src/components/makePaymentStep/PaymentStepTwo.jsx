@@ -6,6 +6,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import Select from 'react-select'
 
 const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
+  const [open,setOpen] = useState(false)
   const paymentCurrency = [
     { value: 'AUD', label: 'AUD' },
     { value: 'CAD', label: 'CAD' },
@@ -101,7 +102,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
 
               <div className="right">
                 <p className='fw-normal fs_14 text_clr_black_33'>
-                  17/10/2023
+                {formattedDate}
                 </p>
               </div>
             </div>
@@ -129,11 +130,10 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
                 }}
               />
 
-            
             </div>
+            <div className='parent'>
 
-            <div className='from_dropdown p-2 d-flex  align-items-center justify-content-between'>
-
+            <div onClick={()=>setOpen(!open)} className='from_dropdown p-2 d-flex  align-items-center justify-content-between'>
               <div className='from_left'>
                 <p className='m-0'>
                   USD CombiNations Savings
@@ -155,6 +155,34 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
               </div>
 
             </div>
+            <div className=' child'>
+
+            {
+              open && 
+              [1,2,3,4,5].map((data,index)=>  <div key={index} className="border-0  from_dropdown p-2 d-flex  align-items-center justify-content-between">
+              <div style={{width:"90%"}}>
+                <p className='m-0'>
+                  USD CombiNations Savings
+                </p>
+
+                <p className="d-flex align-items-center justify-content-between m-0">
+                  <span>
+                    001-7-600123
+                  </span>
+
+                  <span>
+                    USD 45,265.83
+                  </span>
+                </p>
+              </div>
+
+
+            </div>)
+            }
+            </div>
+            </div>
+
+          
           </div>
 
           <div className="amount_info paymentstep_two_border">
