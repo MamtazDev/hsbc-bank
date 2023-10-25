@@ -4,9 +4,10 @@ import { CiCalendarDate } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 import Select from 'react-select'
+import CustomOption from './CustomOption';
 
 const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
-  const [open,setOpen] = useState(false)
+  
   const paymentCurrency = [
     { value: 'AUD', label: 'AUD' },
     { value: 'CAD', label: 'CAD' },
@@ -20,6 +21,11 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
     { value: 'USD', label: 'USD' },
     { value: 'HKD', label: 'HKD' },
   ]
+  const handleChange = (selectedOption) => {
+    if (selectedOption) {
+      handleSelectFieldInputChange(selectedOption.value, 'from');
+    }
+  };
   const [currentDate, setCurrentDate] = useState(new Date());
 
   useEffect(() => {
@@ -120,67 +126,20 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Beneficiary bank location
               </label>
-              <Select name='from' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'from')} id='bbl' options={paymentCurrency} placeholder={"United State"}
+              <Select name='from' onChange={handleChange} id='bbl' options={paymentCurrency}  
+              components={{ Option: CustomOption }}  placeholder={"AUD"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
                     backgroundColor: 'white',
                     borderRadius: '0px'
                   }),
+                
                 }}
               />
 
             </div>
-            <div className='parent'>
-
-            <div onClick={()=>setOpen(!open)} className='from_dropdown p-2 d-flex  align-items-center justify-content-between'>
-              <div className='from_left'>
-                <p className='m-0'>
-                  USD CombiNations Savings
-                </p>
-
-                <p className="d-flex align-items-center justify-content-between m-0">
-                  <span>
-                    001-7-600123
-                  </span>
-
-                  <span>
-                    USD 45,265.83
-                  </span>
-                </p>
-              </div>
-
-              <div className="from_right">
-                <IoIosArrowDown />
-              </div>
-
-            </div>
-            <div className=' child'>
-
-            {
-              open && 
-              [1,2,3,4,5].map((data,index)=>  <div key={index} className="border-0  from_dropdown p-2 d-flex  align-items-center justify-content-between">
-              <div style={{width:"90%"}}>
-                <p className='m-0'>
-                  USD CombiNations Savings
-                </p>
-
-                <p className="d-flex align-items-center justify-content-between m-0">
-                  <span>
-                    001-7-600123
-                  </span>
-
-                  <span>
-                    USD 45,265.83
-                  </span>
-                </p>
-              </div>
-
-
-            </div>)
-            }
-            </div>
-            </div>
+            
 
           
           </div>
