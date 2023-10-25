@@ -9,7 +9,7 @@ const RequestSucess = () => {
         <div className='create_account main_content mt-3'>
             <div className='section_heading'>
                 <h1>
-                    <MdOutlineArrowBackIosNew /> | Create additional HSBC Global Wallet Receiving Account
+                    <MdOutlineArrowBackIosNew /> | Create additional ICBT Global Wallet Receiving Account
                 </h1>
             </div>
             <Alert />
@@ -27,7 +27,7 @@ const RequestSucess = () => {
                 </h3>
 
                 <p>
-                    We have received your request for additional HSBC Global Wallet Receiving Account(s) and will notify you the progress. <br /> HSBC Global Wallet Receiving Account Number will be available after approval.
+                    We have received your request for additional ICBT Global Wallet Receiving Account(s) and will notify you the progress. <br /> ICBT Global Wallet Receiving Account Number will be available after approval.
                 </p>
 
                 <div className="sucess_btn d-flex align-items-center justify-content-center gap-2">

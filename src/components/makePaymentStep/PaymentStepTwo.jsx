@@ -32,7 +32,7 @@ const PaymentStepTwo = ({step,handlePrevious,handleNext,handleInputChange,paymen
                 BeneficiaryAccountNumber
               </p>
               <p className='fw-normal fs_14 text_clr_black_33'>
-                HSBC BANK USA, N.A.
+                ICBT BANK USA, N.A.
               </p>
             </div>
 

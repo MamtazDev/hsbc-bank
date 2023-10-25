@@ -20,7 +20,7 @@ const PaymentStepThree = ({step,handlePrevious,paymentFormData,handleNext}) => {
 <div>
 
 <p>Your instruction has been received at 23/10/2023 12:03HKT. Please note the reference number below for your records.</p>
-<p>If this payment is made to a normal beneficiary, you will receive a notification via SMS. To get notified when your payee receives your payment via RTGS / Telegraphic Transfer, go to "My HSBC > Notification Centre" and subscribe </p>
+<p>If this payment is made to a normal beneficiary, you will receive a notification via SMS. To get notified when your payee receives your payment via RTGS / Telegraphic Transfer, go to "My ICBT > Notification Centre" and subscribe </p>
 <p>'Outgoing Payment Notifications'.</p>
 <p>[NEW] Primary Users can go to 'Payment Tracker' to submit cancellation request for payments executed via RTGS or Telegraphic Transfer. Payment cancellation involves handling charges and it may take a few weeks.</p>
 </div>
@@ -228,7 +228,7 @@ const PaymentStepThree = ({step,handlePrevious,paymentFormData,handleNext}) => {
                         <span>
                             <svg width={"20px"} className="Box-sc-y5ctq9-0 SvgIcon__SvgIconBox-sc-1vnlbss-0 fXlhuh ibHSOP SvgIcon" focusable="false" viewBox="0 0 18 18" aria-labelledby="title-icon-3049 " role="img" data-testid="StatusWarningLightIcon" data-id="Icon" fill="currentColor"><title id="title-icon-3049">StatusWarningLight</title><path fill="none" d="M0 0h18v18H0z"></path><circle cx="9" cy="9" r="9" fill="#fb3"></circle><circle cx="9" cy="13" r="1.2"></circle><path d="M8.1 3.8h1.8v6H8.1z"></path></svg>
                         </span>
-                        Other fees and charges may apply. For details, please refer to the Bank's Commercial Tariff section open in new window available on the HSBC Hong Kong Commercial Banking website. Please go to 'Transaction History' under 'Accounts' on or after the 'Payment Date' to check the transaction details.
+                        Other fees and charges may apply. For details, please refer to the Bank's Commercial Tariff section open in new window available on the ICBT Hong Kong Commercial Banking website. Please go to 'Transaction History' under 'Accounts' on or after the 'Payment Date' to check the transaction details.
                     </span>
                 </div>
 
@@ -384,13 +384,13 @@ const PaymentStepThree = ({step,handlePrevious,paymentFormData,handleNext}) => {
                     With effect from 1 January 2021, any outward telegraphic transfer into mainland China will require the input of a SWIFT BIC code as bank beneficiary identifier. RMB payments with CNAPS code input would be rejected.
                 </p>
                 <p>
-                    HSBC is unable to verify beneficiary account information, and accepts no responsibility for any loss or damage suffered by any person arising out of the rejection, return and/or delay. Please verify all the information of the above transaction details is accurate.
+                    ICBT is unable to verify beneficiary account information, and accepts no responsibility for any loss or damage suffered by any person arising out of the rejection, return and/or delay. Please verify all the information of the above transaction details is accurate.
                 </p>
                 <p>
-                    For HKD/CNY/EUR/USD payments to other local banks via RTGS / Telegraphic Transfer, HSBC charges would be deducted from the debit account of this payment while beneficiary should pay other local bank charges, if any.
+                    For HKD/CNY/EUR/USD payments to other local banks via RTGS / Telegraphic Transfer, ICBT charges would be deducted from the debit account of this payment while beneficiary should pay other local bank charges, if any.
                 </p>
                 <p>
-                    For HKD/CNY/EUR/USD payments to other local banks via RTGS / Telegraphic Transfer, HSBC charges would be deducted from the debit account of this payment while beneficiary should pay other local bank charges, if any.
+                    For HKD/CNY/EUR/USD payments to other local banks via RTGS / Telegraphic Transfer, ICBT charges would be deducted from the debit account of this payment while beneficiary should pay other local bank charges, if any.
                 </p>
                 <p>
                     <Link className="text-decoration-none me-2">

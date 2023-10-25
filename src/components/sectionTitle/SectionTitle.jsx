@@ -7,7 +7,7 @@ const SectionTitle = () => {
             <div className="section_title d-flex align-items-center justify-content-between">
 
                 <h5 className='fs-5 fw-medium'>
-                    HSBC Global Wallet Receiving Account list
+                    ICBT Global Wallet Receiving Account list
                 </h5>
 
                 <span className='fs_12'>

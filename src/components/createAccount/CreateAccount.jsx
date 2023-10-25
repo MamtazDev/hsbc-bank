@@ -70,7 +70,7 @@ setFormData({...formData, [key]:selectedOption})
 
             <div className="create_account_title mb-5">
                 <p className='fs-18 m-0' style={{ color: '#333', }}>
-                    HSBC Global Wallet Receiving Account details
+                    ICBT Global Wallet Receiving Account details
                 </p>
                 <h6>
                     Note: Please ensure that the seller's name and registered address satisfies the e-marketplace validation process.
@@ -191,7 +191,7 @@ setFormData({...formData, [key]:selectedOption})
                     Supporting document details
                 </p>
                 <h6>
-                    Please briefly explain the business relationship between the HSBC Global Wallet customer and the Seller. If the Seller is not the HSBC Global Wallet customer, please supplement with business documentary proof and Confirmation Letter signed by the Seller, and provide 1) Additional HSBC Global Wallet Receiving Accounts Service Schedule, 2) HSBC Global Wallet Terms and Conditions, and 3) General Terms and Conditions to the Seller.Supported file types: pdf, jpeg, jpg, png, doc(x), xls(x), csv, ppt(x).Per file size no larger than 10MB.
+                    Please briefly explain the business relationship between the ICBT Global Wallet customer and the Seller. If the Seller is not the ICBT Global Wallet customer, please supplement with business documentary proof and Confirmation Letter signed by the Seller, and provide 1) Additional ICBT Global Wallet Receiving Accounts Service Schedule, 2) ICBT Global Wallet Terms and Conditions, and 3) General Terms and Conditions to the Seller.Supported file types: pdf, jpeg, jpg, png, doc(x), xls(x), csv, ppt(x).Per file size no larger than 10MB.
                 </h6>
             </div>
 
@@ -292,7 +292,7 @@ setFormData({...formData, [key]:selectedOption})
 
                 <div className="create_account_title">
                     <p className='fs-18 m-0' style={{ color: '#333', }}>
-                        HSBC Global Wallet Receiving Account details
+                        ICBT Global Wallet Receiving Account details
                     </p>
                     <h6>
                         Note: Please ensure that the seller's name and registered address satisfies the e-marketplace validation process.
@@ -389,7 +389,7 @@ setFormData({...formData, [key]:selectedOption})
                         Supporting document details
                     </p>
                     <h6>
-                        Please briefly explain the business relationship between the HSBC Global Wallet customer and the Seller. If the Seller is not the HSBC Global Wallet customer, please supplement with business documentary proof and Confirmation Letter signed by the Seller, and provide 1) Additional HSBC Global Wallet Receiving Accounts Service Schedule, 2) HSBC Global Wallet Terms and Conditions, and 3) General Terms and Conditions to the Seller.Supported file types: pdf, jpeg, jpg, png, doc(x), xls(x), csv, ppt(x).Per file size no larger than 10MB.
+                        Please briefly explain the business relationship between the ICBT Global Wallet customer and the Seller. If the Seller is not the ICBT Global Wallet customer, please supplement with business documentary proof and Confirmation Letter signed by the Seller, and provide 1) Additional ICBT Global Wallet Receiving Accounts Service Schedule, 2) ICBT Global Wallet Terms and Conditions, and 3) General Terms and Conditions to the Seller.Supported file types: pdf, jpeg, jpg, png, doc(x), xls(x), csv, ppt(x).Per file size no larger than 10MB.
                     </h6>
                 </div>
 

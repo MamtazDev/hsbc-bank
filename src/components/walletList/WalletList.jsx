@@ -66,7 +66,7 @@ const WalletList = () => {
             <div className='section_title_wrapper d-flex flex-wrap mb-3 align-items-center justify-content-between'>
                 <div className="section_title">
                     <h5 className='text_clr_black_33 fs-5 fw-medium'>
-                        HSBC Global Wallet list
+                        ICBT Global Wallet list
                         <span className='fs_12 fw-normal ms-1'>
                             (As of {formattedDate} {timeString})
                           
