@@ -39,7 +39,7 @@ const AccountInfo = ({ accountInfo }) => {
                     <span>
                         {accountInfo.availableBalaceType}
                     </span>
-                    {accountInfo.availableBalaceType}
+                    {accountInfo.availableBalance}
                 </div>
             </div>
             <div className="account_date">
