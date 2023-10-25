@@ -7,10 +7,10 @@ import FilterBtn from '../filterBtn/FilterBtn';
 import AccountRequest from '../accountRequest/AccountRequest';
 import SectionTitle from '../sectionTitle/SectionTitle';
 
-const RecevingAccountList = () => {
+const RecevingAccountList = ({timeString,formattedDate}) => {
     return (
         <div className='receving_account_list'>
-            <SectionTitle />
+            <SectionTitle formattedDate={formattedDate} timeString={timeString}/>
             <FilterBtn />
             {
                 recevingData.map((accountDataInfo, index) => (

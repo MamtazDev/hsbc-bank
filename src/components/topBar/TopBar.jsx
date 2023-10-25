@@ -1,6 +1,7 @@
 import React from 'react'
 import './TopBar.scss'
 import icbtLogo from '../../assets/logo-white-text.png'
+import { IoIosArrowDown } from "react-icons/io";
 
 const TopBar = () => {
     return (
@@ -22,7 +23,9 @@ const TopBar = () => {
             </div> */}
             <div className='profile'>
               
-<p>Sky Fashion Limited</p>
+<p className='mb-0'>Sky Fashion Limited</p>
+
+<IoIosArrowDown/>
             </div>
         </div>
 

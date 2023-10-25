@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineReload } from "react-icons/ai";
 
-const SectionTitle = () => {
+const SectionTitle = ({timeString,formattedDate}) => {
     return (
         <div className="section_title_wrapper">
             <div className="section_title d-flex align-items-center justify-content-between">
@@ -11,7 +11,7 @@ const SectionTitle = () => {
                 </h5>
 
                 <span className='fs_12'>
-                    Last updated at 22 Jun 2022 12:13
+                    Last updated at {formattedDate} {timeString}
                     <button className='reload_btn ms-2'>
                         < AiOutlineReload />
                     </button>

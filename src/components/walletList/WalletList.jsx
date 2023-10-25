@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './WalletList.scss'
 import { AiFillDollarCircle, AiFillEuroCircle } from "react-icons/ai";
 import { PiCurrencyGbpFill } from "react-icons/pi";
@@ -8,58 +8,36 @@ const walletInfo = [
     {
         walletName: 'USD Account',
         availableBalance: '326,678.00',
-        walletTypeIcon: <AiFillDollarCircle />
+        walletTypeIcon: <AiFillDollarCircle />,
+        balanceType:"USD"
+
     },
 
     {
         walletName: 'GBP Account',
-        availableBalance: '326,678.00',
-        walletTypeIcon: <PiCurrencyGbpFill />
+        availableBalance: '230,721.00 ',
+        walletTypeIcon: <PiCurrencyGbpFill />,
+        balanceType:"GBP"
     },
 
     {
         walletName: 'EUR Account',
-        availableBalance: '326,678.00',
-        walletTypeIcon: <AiFillEuroCircle />
+        availableBalance: '11,057.00 ',
+        walletTypeIcon: <AiFillEuroCircle />,
+        balanceType:"EUR"
     },
 
     {
         walletName: 'HKD Account',
-        availableBalance: '326,678.00',
-        walletTypeIcon: <AiFillDollarCircle />
+        availableBalance: '167,990.00',
+        walletTypeIcon: <AiFillDollarCircle />,
+        balanceType:"HKD"
     }
 ]
 
-const WalletList = () => {
-    // const [clock, setClock] = useState();
-
-    // useEffect(() => {
-    //   setInterval(() => {
-    //     const date = new Date();
-    //     setClock(date.toLocaleTimeString());
-    //   }, 1000);
-    // }, []);
-    const [dateTime, setDateTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const newDateTime = new Date();
-      setDateTime(newDateTime);
-    }, 1000);
-
-    // Clear the interval when the component unmounts to prevent memory leaks
-    return () => clearInterval(intervalId);
-  }, []);
-
-  // Format the date as "dd MMM, yyyy"
-  const formattedDate = dateTime.toLocaleDateString(undefined, {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-  });
-
-  const timeString = dateTime.toLocaleTimeString();
-
+const WalletList = ({formattedDate,timeString}) => {
+  
+  
 
     return (
         <div className='walletlist'>
@@ -106,7 +84,7 @@ const WalletList = () => {
 
                                         <p className='m-0 text_clr_black_33 fs-5'>
                                             <span className='fs_14 me-1'>
-                                                USD
+                                                {walletData.balanceType}
                                             </span>
                                             {walletData.availableBalance}
                                         </p>
