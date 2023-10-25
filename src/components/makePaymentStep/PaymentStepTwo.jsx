@@ -87,7 +87,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
 
               <div className="right">
                 <p className='fw-normal fs_14 text_clr_black_33'>
-                {paymentCurrency.from} {paymentFormData.amountAUD}
+                {paymentFormData.from} {paymentFormData.amountAUD}
                 </p>
               </div>
             </div>
@@ -119,7 +119,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Beneficiary bank location
               </label>
-              <Select name='from' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'bankLocation')} id='bbl' options={paymentCurrency} placeholder={"United State"}
+              <Select name='from' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'from')} id='bbl' options={paymentCurrency} placeholder={"United State"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -164,7 +164,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
 
             <div className="amount_info_input">
               <span>
-                {paymentCurrency.from}
+                {paymentFormData?.from}
               </span>
               <input onChange={handleInputChange} name='amountAUD' type="text" placeholder='0.00' />
             </div>

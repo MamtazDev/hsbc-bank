@@ -32,7 +32,7 @@ const Account = () => {
         </h1>
       </Link>
 
-      <Alert />
+      {/* <Alert /> */}
 
       <div className="account_card">
         <div className="account_card_left">
@@ -121,7 +121,7 @@ const Account = () => {
 
         </div>
 
-        <div className="account_card_right">
+        {/* <div className="account_card_right">
           <div className="card">
             <img src={guideImage} className="card-img-top" alt="image" />
             <div className="card-body">
@@ -136,7 +136,7 @@ const Account = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div>
