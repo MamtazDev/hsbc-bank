@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import RequestSucess from '../requestSucess/RequestSucess';
 import { useFormData } from '../../context/FormDataContext';
 const options = [
-    { value: 'ERU', label: 'ERU' },
+    { value: 'EUR', label: 'EUR' },
     { value: 'HKD', label: 'HKD' },
     { value: 'USD', label: 'USD' },
     { value: 'GBP', label: 'GBP' },
@@ -450,7 +450,7 @@ setFormData({...formData, [key]:selectedOption})
 
                 <div className="back_submit_btn d-flex align-items-center justify-content-end mt-4">
                     <Link to={'/requestSucess'}>
-                        <Button className='px-3' variant="primary">
+                        <Button className='px-3' >
                             Submit
                         </Button>
                     </Link>

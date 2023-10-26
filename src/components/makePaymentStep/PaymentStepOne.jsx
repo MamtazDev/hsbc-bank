@@ -10,10 +10,9 @@ const options = [
   { value: 'GER', label: 'Germany' },
   { value: 'JP', label: 'Japan' },
   { value: 'KR', label: 'Korea,Republic Of' },
-  { value: 'RF', label: 'Russian Federation' },
   { value: 'SG', label: 'Singapore' },
   { value: 'UK', label: 'United Kingdom' },
-  { value: 'USD', label: 'United State' },
+  { value: 'USD', label: 'United States' },
   { value: 'HK', label: 'Hong Kong' },
 ]
 const paymentCurrency = [
@@ -24,7 +23,6 @@ const paymentCurrency = [
   { value: 'GBP', label: 'GBP' },
   { value: 'JPY', label: 'JPY' },
   { value: 'KRW', label: 'KRW' },
-  { value: 'RUB', label: 'RUB' },
   { value: 'SGD', label: 'SGD' },
   { value: 'USD', label: 'USD' },
   { value: 'HKD', label: 'HKD' },
@@ -40,9 +38,7 @@ const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleIn
       <div className='section_heading'>
         <h1 className='fw-medium'>
           Pay new individual or company
-          <span className='fs_14 ps-2'>
-            (Demo version)
-          </span>
+        
         </h1>
       </div>
 

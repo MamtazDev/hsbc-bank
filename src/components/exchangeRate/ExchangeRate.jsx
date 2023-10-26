@@ -43,7 +43,7 @@ setExChangeCurrencyProperties(resData)
     <div className='overview main_content mt-3'>
       <div className='section_heading'>
         <h1>
-          Overview
+        Exchange Rate
         </h1>
       </div>
 

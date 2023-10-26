@@ -66,206 +66,7 @@ const AccountRequest = () => {
                                 </thead>
 
                                 <tbody className='table_body'>
-
-                                    <tr className='table_row'>
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    USD
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    TCL head Store1
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    Pending
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    17 Jun 2022
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    MBVAC20220617171943143041
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    View detail
-                                                </p>
-                                            </span>
-                                        </td>
-                                    </tr>
-
-                                    <tr className='table_row'>
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    USD
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    TCL head Store1
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    Pending
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    17 Jun 2022
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    MBVAC20220617171943143041
-                                                </p>
-                                            </span>
-                                        </td>
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    View detail
-                                                </p>
-                                            </span>
-                                        </td>
-                                    </tr>
-
-                                    <tr className='table_row'>
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    USD
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    TCL head Store1
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    Pending
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    17 Jun 2022
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    MBVAC20220617171943143041
-                                                </p>
-                                            </span>
-                                        </td>
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    View detail
-                                                </p>
-                                            </span>
-                                        </td>
-                                    </tr>
-
-                                    <tr className='table_row'>
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    USD
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    TCL head Store1
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    Pending
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    17 Jun 2022
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    MBVAC20220617171943143041
-                                                </p>
-                                            </span>
-                                        </td>
-
-                                        <td className='table_data'>
-                                            <span className='table_text'>
-                                                <p className='m-0'>
-                                                    View detail
-                                                </p>
-                                            </span>
-                                        </td>
-                                    </tr>
-
-                                    <tr className='table_row'>
+                                <tr className='table_row'>
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
@@ -313,6 +114,206 @@ const AccountRequest = () => {
                                             </span>
                                         </td>
                                     </tr>
+
+                                    <tr className='table_row'>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    USD
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    TCL head Store1
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    Pending
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    17 Jun 2022
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    MBVAC20220617171943143041
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    View detail
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr className='table_row'>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    USD
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    TCL head Store1
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    Pending
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    17 Jun 2022
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    MBVAC20220617171943143041
+                                                </p>
+                                            </span>
+                                        </td>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    View detail
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr className='table_row'>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    USD
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    TCL head Store1
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    Pending
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    17 Jun 2022
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    MBVAC20220617171943143041
+                                                </p>
+                                            </span>
+                                        </td>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    View detail
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr className='table_row'>
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    USD
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    TCL head Store1
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    Pending
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    17 Jun 2022
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    MBVAC20220617171943143041
+                                                </p>
+                                            </span>
+                                        </td>
+
+                                        <td className='table_data'>
+                                            <span className='table_text'>
+                                                <p className='m-0'>
+                                                    View detail
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                               
 
                                 </tbody>
                             </table>

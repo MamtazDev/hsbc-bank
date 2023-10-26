@@ -63,11 +63,9 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
               <p className='fw-normal fs_14 text_clr_black_33'>
                 {paymentFormData.beneficiaryAddressLine3}
               </p>
+           
               <p className='fw-normal fs_14 text_clr_black_33'>
-                BeneficiaryAccountNumber
-              </p>
-              <p className='fw-normal fs_14 text_clr_black_33'>
-                ICBT BANK USA, N.A.
+              {paymentFormData.bankName}
               </p>
             </div>
 
@@ -123,9 +121,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
               From
             </h3>
             <div className="left mb-4 mb-lg-0" style={{ width: '400px' }}>
-              <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
-                Beneficiary bank location
-              </label>
+             
               <Select name='from' onChange={handleChange} id='bbl' options={paymentCurrency}  
               components={{ Option: CustomOption }}  placeholder={"AUD"}
                 styles={{
