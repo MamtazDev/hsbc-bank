@@ -58,9 +58,9 @@ export const recevingData = [
             accountNumber: 'WA5456789000USD',
             accountType: 'GBP Account',
             currentLedgerType: 'GBP',
-            currentLedgerAmmount: '31,526,633.00',
+            currentLedgerAmmount: '230,721.00',
             availableBalaceType:'GBP',
-            availableBalance: '31,526,633.00',
+            availableBalance: '230,721.00',
         },
         accountData: [
             {
@@ -111,9 +111,9 @@ export const recevingData = [
             accountNumber: 'WA5456789000USD',
             accountType: 'EUR Account',
             currentLedgerType: 'EUR',
-            currentLedgerAmmount: '3,112,526,633.00',
+            currentLedgerAmmount: '11,057.00',
             availableBalaceType:'EUR',
-            availableBalance: '3,112,526,633.00',
+            availableBalance: '11,057.00',
         },
         accountData: [
             {

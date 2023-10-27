@@ -72,7 +72,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                                 Payment currency
                             </p>
                             <span className='fw-bold '>
-                                {paymentFormData.currency}
+                                {paymentFormData.from}
                             </span>
                         </div>
 
@@ -175,7 +175,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                 </div>
             </div>
 
-            <div className="pay_to paymentstep_two_border pt-5">
+            {/* <div className="pay_to paymentstep_two_border pt-5">
                 <h3 style={{ fontSize: '20px' }} className='mb-3'>
                     Amount
                 </h3>
@@ -238,7 +238,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                 </div>
 
 
-            </div>
+            </div> */}
 
             <div className="pay_to paymentstep_two_border pt-5">
                 <h3 style={{fontSize: '20px'}} className='mb-3'>

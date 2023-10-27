@@ -9,15 +9,15 @@ import CustomOption from './CustomOption';
 const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
   const [show,setShow] = useState(false)
   const paymentCurrency = [
-    { value: 'AUD', label: 'AUD' },
-    { value: 'CAD', label: 'CAD' },
-    { value: 'CNY', label: 'CNY' },
+    // { value: 'AUD', label: 'AUD' },
+    // { value: 'CAD', label: 'CAD' },
+    // { value: 'CNY', label: 'CNY' },
     { value: 'EUR', label: 'EUR' },
     { value: 'GBP', label: 'GBP' },
-    { value: 'JPY', label: 'JPY' },
-    { value: 'KRW', label: 'KRW' },
-    { value: 'RUB', label: 'RUB' },
-    { value: 'SGD', label: 'SGD' },
+    // { value: 'JPY', label: 'JPY' },
+    // { value: 'KRW', label: 'KRW' },
+    // { value: 'RUB', label: 'RUB' },
+    // { value: 'SGD', label: 'SGD' },
     { value: 'USD', label: 'USD' },
     { value: 'HKD', label: 'HKD' },
   ]
@@ -28,7 +28,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
   };
 
   const [dropDownState, setDropDownState] =useState({
-    title:"USD CombiNations Savings",
+    title:"USD Current account",
     date:"001-7-600123",
     amount:" USD 1200"
   })
@@ -271,7 +271,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
 
                 <div className='from_left'>
                   <p className='m-0'>
-                    {paymentFormData.from} CombiNations Savings
+                    {paymentFormData.from} Current account
                   </p>
 
                   <p className="d-flex align-items-center justify-content-between m-0">

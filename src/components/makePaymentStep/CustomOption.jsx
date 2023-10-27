@@ -55,7 +55,7 @@ const CustomOption = ({data,setShow,show, paymentFormData, setpaymentFormData,  
         <div onClick={changeHandler } className='cursor-pointer w-100 p-2 d-flex  align-items-center justify-content-between border border-bottom'>
         <div className='w-100'>
           <p className='m-0'>
-            {data.label} CombiNations Savings
+            {data.label} Current account
           </p>
 
           <p className="d-flex align-items-center justify-content-between m-0">

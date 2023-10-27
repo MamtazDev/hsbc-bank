@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 const walletInfo = [
     {
         walletName: 'USD Account',
-        availableBalance: '326,678.00',
+        availableBalance: '326,678.00 ',
         walletTypeIcon: <AiFillDollarCircle />,
         balanceType:"USD"
 
@@ -15,14 +15,14 @@ const walletInfo = [
 
     {
         walletName: 'GBP Account',
-        availableBalance: '31,526,633.00',
+        availableBalance: ' 230,721.00',
         walletTypeIcon: <PiCurrencyGbpFill />,
         balanceType:"GBP"
     },
 
     {
         walletName: 'EUR Account',
-        availableBalance: '3,112,526,633.00',
+        availableBalance: '11,057.00',
         walletTypeIcon: <AiFillEuroCircle />,
         balanceType:"EUR"
     },

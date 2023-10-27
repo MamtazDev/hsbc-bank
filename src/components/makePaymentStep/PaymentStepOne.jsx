@@ -74,7 +74,7 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Beneficiary bank location
               </label>
-              <Select name='bankLocation' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'bankLocation')} id='bbl' options={options} placeholder={"United State"}
+              <Select name='bankLocation' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'bankLocation')} id='bbl' options={options} placeholder={"United States"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -88,7 +88,7 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
               <label htmlFor='bbl' className='fs_14 text_clr_black_33'>
                 Payment currency
               </label>
-              <Select name='currency' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'currency')} id='bbl' options={paymentCurrency} placeholder={"AUD"}
+              <Select name='currency' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'currency')} id='bbl' options={paymentCurrency} placeholder={"USD"}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
