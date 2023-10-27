@@ -163,7 +163,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                     <div className="left">
                         <div className="section_item mb-3">
                             <p className='fs-12 m-0'>
-                                AUD Current Account
+                                {paymentFormData.from} Current Account
                             </p>
                             <span className=''>
                                 001-060730-203
@@ -175,12 +175,12 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                 </div>
             </div>
 
-            {/* <div className="pay_to paymentstep_two_border pt-5">
+            <div className="pay_to paymentstep_two_border pt-5">
                 <h3 style={{ fontSize: '20px' }} className='mb-3'>
-                    Amount
+                    Amount: {paymentFormData.amountAUD}
                 </h3>
 
-                <div className="section_wrapper">
+                {/* <div className="section_wrapper">
                     <div className="left">
                         <div className="section_item mb-3">
                             <p className='fs-12 m-0'>
@@ -210,9 +210,9 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                             </span>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="section_item mb-3">
+                {/* <div className="section_item mb-3">
                     <p className='fs-12 m-0'>
                         Exchange rate
                     </p>
@@ -223,9 +223,9 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                         </span>
                         (indicative only)
                     </span>
-                </div>
+                </div> */}
 
-                <div className="section_item mb-3">
+                {/* <div className="section_item mb-3">
                     <p className='fs-12 m-0'>
                         Rate last update at: 27/12/2021 18:00HKT
                     </p>
@@ -235,10 +235,10 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                         </span>
                         Other fees and charges may apply. For details, please refer to the Bank's Commercial Tariff section open in new window available on the ICBT Hong Kong Commercial Banking website. Please go to 'Transaction History' under 'Accounts' on or after the 'Payment Date' to check the transaction details.
                     </span>
-                </div>
+                </div> */}
 
 
-            </div> */}
+            </div>
 
             <div className="pay_to paymentstep_two_border pt-5">
                 <h3 style={{fontSize: '20px'}} className='mb-3'>

@@ -43,11 +43,12 @@ const CustomOption = ({data,setShow,show, paymentFormData, setpaymentFormData,  
   const changeHandler = () => {
     setShow(!show);
 
-    setpaymentFormData({ ...paymentFormData, from:`${data.label}` })
+    setpaymentFormData({ ...paymentFormData, from:`${data.label}`, accountNumber:`${data.an}`,
+    amount:`${data.amount}` })
     setDropDownState({
     title:  `${data.label}`,
-    date:"001-7-600123",
-    amount:" USD 1200"
+    accountNumber:`${data.an}`,
+    amount:`${data.amount}`,
   })
   }
    
@@ -60,11 +61,11 @@ const CustomOption = ({data,setShow,show, paymentFormData, setpaymentFormData,  
 
           <p className="d-flex align-items-center justify-content-between m-0">
             <span>
-              001-7-600123
+            {data.an}
             </span>
 
             <span>
-              {data.label} 45,265.83
+              {data.label} {data.amount}
             </span>
           </p>
         </div>

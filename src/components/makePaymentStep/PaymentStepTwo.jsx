@@ -9,17 +9,10 @@ import CustomOption from './CustomOption';
 const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
   const [show,setShow] = useState(false)
   const paymentCurrency = [
-    // { value: 'AUD', label: 'AUD' },
-    // { value: 'CAD', label: 'CAD' },
-    // { value: 'CNY', label: 'CNY' },
-    { value: 'EUR', label: 'EUR' },
-    { value: 'GBP', label: 'GBP' },
-    // { value: 'JPY', label: 'JPY' },
-    // { value: 'KRW', label: 'KRW' },
-    // { value: 'RUB', label: 'RUB' },
-    // { value: 'SGD', label: 'SGD' },
-    { value: 'USD', label: 'USD' },
-    { value: 'HKD', label: 'HKD' },
+    { value: 'EUR', label: 'EUR' ,an:"001-7-600123",amount:"11,057.00"},
+    { value: 'GBP', label: 'GBP' ,an:"001-7-600124",amount:"230,721.00"},
+    { value: 'USD', label: 'USD',an:"001-7-600125",amount:"326,678.00" },
+    { value: 'HKD', label: 'HKD',an:"001-7-600126" ,amount:"167,990.00"},
   ]
   const handleChange = (selectedOption) => {
     if (selectedOption) {
@@ -85,7 +78,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
 
               <div className="right">
                 <p className='fw-normal fs_14 text_clr_black_33'>
-                  001-7-600123
+                  001-7-600120
                 </p>
               </div>
             </div>
@@ -154,7 +147,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
 
   <p className="d-flex align-items-center justify-content-between m-0">
     <span>
-     {dropDownState.date}
+     {dropDownState.accountNumber}
     </span>
 
     <span>
@@ -276,11 +269,11 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
 
                   <p className="d-flex align-items-center justify-content-between m-0">
                     <span>
-                      001-7-600123
+                      {paymentFormData.accountNumber}
                     </span>
 
                     <span>
-                    {paymentFormData.from} 45,265.83
+                    {paymentFormData.from}{paymentFormData.amount}
                     </span>
                   </p>
                 </div>
