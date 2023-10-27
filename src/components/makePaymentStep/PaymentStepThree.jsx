@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handleNext}) => {
+const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handleNext,handlePrevious}) => {
     console.log(step);
     const handleAnotherPayment = ()=>{
         setpaymentFormData({})
@@ -72,7 +72,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                                 Payment currency
                             </p>
                             <span className='fw-bold '>
-                                USD
+                                {paymentFormData.currency}
                             </span>
                         </div>
 
@@ -126,7 +126,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                                 Beneficiary bank code / SWIFT address
                             </p>
                             <span className='fw-bold '>
-                                021001088
+                                {paymentFormData.bankName}
                             </span>
                         </div>
 
@@ -411,6 +411,19 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                     Make another payment
                 </button>
             )}
+             
+            {step > 1 && (
+                <button onClick={handlePrevious} className="previous-button">
+                    Previous
+                </button>
+            )}
+            {step < 3 && (
+                <button disabled={!paymentFormData.amountAUD } onClick={handleNext} 
+                className={`${ paymentFormData.amountAUD && "active"} next-button`} >
+                    Next
+                </button>
+            )}
+       
           
         </div>
 

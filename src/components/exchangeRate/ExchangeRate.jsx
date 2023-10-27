@@ -10,7 +10,8 @@ import { convertCurrency, getAllCurrencyRate } from '../../utils/functionalities
 const options = [
   { value: 'USD', label: 'USD' },
   { value: 'GBP', label: 'GBP' },
-  { value: 'AUD', label: 'AUD' }
+  { value: 'EUR', label: 'EUR' },
+  { value: 'HKD', label: 'HKD' }
 ]
 
 const ExchangeRate = () => {
