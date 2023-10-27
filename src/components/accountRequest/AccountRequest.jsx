@@ -3,7 +3,7 @@ import './AccountRequest.scss'
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useFormData } from '../../context/FormDataContext';
 
-const AccountRequest = () => {
+const AccountRequest = ({formattedDate}) => {
     const { formData, setFormData } = useFormData();
     return (
         <div className="account_request">
@@ -94,7 +94,7 @@ const AccountRequest = () => {
                                         <td className='table_data'>
                                             <span className='table_text'>
                                                 <p className='m-0'>
-                                                    17 Jun 2022
+                                                   {formattedDate}
                                                 </p>
                                             </span>
                                         </td>

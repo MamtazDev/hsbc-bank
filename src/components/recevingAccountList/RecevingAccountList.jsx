@@ -49,7 +49,7 @@ const RecevingAccountList = ({timeString,formattedDate}) => {
                     </div>
                 </div>
             </div>
-            <AccountRequest />
+            <AccountRequest formattedDate={formattedDate} />
         </div>
     )
 }

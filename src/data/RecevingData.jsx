@@ -162,137 +162,190 @@ export const recevingData = [
         accountDetails:
         {
             accountNumber: 'WA5456789000USD',
-            accountType: 'AUD Account',
-            currentLedgerType: 'AUD',
-            currentLedgerAmmount: '3,622,678.00',
-            availableBalaceType:'AUD',
-            availableBalance: '3,622,678.00',
+            accountType: 'HKD Account',
+            currentLedgerType: 'HKD',
+            currentLedgerAmmount: '167,990.00',
+            availableBalaceType:'HKD',
+            availableBalance: '167,990.00',
         },
         accountData: [
             {
                 id:16,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011039',
-                currency: 'AUD',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
             {
-                id:17,
+                id:12,
                 accountNickName: 'Lets Shop',
                 accountNumber: '13252222011049',
-                currency: 'AUD',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
             {
-                id:18,
+                id:13,
                 accountNickName: 'Baby World',
                 accountNumber: '13252222031050',
-                currency: 'AUD',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
             {
-                id:19,
+                id:14,
                 accountNickName: 'Mega Trands',
                 accountNumber: '13252222041051',
-                currency: 'AUD',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
             {
-                id:20,
+                id:15,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011052',
-                currency: 'AUD',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
         ]
     },
-    {
-        accountDetails:
-        {
-            accountNumber: 'WA5456789000USD',
-            accountType: 'CAD Account',
-            currentLedgerType: 'CAD',
-            currentLedgerAmmount: '3,622,678.00',
-            availableBalaceType:'CAD',
-            availableBalance: '3,622,678.00',
-        },
-        accountData: [
-            {
-                id:21,
-                accountNickName: 'Simple Fashion',
-                accountNumber: '13252222011039',
-                currency: 'CAD',
-                accountStatus: 'Active',
-                accountAction: 'View detail'
-            },
-            {
-                id:22,
-                accountNickName: 'Lets Shop',
-                accountNumber: '13252222011049',
-                currency: 'CAD',
-                accountStatus: 'Active',
-                accountAction: 'View detail'
-            },
-            {
-                id:23,
-                accountNickName: 'Baby World',
-                accountNumber: '13252222031050',
-                currency: 'CAD',
-                accountStatus: 'Active',
-                accountAction: 'View detail'
-            },
-            {
-                id:24,
-                accountNickName: 'Mega Trands',
-                accountNumber: '13252222041051',
-                currency: 'CAD',
-                accountStatus: 'Active',
-                accountAction: 'View detail'
-            },
-            {
-                id:25,
-                accountNickName: 'Simple Fashion',
-                accountNumber: '13252222011052',
-                currency: 'CAD',
-                accountStatus: 'Active',
-                accountAction: 'View detail'
-            },
-        ]
-    },
-    {
-        accountDetails:
-        {
-            accountNumber: 'WA5456789000USD',
-            accountType: 'SGD Account',
-            currentLedgerType: 'SGD',
-            currentLedgerAmmount: '33,622,678.00',
-            availableBalaceType:'SGD',
-            availableBalance: '33,622,678.00',
-        },
-        accountData: [
-            {
-                id:26,
-                accountNickName: 'Simple Fashion',
-                accountNumber: '13252222011039',
-                currency: 'SGD',
-                accountStatus: 'Active',
-                accountAction: 'View detail'
-            },
-            {
-                id:27,
-                accountNickName: 'Lets Shop',
-                accountNumber: '13252222011049',
-                currency: 'SGD',
-                accountStatus: 'Active',
-                accountAction: 'View detail'
-            },
+    // {
+    //     accountDetails:
+    //     {
+    //         accountNumber: 'WA5456789000USD',
+    //         accountType: 'AUD Account',
+    //         currentLedgerType: 'AUD',
+    //         currentLedgerAmmount: '3,622,678.00',
+    //         availableBalaceType:'AUD',
+    //         availableBalance: '3,622,678.00',
+    //     },
+    //     accountData: [
+    //         {
+    //             id:16,
+    //             accountNickName: 'Simple Fashion',
+    //             accountNumber: '13252222011039',
+    //             currency: 'AUD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:17,
+    //             accountNickName: 'Lets Shop',
+    //             accountNumber: '13252222011049',
+    //             currency: 'AUD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:18,
+    //             accountNickName: 'Baby World',
+    //             accountNumber: '13252222031050',
+    //             currency: 'AUD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:19,
+    //             accountNickName: 'Mega Trands',
+    //             accountNumber: '13252222041051',
+    //             currency: 'AUD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:20,
+    //             accountNickName: 'Simple Fashion',
+    //             accountNumber: '13252222011052',
+    //             currency: 'AUD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //     ]
+    // },
+    // {
+    //     accountDetails:
+    //     {
+    //         accountNumber: 'WA5456789000USD',
+    //         accountType: 'CAD Account',
+    //         currentLedgerType: 'CAD',
+    //         currentLedgerAmmount: '3,622,678.00',
+    //         availableBalaceType:'CAD',
+    //         availableBalance: '3,622,678.00',
+    //     },
+    //     accountData: [
+    //         {
+    //             id:21,
+    //             accountNickName: 'Simple Fashion',
+    //             accountNumber: '13252222011039',
+    //             currency: 'CAD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:22,
+    //             accountNickName: 'Lets Shop',
+    //             accountNumber: '13252222011049',
+    //             currency: 'CAD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:23,
+    //             accountNickName: 'Baby World',
+    //             accountNumber: '13252222031050',
+    //             currency: 'CAD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:24,
+    //             accountNickName: 'Mega Trands',
+    //             accountNumber: '13252222041051',
+    //             currency: 'CAD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:25,
+    //             accountNickName: 'Simple Fashion',
+    //             accountNumber: '13252222011052',
+    //             currency: 'CAD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //     ]
+    // },
+    // {
+    //     accountDetails:
+    //     {
+    //         accountNumber: 'WA5456789000USD',
+    //         accountType: 'SGD Account',
+    //         currentLedgerType: 'SGD',
+    //         currentLedgerAmmount: '33,622,678.00',
+    //         availableBalaceType:'SGD',
+    //         availableBalance: '33,622,678.00',
+    //     },
+    //     accountData: [
+    //         {
+    //             id:26,
+    //             accountNickName: 'Simple Fashion',
+    //             accountNumber: '13252222011039',
+    //             currency: 'SGD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
+    //         {
+    //             id:27,
+    //             accountNickName: 'Lets Shop',
+    //             accountNumber: '13252222011049',
+    //             currency: 'SGD',
+    //             accountStatus: 'Active',
+    //             accountAction: 'View detail'
+    //         },
            
-        ]
-    },
+    //     ]
+    // },
 
 ]

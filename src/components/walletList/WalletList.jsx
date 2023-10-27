@@ -15,14 +15,14 @@ const walletInfo = [
 
     {
         walletName: 'GBP Account',
-        availableBalance: '230,721.00 ',
+        availableBalance: '31,526,633.00',
         walletTypeIcon: <PiCurrencyGbpFill />,
         balanceType:"GBP"
     },
 
     {
         walletName: 'EUR Account',
-        availableBalance: '11,057.00 ',
+        availableBalance: '3,112,526,633.00',
         walletTypeIcon: <AiFillEuroCircle />,
         balanceType:"EUR"
     },
