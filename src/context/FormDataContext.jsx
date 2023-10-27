@@ -1,19 +1,11 @@
-// FormDataContext.js
 
-import React, { createContext, useContext, useState } from 'react';
 
-const FormDataContext = createContext();
+import { createContext, useState } from "react";
 
-export function useFormData() {
-  return useContext(FormDataContext);
-}
-
-export function FormDataProvider({ children }) {
+export const FormContext = createContext();
+const FormContextProvider = ({children})=>{
   const [formData, setFormData] = useState({});
-
-  return (
-    <FormDataContext.Provider value={{ formData, setFormData }}>
-      {children}
-    </FormDataContext.Provider>
-  );
+  const FormDataValue = {formData,setFormData}
+  return <FormContext.Provider  value={FormDataValue}>{children}</FormContext.Provider>
 }
+export default FormContextProvider;

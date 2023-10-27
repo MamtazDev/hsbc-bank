@@ -10,7 +10,7 @@ import ExchangeRate from './components/exchangeRate/ExchangeRate';
 import MakePayment from './components/makePayment/MakePayment';
 import Account from './components/account/Account';
 import RequestSucess from './components/requestSucess/RequestSucess';
-import { FormDataProvider } from './context/FormDataContext';
+import FormContextProvider from './context/FormDataContext';
 
 const router = createBrowserRouter([
   {
@@ -51,10 +51,9 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <FormDataProvider>
-
+  <FormContextProvider>
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-  </FormDataProvider>
+  </FormContextProvider>
 )

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import './CreateAccount.scss'
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import Select from 'react-select';
@@ -6,7 +6,7 @@ import { Button, Modal } from 'react-bootstrap';
 import './Account.css';
 import { Link } from 'react-router-dom';
 import RequestSucess from '../requestSucess/RequestSucess';
-import { useFormData } from '../../context/FormDataContext';
+import { FormContext } from '../../context/FormDataContext';
 const options = [
     { value: 'EUR', label: 'EUR' },
     { value: 'HKD', label: 'HKD' },
@@ -29,7 +29,7 @@ const options3 = [
 ]
 
 const CreateAccount = () => {
-const { formData, setFormData } = useFormData();
+const { formData, setFormData } = useContext(FormContext);
 const fileRef = useRef()
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -59,7 +59,7 @@ setFormData({...formData, [key]:selectedOption})
         handleShow()
     };
     
-
+console.log(formData,"pppp");
     return (
         <div className='create_account main_content mt-3'>
             <div className='section_heading'>

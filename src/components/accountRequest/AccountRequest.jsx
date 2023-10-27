@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './AccountRequest.scss'
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { useFormData } from '../../context/FormDataContext';
+import { FormContext } from '../../context/FormDataContext';
+
 
 const AccountRequest = ({formattedDate}) => {
-    const { formData, setFormData } = useFormData();
+    const { formData, setFormData } = useContext(FormContext);
+    console.log(formData,"llll");
     return (
         <div className="account_request">
             <div className="account_request_wrapper">
@@ -66,6 +68,8 @@ const AccountRequest = ({formattedDate}) => {
                                 </thead>
 
                                 <tbody className='table_body'>
+                                    {
+                                    !( Object.keys(formData).length === 0  )  && 
                                 <tr className='table_row'>
                                         <td className='table_data'>
                                             <span className='table_text'>
@@ -114,6 +118,7 @@ const AccountRequest = ({formattedDate}) => {
                                             </span>
                                         </td>
                                     </tr>
+                                    }
 
                                     <tr className='table_row'>
                                         <td className='table_data'>
