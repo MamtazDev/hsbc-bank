@@ -6,8 +6,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import Select from 'react-select'
 import CustomOption from './CustomOption';
 
-const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
-  
+const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
+  const [show,setShow] = useState(false)
   const paymentCurrency = [
     { value: 'AUD', label: 'AUD' },
     { value: 'CAD', label: 'CAD' },
@@ -26,6 +26,13 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
       handleSelectFieldInputChange(selectedOption.value, 'from');
     }
   };
+
+  const [dropDownState, setDropDownState] =useState({
+    title:"USD CombiNations Savings",
+    date:"001-7-600123",
+    amount:" USD 1200"
+  })
+
   const [currentDate, setCurrentDate] = useState(new Date());
 
   useEffect(() => {
@@ -122,8 +129,8 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
             </h3>
             <div className="left mb-4 mb-lg-0" style={{ width: '400px' }}>
              
-              <Select name='from' onChange={handleChange} id='bbl' options={paymentCurrency}  
-              components={{ Option: CustomOption }}  placeholder={"AUD"}
+              {/* <Select name='from' onChange={handleChange} options={paymentCurrency}  
+              components={{ Option: CustomOption }}    placeholder={<CustomOption/>}
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
@@ -132,7 +139,48 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
                   }),
                 
                 }}
-              />
+              /> */}
+              <div className='parent'>
+
+              {/* ---------------------**********************_____________ */}
+
+
+<div onClick={()=>setShow(!show)} className='from_dropdown p-2 d-flex  align-items-center justify-content-between'>
+
+<div className='from_left'>
+  <p className='m-0'>
+    {dropDownState.title}
+  </p>
+
+  <p className="d-flex align-items-center justify-content-between m-0">
+    <span>
+     {dropDownState.date}
+    </span>
+
+    <span>
+     {dropDownState.amount}
+    </span>
+  </p>
+</div>
+
+<div className="from_right">
+  <IoIosArrowDown />
+</div>
+
+</div>
+<div className='child'>
+
+{
+  show && paymentCurrency.map((data,index)=><CustomOption paymentFormData={paymentFormData} setpaymentFormData={setpaymentFormData} show={show} setShow={setShow} setDropDownState={setDropDownState} key={index} data={data}></CustomOption>) 
+}
+</div>
+
+{/* ---------------------**********************_____________ */}
+
+              </div>
+
+
+
 
             </div>
             
@@ -223,7 +271,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
 
                 <div className='from_left'>
                   <p className='m-0'>
-                    USD CombiNations Savings
+                    {paymentFormData.from} CombiNations Savings
                   </p>
 
                   <p className="d-flex align-items-center justify-content-between m-0">
@@ -232,7 +280,7 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange,handlePrevious,handle
                     </span>
 
                     <span>
-                      USD 45,265.83
+                    {paymentFormData.from} 45,265.83
                     </span>
                   </p>
                 </div>

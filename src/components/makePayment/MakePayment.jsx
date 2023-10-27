@@ -24,14 +24,17 @@ const MakePayment = () => {
           }
     const handleFormSubmit = () => {
       event.preventDefault()
-    
       
   };
+
+
+
+
  
   const renderStepContent = () => {
     switch (step) {
       case 1:
-        return <PaymentStepOne paymentFormData={paymentFormData} handlePrevious={handlePrevious} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} handleFormSubmit={handleFormSubmit} step={step} handleNext={handleNext} />
+        return <PaymentStepOne setpaymentFormData={setpaymentFormData} paymentFormData={paymentFormData} handlePrevious={handlePrevious} handleInputChange={handleInputChange} handleSelectFieldInputChange={handleSelectFieldInputChange} handleFormSubmit={handleFormSubmit} step={step} handleNext={handleNext} />
       case 2:
         return  <PaymentStepThree handleNext={handleNext} step={step}  handlePrevious={handlePrevious} paymentFormData={paymentFormData} />;
       case 3:
@@ -40,7 +43,7 @@ const MakePayment = () => {
         return null;
     }
   };
-console.log(paymentFormData);
+console.log("paymentFormData",paymentFormData);
   return (
 
     <div className='overview main_content mt-3'>

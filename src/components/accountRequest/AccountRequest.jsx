@@ -6,7 +6,7 @@ import { FormContext } from '../../context/FormDataContext';
 
 const AccountRequest = ({formattedDate}) => {
     const { formData, setFormData } = useContext(FormContext);
-    console.log(formData,"llll");
+  
     return (
         <div className="account_request">
             <div className="account_request_wrapper">

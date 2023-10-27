@@ -59,7 +59,6 @@ setFormData({...formData, [key]:selectedOption})
         handleShow()
     };
     
-console.log(formData,"pppp");
     return (
         <div className='create_account main_content mt-3'>
             <div className='section_heading'>

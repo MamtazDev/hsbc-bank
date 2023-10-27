@@ -28,7 +28,7 @@ const paymentCurrency = [
   { value: 'HKD', label: 'HKD' },
 ]
 
-const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
+const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
  const [detailsStep,setDetailsStep] = useState(0)
  
   return (
@@ -254,7 +254,7 @@ const PaymentStepOne = ({paymentFormData,handlePrevious,step,handleNext,handleIn
     </div>
     }
     {
-      detailsStep === 1 && <PaymentStepTwo handleSelectFieldInputChange={handleSelectFieldInputChange} step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange} />
+      detailsStep === 1 && <PaymentStepTwo setpaymentFormData={setpaymentFormData} handleSelectFieldInputChange={handleSelectFieldInputChange} step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange} />
     }
     </>
    

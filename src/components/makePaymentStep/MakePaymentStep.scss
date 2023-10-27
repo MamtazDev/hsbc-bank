@@ -411,3 +411,17 @@
     margin: 0px 0px 6px;
     text-align: left;
 }
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+    max-height: 400px;
+    overflow-y: scroll;
+}
