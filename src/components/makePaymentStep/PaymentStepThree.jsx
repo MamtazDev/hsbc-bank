@@ -166,7 +166,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                                 {paymentFormData.from} Current Account
                             </p>
                             <span className=''>
-                                001-060730-203
+                               {paymentFormData.accountNumber}
                             </span>
                         </div>
 
