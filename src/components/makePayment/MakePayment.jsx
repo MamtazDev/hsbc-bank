@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PaymentStepOne from '../makePaymentStep/PaymentStepOne';
 import PaymentStepTwo from '../makePaymentStep/PaymentStepTwo';
 import PaymentStepThree from '../makePaymentStep/PaymentStepThree';
 import PaymentStepBtn from '../makePaymentStep/PaymentStepBtn';
 import StepTracker from '../stepTracker/StepTracker';
+import { useLocation } from 'react-router-dom';
 
 const MakePayment = () => {
   const [paymentFormData, setpaymentFormData] = useState({})
@@ -28,7 +29,9 @@ const MakePayment = () => {
   };
 
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [step]);
 
  
   const renderStepContent = () => {

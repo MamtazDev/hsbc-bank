@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './MakePaymentStep.scss'
 import Select from 'react-select'
 import PaymentStepTwo from './PaymentStepTwo'
@@ -30,6 +30,9 @@ const paymentCurrency = [
 
 const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
  const [detailsStep,setDetailsStep] = useState(0)
+ useEffect(() => {
+  window.scrollTo(0, 0);
+}, [detailsStep]);
  
   return (
     <>
