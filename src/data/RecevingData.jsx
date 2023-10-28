@@ -55,7 +55,7 @@ export const recevingData = [
     {
         accountDetails:
         {
-            accountNumber: 'WA5456789000USD',
+            accountNumber: 'WA5456789000GBP',
             accountType: 'GBP Account',
             currentLedgerType: 'GBP',
             currentLedgerAmmount: '230,721.00',
@@ -108,7 +108,7 @@ export const recevingData = [
     {
         accountDetails:
         {
-            accountNumber: 'WA5456789000USD',
+            accountNumber: 'WA5456789000EUR',
             accountType: 'EUR Account',
             currentLedgerType: 'EUR',
             currentLedgerAmmount: '11,057.00',
@@ -161,7 +161,7 @@ export const recevingData = [
     {
         accountDetails:
         {
-            accountNumber: 'WA5456789000USD',
+            accountNumber: 'WA5456789000HKD',
             accountType: 'HKD Account',
             currentLedgerType: 'HKD',
             currentLedgerAmmount: '167,990.00',
