@@ -1,10 +1,23 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
 const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handleNext,handlePrevious}) => {
-    console.log(step);
+    const [currentDate, setCurrentDate] = useState(new Date());
+
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        const newDateTime = new Date();
+        setCurrentDate(newDateTime);
+      }, 1000);
+  
+      // Clear the interval when the component unmounts to prevent memory leaks
+      return () => clearInterval(intervalId);
+    }, []);
+  
+    // Format the date as "DD/MM/YY"
+    const formattedDate = currentDate.toLocaleDateString('en-GB', { year: '2-digit', month: '2-digit', day: '2-digit' });
     const handleAnotherPayment = ()=>{
         setpaymentFormData({})
         setStep(1)
@@ -24,7 +37,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
 </span>
 <div>
 
-<p>Your instruction has been received at 23/10/2023 12:03HKT. Please note the reference number below for your records.</p>
+<p>Your instruction has been received at {formattedDate} 12:03HKT. Please note the reference number below for your records.</p>
 <p>If this payment is made to a normal beneficiary, you will receive a notification via SMS. To get notified when your payee receives your payment via RTGS / Telegraphic Transfer, go to "My ICBT > Notification Centre" and subscribe </p>
 <p>'Outgoing Payment Notifications'.</p>
 <p>[NEW] Primary Users can go to 'Payment Tracker' to submit cancellation request for payments executed via RTGS or Telegraphic Transfer. Payment cancellation involves handling charges and it may take a few weeks.</p>
@@ -246,7 +259,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                 </h3>
                 <div className="section_item mb-3">
                     <p style={{fontSize: '14px'}} className='fs-12'>
-                        18/10/2023
+                      {formattedDate}
                     </p>
                     <span className='d-flex align-items-center gap-2'>
                         Transaction requests submitted during business hours open in new window on a Hong Kong working day will be processed on the same day. Requests submitted at other times (e.g. on a public holiday) will be processed on the next working day.
@@ -412,7 +425,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                 </button>
             )}
              
-            {step > 1 && (
+            {(step > 1 && step !== 3) && (
                 <button onClick={handlePrevious} className="previous-button">
                     Previous
                 </button>

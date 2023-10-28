@@ -61,7 +61,7 @@ const Account = () => {
               <div className="account_card_item_left">
                 <div className="account_card_item mb-4">
                   <p className='fs_14 text_clr_76'>Receiving Account currency</p>
-                  <p className='fw-medium fs_14 text-black'>USD</p>
+                  <p className='fw-medium fs_14 text-black'>{accountData?.currency}</p>
                 </div>
 
                 <div className="account_card_item mb-4">
@@ -86,7 +86,7 @@ const Account = () => {
             <div className="account_card_content_middle">
               <div className="account_card_item mb-4">
                 <p className='fs_14 text_clr_76'>Seller name</p>
-                <p className='fw-medium fs_14 text-black'>USD</p>
+                <p className='fw-medium fs_14 text-black'>{accountData?.currency}</p>
               </div>
 
               <div className="account_card_item mb-4">
@@ -302,7 +302,7 @@ const Account = () => {
                         <td className='table_data'>
                           <span className='table_text'>
                             <p className='m-0'>
-                              USD 80.00
+                            {accountData?.currency} 80.00
                             </p>
                           </span>
                         </td>
@@ -377,7 +377,7 @@ const Account = () => {
                         <td className='table_data'>
                           <span className='table_text'>
                             <p className='m-0'>
-                              USD 80.00
+                            {accountData?.currency} 80.00
                             </p>
                           </span>
                         </td>
@@ -452,7 +452,7 @@ const Account = () => {
                         <td className='table_data'>
                           <span className='table_text'>
                             <p className='m-0'>
-                              USD 80.00
+                            {accountData?.currency} 80.00
                             </p>
                           </span>
                         </td>
@@ -527,7 +527,7 @@ const Account = () => {
                         <td className='table_data'>
                           <span className='table_text'>
                             <p className='m-0'>
-                              USD 80.00
+                            {accountData?.currency} 80.00
                             </p>
                           </span>
                         </td>
@@ -602,7 +602,7 @@ const Account = () => {
                         <td className='table_data'>
                           <span className='table_text'>
                             <p className='m-0'>
-                              USD 80.00
+                            {accountData?.currency} 80.00
                             </p>
                           </span>
                         </td>
@@ -677,7 +677,7 @@ const Account = () => {
                         <td className='table_data'>
                           <span className='table_text'>
                             <p className='m-0'>
-                              USD 80.00
+                            {accountData?.currency} 80.00
                             </p>
                           </span>
                         </td>

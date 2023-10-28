@@ -21,9 +21,9 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
   };
 
   const [dropDownState, setDropDownState] =useState({
-    title:"USD Current account",
-    date:"001-7-600123",
-    amount:" USD 1200"
+    title:"Select an  account",
+    date:"",
+    amount:""
   })
 
   const [currentDate, setCurrentDate] = useState(new Date());
