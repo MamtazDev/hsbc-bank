@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Alert from '../alert/Alert'
 import WalletList from '../walletList/WalletList'
 import RecevingAccountList from '../recevingAccountList/RecevingAccountList'
+import ScrollToTop from '../ScrollToTop'
 
 const Overview = () => {
 
@@ -30,6 +31,7 @@ const Overview = () => {
   
     return (
         <div className='overview main_content mt-3'>
+          <ScrollToTop/>
             <div className='section_heading'>
                 <h1>
                     Overview

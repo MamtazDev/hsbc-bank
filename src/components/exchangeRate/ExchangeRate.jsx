@@ -6,6 +6,7 @@ import { BiTrendingUp } from "react-icons/bi";
 import { MdOutlineEdit } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { convertCurrency, getAllCurrencyRate } from '../../utils/functionalities';
+import ScrollToTop from '../ScrollToTop';
 
 const options = [
   { value: 'USD', label: 'USD' },
@@ -54,6 +55,7 @@ const ExchangeRate = () => {
   console.log(exChangeCurrencyProperties,"gg")
   return (
     <div className='overview main_content mt-3'>
+      <ScrollToTop/>
       <div className='section_heading'>
         <h1>
         Exchange Rate

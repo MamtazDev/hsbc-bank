@@ -7,6 +7,7 @@ import './Account.css';
 import { Link } from 'react-router-dom';
 import RequestSucess from '../requestSucess/RequestSucess';
 import { FormContext } from '../../context/FormDataContext';
+import ScrollToTop from '../ScrollToTop';
 const options = [
     { value: 'EUR', label: 'EUR' },
     { value: 'HKD', label: 'HKD' },
@@ -61,6 +62,7 @@ setFormData({...formData, [key]:selectedOption})
     
     return (
         <div className='create_account main_content mt-3'>
+            <ScrollToTop/>
             <div className='section_heading'>
                 <h1>
                    Create Account
