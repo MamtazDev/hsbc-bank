@@ -5,7 +5,7 @@ import './Account.scss';
 import { PiClipboardTextBold } from "react-icons/pi";
 import guideImage from '../../assets/guideImage.png'
 import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { GiSettingsKnobs } from "react-icons/gi";
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import AccountRequest from '../accountRequest/AccountRequest';
@@ -27,6 +27,11 @@ const Account = () => {
       setAccountData(selectedAccount);
     }
   }, [id]);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   
   return (
     <div className='create_account main_content mt-3 '>
