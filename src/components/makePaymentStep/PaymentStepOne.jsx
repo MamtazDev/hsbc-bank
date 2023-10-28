@@ -231,7 +231,7 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
         </div>
       </form>
 
-      <div className="note">
+      {/* <div className="note">
         <p className='fs_14'>
           Note
         </p>
@@ -243,7 +243,7 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
             With effect from 1 January 2021, any outward telegraphic transfer into mainland China will require the input of a SWIFT BIC code (also known as SWIFT code or SWIFT address) as bank beneficiary identifier. CNY payments with CNAPS code input will be rejected.
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className='text-end'>
 
       {step < 3 && (

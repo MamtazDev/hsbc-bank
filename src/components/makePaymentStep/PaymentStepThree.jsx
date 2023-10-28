@@ -394,7 +394,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
 
             </div>
 
-            <div className="pay_to paymentstep_two_border pt-5">
+            {/* <div className="pay_to paymentstep_two_border pt-5">
                 <h3 style={{ fontSize: '20px' }} className='mb-3'>
                     Important Notes
                 </h3>
@@ -417,7 +417,7 @@ const PaymentStepThree = ({step,setStep,setpaymentFormData,paymentFormData,handl
                     to learn about the solutions for the most common issues you may face when making payments in Business Internet Banking.
                 </p>
 
-            </div>
+            </div> */}
             <div className="button-container">
             {step === 3 && (
                 <button onClick={handleAnotherPayment} className="previous-button">
