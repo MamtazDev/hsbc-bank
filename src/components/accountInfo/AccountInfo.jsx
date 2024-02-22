@@ -1,6 +1,5 @@
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
-import { recevingData } from '../../data/RecevingData';
 import moment from 'moment';
 
 const AccountInfo = ({ accountInfo }) => {
@@ -19,7 +18,7 @@ const AccountInfo = ({ accountInfo }) => {
                     {accountInfo.accountNumber}
                 </p>
             </div>
-            <div className="account_current">
+            {/* <div className="account_current">
                 <p className='m-0'>
                     Current ledger
                 </p>
@@ -51,7 +50,7 @@ const AccountInfo = ({ accountInfo }) => {
                 <a href="#">
                     Top-up / Withdraw <IoIosArrowForward style={{ color: 'red' }} />
                 </a>
-            </div>
+            </div> */}
 
         </div>
     )

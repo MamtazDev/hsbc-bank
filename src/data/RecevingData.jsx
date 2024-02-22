@@ -3,7 +3,7 @@ export const recevingData = [
         accountDetails:
         {
             accountNumber: 'WA5456789000USD',
-            accountType: 'USD Account',
+            accountType: 'Simple Fashion',
             currentLedgerType: 'USD',
             currentLedgerAmmount: '326, 678.00',
             availableBalaceType:'USD',

@@ -17,41 +17,41 @@ const AccountDetails = ({ accountData }) => {
                                     <tr className='table_row'>
                                         <th className='table_head_one ' style={{ width: '200px' }}>
                                             <div className='table_head_title'>
-                                                <button>
+                                          
                                                     Receiving Account nickname
-                                                </button>
+                                           
                                             </div>
                                         </th>
 
                                         <th className='table_head_one ' style={{ width: '200px' }}>
                                             <div className='table_head_title'>
-                                                <button>
+                                         
                                                     Receiving Account Number
-                                                </button>
+                                            
                                             </div>
                                         </th>
 
                                         <th className='table_head_one ' style={{ width: '120px' }}>
                                             <div className='table_head_title'>
-                                                <button>
+                                           
                                                     Currency
-                                                </button>
+                                             
                                             </div>
                                         </th>
 
                                         <th className='table_head_one ' style={{ width: '160px' }}>
                                             <div className='table_head_title'>
-                                                <button>
+                                           
                                                     Status
-                                                </button>
+                                          
                                             </div>
                                         </th>
 
                                         <th className='table_head_one ' style={{ width: '120px' }}>
                                             <div className='table_head_title'>
-                                                <button>
+                                            
                                                     Action
-                                                </button>
+                                        
                                             </div>
                                         </th>
                                     </tr>
