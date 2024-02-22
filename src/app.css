@@ -11,3 +11,15 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.reset {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reset form{
+    max-width: 400px;
+}

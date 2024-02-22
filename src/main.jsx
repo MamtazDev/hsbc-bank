@@ -13,6 +13,7 @@ import Account from './components/account/Account';
 import RequestSucess from './components/requestSucess/RequestSucess';
 import FormContextProvider from './context/FormDataContext';
 import Login from './components/Authentication/Login';
+import ResetPass from './components/Authentication/ResetPass';
 
 const router = createBrowserRouter([
   {
@@ -53,7 +54,11 @@ const router = createBrowserRouter([
     {
       path: '/login',
       element: <Login />
-    }
+    },
+    {
+      path: '/reset-password',
+      element: <ResetPass />
+    },
   
 ])
 
