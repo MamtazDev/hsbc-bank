@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
+import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import DashboardLayout from './components/dashboardLayout/DashboardLayout';
@@ -11,6 +12,7 @@ import MakePayment from './components/makePayment/MakePayment';
 import Account from './components/account/Account';
 import RequestSucess from './components/requestSucess/RequestSucess';
 import FormContextProvider from './context/FormDataContext';
+import Login from './components/Authentication/Login';
 
 const router = createBrowserRouter([
   {
@@ -48,13 +50,18 @@ const router = createBrowserRouter([
       }
     ]
   },
+    {
+      path: '/login',
+      element: <Login />
+    }
+  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <FormContextProvider>
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
   </FormContextProvider>
 
 )
