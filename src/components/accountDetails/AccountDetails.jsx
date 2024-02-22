@@ -15,7 +15,7 @@ const AccountDetails = ({ accountData }) => {
 
                                 <thead className='table_head'>
                                     <tr className='table_row'>
-                                        <th className='table_head_one ' style={{ width: '200px' }}>
+                                        {/* <th className='table_head_one ' style={{ width: '200px' }}>
                                             <div className='table_head_title'>
                                           
                                                     Receiving Account nickname
@@ -29,7 +29,7 @@ const AccountDetails = ({ accountData }) => {
                                                     Receiving Account Number
                                             
                                             </div>
-                                        </th>
+                                        </th> */}
 
                                         <th className='table_head_one ' style={{ width: '120px' }}>
                                             <div className='table_head_title'>
@@ -42,7 +42,7 @@ const AccountDetails = ({ accountData }) => {
                                         <th className='table_head_one ' style={{ width: '160px' }}>
                                             <div className='table_head_title'>
                                            
-                                                    Status
+                                                    Value
                                           
                                             </div>
                                         </th>
@@ -61,21 +61,21 @@ const AccountDetails = ({ accountData }) => {
                                     {
                                         accountData.map((accountDataInfo, index) => (
                                             <tr className='table_row' key={index}>
-                                                <td className='table_data'>
+                                                {/* <td className='table_data'>
                                                     <span className='table_text'>
                                                         <p className='m-0'>
                                                             {accountDataInfo.accountNickName}
                                                         </p>
                                                     </span>
-                                                </td>
+                                                </td> */}
 
-                                                <td className='table_data'>
+                                                {/* <td className='table_data'>
                                                     <span className='table_text'>
                                                         <p className='m-0'>
                                                             {accountDataInfo.accountNumber}
                                                         </p>
                                                     </span>
-                                                </td>
+                                                </td> */}
 
                                                 <td className='table_data'>
                                                     <span className='table_text'>
@@ -88,7 +88,7 @@ const AccountDetails = ({ accountData }) => {
                                                 <td className='table_data'>
                                                     <span className='table_text'>
                                                         <p className='m-0'>
-                                                            {accountDataInfo.accountStatus}
+                                                            {/* {accountDataInfo.accountStatus} */} 0.00
                                                         </p>
                                                     </span>
                                                 </td>

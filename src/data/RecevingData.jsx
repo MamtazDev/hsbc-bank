@@ -22,7 +22,7 @@ export const recevingData = [
                 id:2,
                 accountNickName: 'Lets Shop',
                 accountNumber: '13252222011049',
-                currency: 'USD',
+                currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -30,7 +30,7 @@ export const recevingData = [
                 id:3,
                 accountNickName: 'Baby World',
                 accountNumber: '13252222031050',
-                currency: 'USD',
+                currency: 'EUR',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -38,7 +38,7 @@ export const recevingData = [
                 id:4,
                 accountNickName: 'Mega Trands',
                 accountNumber: '13252222041051',
-                currency: 'USD',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -46,7 +46,7 @@ export const recevingData = [
                 id:5,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011052',
-                currency: 'USD',
+                currency: 'CNY',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -56,7 +56,7 @@ export const recevingData = [
         accountDetails:
         {
             accountNumber: 'WA5456789000GBP',
-            accountType: 'GBP Account',
+            accountType: 'Lets Shop',
             currentLedgerType: 'GBP',
             currentLedgerAmmount: '230,721.00',
             availableBalaceType:'GBP',
@@ -67,7 +67,7 @@ export const recevingData = [
                 id:6,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011039',
-                currency: 'GBP',
+                currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -83,7 +83,7 @@ export const recevingData = [
                 id:8,
                 accountNickName: 'Baby World',
                 accountNumber: '13252222031050',
-                currency: 'GBP',
+                currency: 'EUR',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -91,7 +91,7 @@ export const recevingData = [
                 id:9,
                 accountNickName: 'Mega Trands',
                 accountNumber: '13252222041051',
-                currency: 'GBP',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -99,7 +99,7 @@ export const recevingData = [
                 id:10,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011052',
-                currency: 'GBP',
+                currency: 'CNY',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -109,7 +109,7 @@ export const recevingData = [
         accountDetails:
         {
             accountNumber: 'WA5456789000EUR',
-            accountType: 'EUR Account',
+            accountType: 'Baby World',
             currentLedgerType: 'EUR',
             currentLedgerAmmount: '11,057.00',
             availableBalaceType:'EUR',
@@ -120,7 +120,7 @@ export const recevingData = [
                 id:11,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011039',
-                currency: 'EUR',
+                currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -128,7 +128,7 @@ export const recevingData = [
                 id:12,
                 accountNickName: 'Lets Shop',
                 accountNumber: '13252222011049',
-                currency: 'EUR',
+                currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -144,7 +144,7 @@ export const recevingData = [
                 id:14,
                 accountNickName: 'Mega Trands',
                 accountNumber: '13252222041051',
-                currency: 'EUR',
+                currency: 'HKD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -152,7 +152,7 @@ export const recevingData = [
                 id:15,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011052',
-                currency: 'EUR',
+                currency: 'CNY',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -162,7 +162,7 @@ export const recevingData = [
         accountDetails:
         {
             accountNumber: 'WA5456789000HKD',
-            accountType: 'HKD Account',
+            accountType: 'Mega Trends',
             currentLedgerType: 'HKD',
             currentLedgerAmmount: '167,990.00',
             availableBalaceType:'HKD',
@@ -173,7 +173,7 @@ export const recevingData = [
                 id:16,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011039',
-                currency: 'HKD',
+                currency: 'USD',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -181,7 +181,7 @@ export const recevingData = [
                 id:12,
                 accountNickName: 'Lets Shop',
                 accountNumber: '13252222011049',
-                currency: 'HKD',
+                currency: 'GBP',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -189,7 +189,7 @@ export const recevingData = [
                 id:13,
                 accountNickName: 'Baby World',
                 accountNumber: '13252222031050',
-                currency: 'HKD',
+                currency: 'EUR',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
@@ -205,7 +205,7 @@ export const recevingData = [
                 id:15,
                 accountNickName: 'Simple Fashion',
                 accountNumber: '13252222011052',
-                currency: 'HKD',
+                currency: 'CNY',
                 accountStatus: 'Active',
                 accountAction: 'View detail'
             },
