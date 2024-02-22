@@ -169,11 +169,8 @@ const Account = () => {
                 <GiSettingsKnobs />
                 Filter
                 <IoIosArrowDown />
-
               </button>
             </div>
-
-
           </div>
         </div>
 
@@ -188,10 +185,8 @@ const Account = () => {
                     <thead className='table_head'>
                       <tr className='table_row'>
                         <th className='table_head_one ' style={{ width: '120px' }}>
-                          <div className='table_head_title'>
-                      
-                              Bank reference
-                          
+                          <div className='table_head_title'>                     
+                              Bank reference                         
                           </div>
                         </th>
 

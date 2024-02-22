@@ -11,7 +11,6 @@ import MakePayment from './components/makePayment/MakePayment';
 import Account from './components/account/Account';
 import RequestSucess from './components/requestSucess/RequestSucess';
 import FormContextProvider from './context/FormDataContext';
-import ScrollToTop from './components/ScrollToTop';
 
 const router = createBrowserRouter([
   {

@@ -27,6 +27,16 @@ const paymentCurrency = [
   { value: 'USD', label: 'USD' },
   { value: 'HKD', label: 'HKD' },
 ]
+const beneficiaryType = [
+  { value: 'Procurement', label: 'Procurement' },
+  { value: 'Logistics', label: 'Logistics' },
+  { value: 'Service Providers', label: 'Service Providers' },
+  { value: 'Warehousing', label: 'Warehousing' },
+  { value: 'Trading Companies', label: 'Trading Companies' },
+  { value: 'Wholesalers', label: 'Wholesalers' },
+  { value: 'Manufacturers', label: 'Manufacturers' },
+  { value: 'Other', label: 'Other' },
+]
 
 const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
  const [detailsStep,setDetailsStep] = useState(0)
@@ -227,6 +237,38 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
           <div>
             <input onChange={handleInputChange} name='beneficiaryAddressLine3' className='input_box_iban' type="text" id='iban3' />
           </div>
+
+        </div>
+        <div className='mb-4'>
+          <p className='fs-5 fw-medium' style={{ color: '#333' }}>
+            Additional information
+          </p>
+        </div>
+        <div className="input_box mb-3">
+          <label htmlFor="iban3" className='mb-2 fs_14'>
+          Beneficiary nickname
+          </label>
+
+          <div>
+            <input onChange={handleInputChange} name='beneficiaryNickname' className='input_box_iban' type="text" id='iban3' />
+          </div>
+
+        </div>
+        <div className="input_box mb-3">
+          <label htmlFor="iban3" className='mb-2 fs_14'>
+          Beneficiary's type
+          </label>
+
+          <Select name='beneficiaryType' onChange={(selectedOption)=>handleSelectFieldInputChange(selectedOption.value, 'beneficiaryType')} id='bbl' options={beneficiaryType} placeholder={"Procurement"}
+                styles={{
+                  control: (baseStyles, state) => ({
+                    ...baseStyles,
+                    backgroundColor: 'white',
+                    borderRadius: '0px',
+                    maxWidth:"400px"
+                  }),
+                }}
+              />
 
         </div>
       </form>
