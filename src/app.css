@@ -2,6 +2,7 @@ a {
     text-decoration: none !important;
 }
 
+
 .login {
     height: 100vh;
     max-width: 400px;
@@ -20,6 +21,17 @@ a {
     align-items: center;
     justify-content: center;
 }
-.reset form{
+
+.reset form {
     max-width: 400px;
+}
+
+.file_card {
+    border: 2px dashed whitesmoke;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.file_card button {
+    background-color: rgb(77, 100, 116);
 }

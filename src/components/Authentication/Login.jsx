@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 const Login = () => {
     return (
         <div className="login text-center">
+            <div className="container">
+
             <p className="mb-5">Welcome back!</p>
             <form className="w-100">
                 <input className="form-control mb-3"  type="email" placeholder="Email" />
@@ -28,6 +30,7 @@ const Login = () => {
                     <Link to="">Sign up</Link>
                 </div>
             </form>
+            </div>
             
         </div>
     )

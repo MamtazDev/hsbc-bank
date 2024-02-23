@@ -14,6 +14,7 @@ import RequestSucess from './components/requestSucess/RequestSucess';
 import FormContextProvider from './context/FormDataContext';
 import Login from './components/Authentication/Login';
 import ResetPass from './components/Authentication/ResetPass';
+import Registration from './components/Authentication/Registration';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
     {
       path: '/login',
       element: <Login />
+    },
+    {
+      path: '/registration',
+      element: <Registration />
     },
     {
       path: '/reset-password',
