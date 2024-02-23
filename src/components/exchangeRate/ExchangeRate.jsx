@@ -72,6 +72,7 @@ const ExchangeRate = () => {
       </div>
 
       <div className="create_account_form border-bottom pb-3">
+        <h6>Sell</h6>
         <div className="create_account_box">
           <div className="create_account_input">
             <Select options={options} placeholder={"USD"}  onChange={handleBaseCurrencyChange}
@@ -91,7 +92,7 @@ const ExchangeRate = () => {
             <input className='ca_input' placeholder='0' value={exChangeCurrencyProperties?.baseCurrencyValue} type="number" name='baseCurrencyValue' onChange={(e)=>handleInputChange(e,"first")} />
           </div>
         </div>
-
+              <h6>Buy</h6>
         <div className="create_account_box">
           <div className="create_account_input">
             <Select options={options} placeholder={"AUD"}   onChange={handleCurrencyChange}
@@ -112,6 +113,14 @@ const ExchangeRate = () => {
           </div>
         </div>
 
+        <select style={{maxWidth:"600px"}} className="form-select">
+          <option selected>Select Account </option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+        </select>
+        <button className='next-button active mt-4'>Submit</button>
         <div className="rete_alert mt-5">
           <p className='fs-6 d-flex align-items-center gap-2 text_clr_76 mb-1'>
             <HiBellAlert className='text_clr_76' />

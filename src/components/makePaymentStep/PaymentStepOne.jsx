@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './MakePaymentStep.scss'
 import Select from 'react-select'
 import PaymentStepTwo from './PaymentStepTwo'
@@ -40,9 +40,18 @@ const beneficiaryType = [
 
 const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
  const [detailsStep,setDetailsStep] = useState(0)
+ const fileRef = useRef()
  useEffect(() => {
   window.scrollTo(0, 0);
 }, [detailsStep]);
+
+const handleBeneficiarySelect = (selectedOption) => {
+  // If an existing beneficiary is selected, proceed to step 2
+  if (selectedOption.value !== 'choose') {
+    setpaymentFormData({ ...paymentFormData, selectedBeneficiary: selectedOption.value });
+    setDetailsStep(1);
+  }
+};
  
   return (
     <>
@@ -50,11 +59,11 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
       detailsStep === 0 &&  <div className='paymentstep_one'>
       <div className='mb-4'>
         <label> Pay existing beneficiary</label>
-        <select className="form-select">
+        <select className="form-select" onChange={(e) => handleBeneficiarySelect({ value: e.target.value })}>
           <option selected>choose</option>
-          <option>A</option>
-          <option>B</option>
-          <option>C</option>
+          <option>existing beneficiary A</option>
+          <option>existing beneficiary B</option>
+          <option>existing beneficiary C</option>
         </select>
       </div>
 
@@ -281,6 +290,27 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
               />
 
         </div>
+
+        <div className="input_box mb-3">
+          <label htmlFor="iban3" className='mb-2 fs_14'>
+          Phone (Optional)
+          </label>
+
+          <div>
+            <input onChange={handleInputChange} name='phone' className='input_box_iban' type="tel" />
+          </div>
+
+        </div>
+
+        <div className='text-secondary'>
+          <h5 >Transaction information</h5>
+          <p>Please upload a contract or invoice that reflects your trade relationship with the recipient (for logistics recipielts, logictics documents are also accepted)</p>
+        </div>
+        <div className='mt-4'>
+          <input ref={fileRef} type="file" className='d-none' />
+        <button onClick={()=>fileRef.current.click()} type="button" className="btn btn-outline-secondary rounded-pill px-4">UPLOAD FILE</button>
+        </div>
+        
       </form>
 
       {/* <div className="note">

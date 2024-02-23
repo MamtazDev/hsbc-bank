@@ -52,6 +52,9 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
 
             <div className="payment_info">
               <p className='fw-normal fs_14 text_clr_black_33'>
+                {paymentFormData.selectedBeneficiary}
+              </p>
+              <p className='fw-normal fs_14 text_clr_black_33'>
                 {paymentFormData.beneficiaryName}
               </p>
               <p className='fw-normal fs_14 text_clr_black_33'>
