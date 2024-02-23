@@ -48,6 +48,16 @@ const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step
     <>
     {
       detailsStep === 0 &&  <div className='paymentstep_one'>
+      <div className='mb-4'>
+        <label> Pay existing beneficiary</label>
+        <select className="form-select">
+          <option selected>choose</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+      </div>
+
       <div className='section_heading'>
         <h1 className='fw-medium'>
           Pay new individual or company
