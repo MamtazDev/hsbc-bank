@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './MakePaymentStep.scss'
 import Select from 'react-select'
 import PaymentStepTwo from './PaymentStepTwo'
+import axios from 'axios'
 const options = [
   { value: 'AUD', label: 'Australia' },
   { value: 'CUD', label: 'Canada' },
@@ -40,6 +41,7 @@ const beneficiaryType = [
 
 const PaymentStepOne = ({paymentFormData, setpaymentFormData,handlePrevious,step,handleNext,handleInputChange,handleFormSubmit,handleSelectFieldInputChange}) => {
  const [detailsStep,setDetailsStep] = useState(0)
+ const [countryNames, setCountryNames] = useState([]);
  const fileRef = useRef()
  useEffect(() => {
   window.scrollTo(0, 0);
@@ -52,6 +54,21 @@ const handleBeneficiarySelect = (selectedOption) => {
     setDetailsStep(1);
   }
 };
+
+console.log(countryNames,"countryNames")
+
+useEffect(() => {
+  axios
+    .get(
+      "https://gist.githubusercontent.com/anubhavshrimal/75f6183458db8c453306f93521e93d37/raw/f77e7598a8503f1f70528ae1cbf9f66755698a16/CountryCodes.json"
+    )
+    .then(function (response) {
+      setCountryNames(response.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}, []);
  
   return (
     <>
@@ -295,9 +312,15 @@ const handleBeneficiarySelect = (selectedOption) => {
           <label htmlFor="iban3" className='mb-2 fs_14'>
           Phone (Optional)
           </label>
-
-          <div>
-            <input onChange={handleInputChange} name='phone' className='input_box_iban' type="tel" />
+          <div style={{maxWidth:"400px"}} className='d-flex border p-1'>
+                      <select className='border-0 bg-light p-2'>
+                        {countryNames.map((name, index) => (
+                          <option value={name.dial_code} key={index} >
+                            {name.dial_code}
+                          </option>
+                        ))}
+                      </select>
+            <input className='border-0' onChange={handleInputChange} name='phone'  type="tel" />
           </div>
 
         </div>
