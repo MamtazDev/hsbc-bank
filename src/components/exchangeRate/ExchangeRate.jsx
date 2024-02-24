@@ -52,7 +52,7 @@ const ExchangeRate = () => {
     getCurerncyRating()
   },[])
 
-  console.log(exChangeCurrencyProperties,"gg")
+
   return (
     <div className='overview main_content mt-3'>
       <ScrollToTop/>

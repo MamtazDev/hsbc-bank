@@ -46,7 +46,7 @@ const MakePayment = () => {
         return null;
     }
   };
-console.log("paymentFormData",paymentFormData);
+
   return (
 
     <div className='overview main_content mt-3'>

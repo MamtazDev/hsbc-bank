@@ -10,7 +10,6 @@ const Registration = () => {
     const frontFileref = useRef()
     const backFileref = useRef()
 
-    console.log(countryNames, "countryNames")
 
     const [selected,setSelected]=useState("")
 
