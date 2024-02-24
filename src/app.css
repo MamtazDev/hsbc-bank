@@ -45,7 +45,16 @@ a {
     background-color: rgb(77, 100, 116);
 }
 
+.dropdown_parent {
+    position: relative;
+}
+
 .dropdown_result {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 100%;
+    z-index: 9999;
     background-color: white;
     padding: 20px;
     border-radius: 10px;

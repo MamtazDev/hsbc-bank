@@ -290,7 +290,7 @@ useEffect(() => {
           </div>
 
         </div>
-        <div className="input_box mb-3">
+        <div style={{maxWidth:"400px"}} className="input_box mb-3">
           <label htmlFor="iban3" className='mb-2 fs_14'>
           Beneficiary's type
           </label>
