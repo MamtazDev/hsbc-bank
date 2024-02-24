@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './TopBar.scss'
 import icbtLogo from '../../assets/logo-white-text.png'
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const TopBar = () => {
     const [show,setShow] = useState(false)
@@ -22,7 +23,7 @@ const TopBar = () => {
                     Subscribe now
                 </button>
             </div> */}
-            <div className='logout'>
+            <div className='dropdown_parent'>
 
             <div onClick={()=>setShow(!show)} className='profile '>           
                     <p className='mb-0'>Sky Fashion Limited</p>
@@ -30,7 +31,15 @@ const TopBar = () => {
             </div>
             {
                 show && 
-            <button>Log Out</button>
+                <div className='dropdown_result'>
+                    <Link to="/login">Login</Link>
+                    <Link to="/registration">Registration</Link>
+                    <Link to="/reset-password">Reset Password</Link>
+                    <button>Logout</button>
+
+                    
+                </div>
+
             }
             </div>
 

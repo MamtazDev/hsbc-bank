@@ -5,12 +5,19 @@ a {
 
 .login {
     height: 100vh;
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.login .container,
+.reset .container {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 55px;
+    border-radius: 10px;
 }
 
 .reset {
@@ -22,8 +29,10 @@ a {
     justify-content: center;
 }
 
+
 .reset form {
     max-width: 400px;
+    margin: auto;
 }
 
 .file_card {
@@ -34,4 +43,18 @@ a {
 
 .file_card button {
     background-color: rgb(77, 100, 116);
+}
+
+.dropdown_result {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown_result a {
+    display: block;
 }

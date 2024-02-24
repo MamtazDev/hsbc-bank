@@ -18,58 +18,58 @@ const Registration = () => {
                 <div className="row g-4">
                     <div className="col-lg-9">
                     <div className="row gy-5 gx-3">
-    <div className="col-lg-4">
-    <label>First Name</label>
-    <input className="form-control"  type="text" />
-    </div>
-    <div className="col-lg-4">
-    <label>Last Name</label>
-    <input className="form-control"  type="text" />
-    </div>
-    <div className="col-lg-4">
-    <label>E-mail</label>
-    <input className="form-control"  type="email" />
-    </div>
-    <div className="col-lg-4">
-    <label>Date of Birth</label>
-    <input className="form-control"  type="date" />
-    </div>
-    <div className="col-lg-4">
-    <label>Personal ID Code </label>
-    <input className="form-control"  type="text" />
-    </div>
-    <div className="col-lg-4">
-    <label>Contact Phone Number </label>
-    <input className="form-control"  type="tel" placeholder="(555) 123-4567"/>
-    </div>
-    <div className="col-lg-6">
-    <label>Citizenship </label>
-   <select className="form-select">
-    <option selected>Choose Citizenship</option>
-    <option >B</option>
-    <option >C</option>
-    <option >D</option>
-    <option >E</option>
-   </select>
-    </div>
-    <div className="col-lg-6">
-    <label>Country of Residence </label>
-   <select className="form-select" >
-    <option selected>Choose Country</option>
-    <option >B</option>
-    <option >C</option>
-    <option >D</option>
-    <option >E</option>
-   </select>
-    </div>
-    <div className="col-lg-6">
-    <label>Full address</label>
-    <input className="form-control"  type="text" />
-    </div>
-    <div className="col-lg-6">
-    <label>Post Code </label>
-    <input className="form-control"  type="text" />
-    </div>
+                    <div className="col-lg-4">
+                    <label>First Name</label>
+                    <input className="form-control"  type="text" />
+                    </div>
+                    <div className="col-lg-4">
+                    <label>Last Name</label>
+                    <input className="form-control"  type="text" />
+                    </div>
+                    <div className="col-lg-4">
+                    <label>E-mail</label>
+                    <input className="form-control"  type="email" />
+                    </div>
+                    <div className="col-lg-4">
+                    <label>Date of Birth</label>
+                    <input className="form-control"  type="date" />
+                    </div>
+                    <div className="col-lg-4">
+                    <label>Personal ID Code </label>
+                    <input className="form-control"  type="text" />
+                    </div>
+                    <div className="col-lg-4">
+                    <label>Contact Phone Number </label>
+                    <input className="form-control"  type="tel" placeholder="(555) 123-4567"/>
+                    </div>
+                    <div className="col-lg-6">
+                    <label>Citizenship </label>
+                <select className="form-select">
+                    <option selected>Choose Citizenship</option>
+                    <option >B</option>
+                    <option >C</option>
+                    <option >D</option>
+                    <option >E</option>
+                </select>
+                    </div>
+                    <div className="col-lg-6">
+                    <label>Country of Residence </label>
+                <select className="form-select" >
+                    <option selected>Choose Country</option>
+                    <option >B</option>
+                    <option >C</option>
+                    <option >D</option>
+                    <option >E</option>
+                </select>
+                    </div>
+                    <div className="col-lg-6">
+                    <label>Full address</label>
+                    <input className="form-control"  type="text" />
+                    </div>
+                    <div className="col-lg-6">
+                    <label>Post Code </label>
+                    <input className="form-control"  type="text" />
+                    </div>
                     </div>
                     </div>
                     <div className="col-lg-3">
@@ -168,15 +168,15 @@ const Registration = () => {
                             <label> Company Website  </label>
                             <input className="form-control"  type="text"  />
                             </div>
-                            <div className="text-end">
+                            <div className="d-flex align-items-center justify-content-between gap-4">
 
+                            <button onClick={()=>setStep(1)} className="next-button active mt-5">Back</button>
                             <button  className="next-button active mt-5">Submit</button>
                             </div>
                         </div>
 
                     </div>
                 }
-
             </div>
             
         </div>

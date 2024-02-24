@@ -6,7 +6,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import Select from 'react-select'
 import CustomOption from './CustomOption';
 
-const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
+const PaymentStepTwo = ({detailsStep,setDetailsStep,step,handleSelectFieldInputChange, setpaymentFormData, handlePrevious,handleNext,handleInputChange,paymentFormData}) => {
   const [show,setShow] = useState(false)
   const paymentCurrency = [
     { value: 'EUR', label: 'EUR' ,an:"001-7-600123",amount:"11,057.00"},
@@ -384,8 +384,8 @@ const PaymentStepTwo = ({step,handleSelectFieldInputChange, setpaymentFormData, 
         </div>
       </div>
       <div className="button-container">
-            {step > 1 && (
-                <button onClick={handlePrevious} className="previous-button">
+            {detailsStep === 1 && (
+                <button onClick={()=>setDetailsStep(0)} className="previous-button">
                     Previous
                 </button>
             )}

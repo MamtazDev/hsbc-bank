@@ -339,7 +339,7 @@ const handleBeneficiarySelect = (selectedOption) => {
     </div>
     }
     {
-      detailsStep === 1 && <PaymentStepTwo setpaymentFormData={setpaymentFormData} handleSelectFieldInputChange={handleSelectFieldInputChange} step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange} />
+      detailsStep === 1 && <PaymentStepTwo detailsStep={detailsStep} setDetailsStep={setDetailsStep} setpaymentFormData={setpaymentFormData} handleSelectFieldInputChange={handleSelectFieldInputChange} step={step} handleNext={handleNext} handlePrevious={handlePrevious} paymentFormData={paymentFormData} handleInputChange={handleInputChange} />
     }
     </>
    
