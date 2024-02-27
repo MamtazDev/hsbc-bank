@@ -112,7 +112,7 @@ const ExchangeRate = () => {
             <input className='ca_input' placeholder='0' type="number" value={exChangeCurrencyProperties?.currencyValue} name='currencyValue' onChange={(e)=>handleInputChange(e,"second")} />
           </div>
         </div>
-
+        <button className='next-button active mb-4'>Get a quote </button>
         <select style={{maxWidth:"600px"}} className="form-select">
           <option selected>Select Account </option>
           <option>A</option>

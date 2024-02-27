@@ -19,12 +19,30 @@ const Registration = () => {
                 "https://restcountries.com/v3.1/all?fields=name,callingCodes,flags"
             )
             .then(function (response) {
-                setCountryNames(response.data);
+                const countries = response.data;
+                const hongKongIndex = countries.findIndex(
+                    (country) => country.name.common === "Hong Kong"
+                );
+                const chinaIndex = countries.findIndex(
+                    (country) => country.name.common === "China"
+                );
+                if (hongKongIndex !== -1 && chinaIndex !== -1) {
+                    const hongKong = countries.splice(hongKongIndex, 1)[0];
+                    const china = countries.splice(chinaIndex , 1)[0];  
+    
+                    countries.unshift(china);
+                    countries.unshift(hongKong);
+                }
+          
+                setCountryNames(countries);
             })
             .catch(function (error) {
                 console.log(error);
             });
     }, []);
+    
+    
+    
 
     const dropdownRef = useRef(null);
 
@@ -117,10 +135,11 @@ const Registration = () => {
                                         <label>Country of Residence </label>
                                         <select className="form-select" >
                                             <option selected>Choose Country</option>
-                                            <option >B</option>
-                                            <option >C</option>
-                                            <option >D</option>
-                                            <option >E</option>
+                                            {
+                                                countryNames.map((data,index)=><option key={index} >{data.name.common}</option>)
+                                            }
+                                      
+                                          
                                         </select>
                                     </div>
                                     <div className="col-lg-6">
@@ -226,10 +245,9 @@ const Registration = () => {
                                 <label>Country of Registration</label>
                                 <select className="form-select">
                                     <option selected>Choose Country</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
+                                    {
+                                                countryNames.map((data,index)=><option key={index} >{data.name.common}</option>)
+                                            }
                                 </select>
                             </div>
                             <div className="col-lg-4">
